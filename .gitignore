@@ -1,5 +1,7 @@
 *.pyc
-/__pycache__/
+__pycache__
 myvenv/
 .DS_Store
 *.sqlite3
+localenv.txt
+temp.json
