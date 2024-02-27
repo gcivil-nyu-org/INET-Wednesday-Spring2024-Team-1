@@ -27,7 +27,7 @@ SECRET_KEY = "secret_key"
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/",
+    "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com",
     "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/"
     ]
 
