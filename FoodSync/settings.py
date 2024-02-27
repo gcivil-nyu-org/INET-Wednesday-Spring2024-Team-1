@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/"
+    "https://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/"
     ]
 
 
