@@ -9,4 +9,4 @@ temp.json
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-swe-project/
+swe-project/*
