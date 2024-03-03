@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('recipe/', include('recipe.urls')),
     path('homepage/', include('homepage.urls')),
+    path('groceryStore/',include('groceryStore.urls')),
 ]
