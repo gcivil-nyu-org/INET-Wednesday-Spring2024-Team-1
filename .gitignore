@@ -2,7 +2,7 @@
 __pycache__
 venv/
 .DS_Store
-*.sqlite3
+# *.sqlite3
 localenv.txt
 temp.json
 # Elastic Beanstalk Files
