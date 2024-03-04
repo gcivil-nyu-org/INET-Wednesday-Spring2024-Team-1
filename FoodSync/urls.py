@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.urls import path, include
 from FoodSync import views
+from django.contrib import admin
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
     path('recipe/', include('recipe.urls')),
     path('homepage/', include('homepage.urls')),
     path('groceryStore/',include('groceryStore.urls')),
+    path('',include('users.urls')),
+    path('admin/',admin.site.urls)
 ]

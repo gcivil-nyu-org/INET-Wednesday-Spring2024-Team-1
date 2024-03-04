@@ -1,0 +1,15 @@
+{% if user.is_authenticated %}
+<h2>Hello {{ user.username }}!</h2>
+<h2>Hello {{ user.socialaccount_set.all.0.extra_data.name }}!</h2>
+<h2>Email {{ user.email }}</h2>
+<h1>Welcome to FoodSync!</h1>
+
+<form method="post" action="{% url 'account_logout' %}">
+  {% csrf_token %}
+  <button type="submit">Logout</button>
+</form>
+
+{% else %}
+<a href="/">Please login</a>
+
+{% endif %}

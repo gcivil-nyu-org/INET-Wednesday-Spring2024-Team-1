@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1"
     ]
 
-
+SITE_ID = 3
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,8 +45,32 @@ INSTALLED_APPS = [
     "FoodSync",
     "recipe",
     "groceryStore",
-    "homepage"
+    "homepage",
+    "users",
+    "django.contrib.sites",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google",
 ]
+
+SOCIALACCOUNT_LOGIN_ON_GET = True
+SOCIALACCOUNT_AUTO_SIGNUP = True
+SOCIALACCOUNT_PROVIDERS={
+    "google":{
+        "SCOPE": [
+            "profile",
+            "email"
+        ],
+        "AUTH_PARAMS":{"access_type":"online"},
+        # 'OAUTH_PKCE_ENABLED': True,
+        'APP': {
+            'client_id': os.environ.get('google_client_id'),
+            'secret': os.environ.get('google_secret'),
+            'key': ''
+        }
+    }
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -56,6 +80,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "FoodSync.urls"
@@ -131,3 +156,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTHENTICATION_BACKENDS = {
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+    # "users.backends.EmailBackend",
+}
+
+LOGIN_REDIRECT_URL = "/home/"
+LOGOUT_REDIRECT_URL = "/"
+

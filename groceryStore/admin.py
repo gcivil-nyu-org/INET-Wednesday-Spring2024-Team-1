@@ -1,3 +1,7 @@
-from django.contrib import admin
+from django.contrib import admin 
+from.models import Grocery, Order, OrderItem, UserProfile 
 
-# Register your models here.
+admin.site.register(Grocery) 
+admin.site.register(Order)
+admin.site.register(OrderItem) 
+admin.site.register(UserProfile)
