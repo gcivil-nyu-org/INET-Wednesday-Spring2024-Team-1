@@ -18,8 +18,8 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
-  access_key_id: $aws_secret_access_key
-  secret_access_key: $aws_secret_key
+  access_key_id: $aws_access_key
+  secret_access_key: $aws_secret_access_key
   bucket_name: $aws_bucket_name
   app: INET-Wednesday-Spring2024-Team-1
   env: INET-Wednesday-Spring2024-Team-1-dev
