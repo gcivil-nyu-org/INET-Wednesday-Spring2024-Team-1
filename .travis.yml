@@ -15,6 +15,10 @@ script:
 after_success:
 - coveralls
 
+env:
+  global:
+  - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
+
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
