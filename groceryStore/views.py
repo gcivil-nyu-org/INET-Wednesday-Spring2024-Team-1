@@ -10,7 +10,6 @@ def get_grocery_data(request):
     # one_data = userdetails.objects.get(pk=1) # 1 will return the first item change it depending on the data you want
     context = {
         "my_data": my_data,
-        #'one_data':one_data,
     }
 
     return render(request, "get_grocery_data.html", context)
@@ -22,7 +21,6 @@ def get_order_data(request):
     # one_data = userdetails.objects.get(pk=1) # 1 will return the first item change it depending on the data you want
     context = {
         "my_data": my_data,
-        #'one_data':one_data,
     }
 
     return render(request, "get_order_data.html", context)
@@ -34,7 +32,6 @@ def get_orderitem_data(request):
     # one_data = userdetails.objects.get(pk=1) # 1 will return the first item change it depending on the data you want
     context = {
         "my_data": my_data,
-        #'one_data':one_data,
     }
 
     return render(request, "get_orderitem_data.html", context)
@@ -46,7 +43,6 @@ def get_user_data(request):
     # one_data = userdetails.objects.get(pk=1) # 1 will return the first item change it depending on the data you want
     context = {
         "my_data": my_data,
-        #'one_data':one_data,
     }
 
     return render(request, "get_user_data.html", context)
