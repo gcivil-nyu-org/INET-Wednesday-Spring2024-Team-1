@@ -1,6 +1,8 @@
+dist: jammy
 language: python
-python:
-  - "3.11"
+matrix:
+  include:
+  - python: 3.11
 install:
 - pip install -r requirements.txt
 before_script:
