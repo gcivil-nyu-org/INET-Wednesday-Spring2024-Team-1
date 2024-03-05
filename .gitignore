@@ -2,7 +2,6 @@
 __pycache__
 venv/
 .DS_Store
-# *.sqlite3
 localenv.txt
 temp.json
 # Elastic Beanstalk Files
@@ -10,3 +9,5 @@ temp.json
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 swe-project/*
+
+.coverage
