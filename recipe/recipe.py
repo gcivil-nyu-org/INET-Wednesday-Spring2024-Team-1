@@ -5,7 +5,9 @@ import os
 def recipe_info(request):
     recipe_id = request.GET.get("recipe_id")
     url = (
-        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/" + str(recipe_id) + "/information"
+        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/"
+        + str(recipe_id)
+        + "/information"
     )
     # url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/798400/information"
     headers = {
