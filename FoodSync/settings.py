@@ -29,8 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com",
     "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/",
-    "127.0.0.1"
-    ]
+    "127.0.0.1",
+]
 
 SITE_ID = 3
 # Application definition
@@ -56,19 +56,16 @@ INSTALLED_APPS = [
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
 SOCIALACCOUNT_AUTO_SIGNUP = True
-SOCIALACCOUNT_PROVIDERS={
-    "google":{
-        "SCOPE": [
-            "profile",
-            "email"
-        ],
-        "AUTH_PARAMS":{"access_type":"online"},
+SOCIALACCOUNT_PROVIDERS = {
+    "google": {
+        "SCOPE": ["profile", "email"],
+        "AUTH_PARAMS": {"access_type": "online"},
         # 'OAUTH_PKCE_ENABLED': True,
-        'APP': {
-            'client_id': os.environ.get('google_client_id'),
-            'secret': os.environ.get('google_secret'),
-            'key': ''
-        }
+        "APP": {
+            "client_id": os.environ.get("google_client_id"),
+            "secret": os.environ.get("google_secret"),
+            "key": "",
+        },
     }
 }
 
@@ -88,7 +85,7 @@ ROOT_URLCONF = "FoodSync.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -150,7 +147,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -165,4 +162,3 @@ AUTHENTICATION_BACKENDS = {
 
 LOGIN_REDIRECT_URL = "/preferences/"
 LOGOUT_REDIRECT_URL = "/"
-
