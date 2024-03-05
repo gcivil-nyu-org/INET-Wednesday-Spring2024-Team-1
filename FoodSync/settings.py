@@ -163,6 +163,6 @@ AUTHENTICATION_BACKENDS = {
     # "users.backends.EmailBackend",
 }
 
-LOGIN_REDIRECT_URL = "/home/"
+LOGIN_REDIRECT_URL = "/preferences/"
 LOGOUT_REDIRECT_URL = "/"
 
