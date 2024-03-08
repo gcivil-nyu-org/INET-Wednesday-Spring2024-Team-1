@@ -48,11 +48,14 @@ INSTALLED_APPS = [
     "homepage",
     "users",
     "django.contrib.sites",
+    "cart",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
 ]
+
+CART_SESSION_ID = 'cart'
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
 SOCIALACCOUNT_AUTO_SIGNUP = True
@@ -96,6 +99,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "cart.context_processor.cart_total_amount"
             ],
         },
     },
