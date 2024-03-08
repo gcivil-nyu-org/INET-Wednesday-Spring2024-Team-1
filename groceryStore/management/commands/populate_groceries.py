@@ -2,6 +2,7 @@ from django.core.management.base import BaseCommand
 from groceryStore.models import Grocery
 import csv
 
+
 class Command(BaseCommand):
     help = 'Populate the Grocery table from a CSV file'
 
