@@ -28,7 +28,11 @@ urlpatterns = [
     path("", include("users.urls")),
     path("admin/", admin.site.urls),
     path("addToCart/", recipe_views.add_to_cart, name="add_to_cart"),
-    path('fetch-cart-data/', recipe_views.fetch_cart_data, name='fetch_cart_data'),
-    path('update_cart/', recipe_views.update_cart, name='update_cart'),
-    path('check_session_variable/', recipe_views.check_session_variable, name='check_session_variable'),
+    path("fetch-cart-data/", recipe_views.fetch_cart_data, name="fetch_cart_data"),
+    path("update_cart/", recipe_views.update_cart, name="update_cart"),
+    path(
+        "check_session_variable/",
+        recipe_views.check_session_variable,
+        name="check_session_variable",
+    ),
 ]
