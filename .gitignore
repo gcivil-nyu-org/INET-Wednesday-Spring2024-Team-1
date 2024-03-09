@@ -11,3 +11,5 @@ temp.json
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 swe-project/*
+
+.coverage

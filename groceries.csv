@@ -1,0 +1,65 @@
+gname,price,stock
+Apple,1.5,100
+Banana,0.75,150
+Orange,1.2,120
+Grapes,2.0,80
+Strawberry,3.5,60
+Blueberry,4.0,70
+Mango,2.5,90
+Pineapple,2.75,100
+Watermelon,5.0,40
+Kiwi,1.8,110
+Peach,2.25,95
+Pear,1.7,85
+Plum,1.9,75
+Cherry,3.2,55
+Raspberry,4.5,65
+Blackberry,4.2,50
+Lemon,0.9,130
+Lime,1.0,125
+Coconut,3.75,45
+Avocado,2.8,105
+Tomato,1.25,140
+Cucumber,0.6,180
+Carrot,0.5,200
+Lettuce,1.1,170
+Spinach,1.3,160
+Broccoli,1.8,130
+Cauliflower,1.7,140
+Bell Pepper,1.4,150
+Eggplant,1.6,120
+Zucchini,1.2,170
+Potato,0.8,220
+Onion,0.75,210
+Garlic,0.7,200
+Ginger,1.0,180
+Mushroom,2.0,110
+Celery,0.9,190
+Asparagus,1.8,100
+Artichoke,2.5,80
+Radish,0.7,210
+Bean,1.0,160
+Pea,0.95,170
+Corn,0.8,190
+Pumpkin,3.0,60
+Squash,2.0,90
+Sweet Potato,1.5,120
+Beetroot,1.2,150
+Turnip,1.0,170
+Rutabaga,1.1,160
+Parsnip,1.3,140
+Kale,1.25,130
+Swiss Chard,1.4,120
+Collard Greens,1.3,140
+Mustard Greens,1.35,135
+Bok Choy,1.2,150
+Cabbage,1.0,180
+Brussels Sprouts,1.5,100
+Okra,1.1,170
+Leek,1.25,130
+Scallion,1.0,160
+Green Bean,1.2,150
+Snap Pea,1.0,180
+Snow Pea,1.1,170
+Watercress,1.3,140
+Radicchio,1.4,120
