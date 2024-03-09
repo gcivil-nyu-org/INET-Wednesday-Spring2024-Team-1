@@ -4,6 +4,7 @@ import os
 from django.http import JsonResponse
 import json
 
+
 def recipe_info(request, recipe_id):
     print(recipe_id)
     url = (
@@ -19,7 +20,6 @@ def recipe_info(request, recipe_id):
     querystring = {"includeNutrition": "true"}
     response = requests.request("GET", url, headers=headers, params=querystring)
     return render(request, "recipe/recipe.html", {"recipe": response.json()})
-
 def add_to_cart(request):
     if request.method == 'POST':
         # Assuming you're receiving data in JSON format
@@ -83,3 +83,4 @@ def check_session_variable(request):
     else:
         exists = False
     return JsonResponse({'exists': exists})
+ 

@@ -3,7 +3,6 @@ __pycache__
 venv/
 .DS_Store
 .coverage
-# *.sqlite3
 localenv.txt
 temp.json
 # Elastic Beanstalk Files
