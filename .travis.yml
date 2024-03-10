@@ -17,7 +17,7 @@ after_success:
 
 env:
   global:
-  - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN coveralls
+  - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
 
 deploy:
   provider: elasticbeanstalk
