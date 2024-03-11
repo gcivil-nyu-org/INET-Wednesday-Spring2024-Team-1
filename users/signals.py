@@ -4,6 +4,7 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 from .models import CustomUser  # Replace 'your_app' with your app name
 
+
 # Define a receiver function for the user_logged_in signal
 @receiver(user_logged_in)
 def update_custom_user(sender, user, request, **kwargs):
@@ -20,7 +21,7 @@ def update_custom_user(sender, user, request, **kwargs):
         # If CustomUser does not exist, create a new one
         custom_user = CustomUser(email=auth_user.email)
 
-    # Update CustomUser fields with auth_user data
+        # Update CustomUser fields with auth_user data
         custom_user.username = auth_user.username
         custom_user.preferences = "False"
         custom_user.save()

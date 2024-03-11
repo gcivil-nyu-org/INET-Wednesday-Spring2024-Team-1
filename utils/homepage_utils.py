@@ -1,6 +1,7 @@
 import requests
 import os
 
+
 def homepage_recipes(request):
 
     url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random"
