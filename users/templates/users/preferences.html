@@ -197,7 +197,7 @@
                     allergies
                 </p>
                 <br />
-                <form action="{% url 'home' %}" method="POST">
+                <form action="/setPreferences/" method="POST">
                     {% csrf_token %}
                     <fieldset>
                         <legend>Contact Information</legend>
@@ -206,7 +206,7 @@
                                 onkeypress="return isNumber(event)" maxlength="10" />
                         </label>
                         <label class="label-tag">Address
-                            <input type="text" name="Address" id="autocomplete" required placeholder="Your address" />
+                            <input type="text" name="address" id="autocomplete" required placeholder="Your address" />
                         </label>
                     </fieldset>
                     <fieldset>
@@ -249,16 +249,18 @@
                     <fieldset>
                         <legend>Physical Health</legend>
 
-                        <label class="label-tag">Height <input type="text" name="Height" required
+                        <label class="label-tag">Height <input type="text" name="height" required
                                 onkeypress="return isNumber(event)" placeholder="Height in cm (e.g., 170)" /></label>
-                        <label class="label-tag">Weight <input type="text" name="Weight" required
+                        <label class="label-tag">Weight <input type="text" name="weight" required
                                 onkeypress="return isNumber(event)" placeholder="Weight in lbs (e.g., 170)" /></label>
-                        <label class="label-tag">Target Weight <input type="text" name="Target Weight" required
+                        <label class="label-tag">Target Weight <input type="text" name="targetWeight" required
                                 onkeypress="return isNumber(event)"
                                 placeholder="Target Weight in lbs (e.g., 170)" /></label>
                     </fieldset>
-                    <button type="submit">Save</button>
+                    <button type="button submit" class="btn btn-success">Save</button>
                 </form>
+                <br><br>
+                <button type="button submit" class="btn btn-secondary" type="button" id="skipPreferences">Skip For Now</button>
             </section>
         </main>
         {% endif %}
@@ -285,5 +287,16 @@
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+
+    $("#skipPreferences").click(function () {
+        $.ajax({
+            url: '/skipPreferences/',
+            success: function (data) {
+                window.location.href = '/homepage';
+            }
+        });
+    });
 </script>
 </html>
