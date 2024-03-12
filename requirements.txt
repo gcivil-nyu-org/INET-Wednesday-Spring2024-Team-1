@@ -10,10 +10,12 @@ cryptography==42.0.5
 defusedxml==0.7.1
 Django==5.0.2
 django-allauth==0.61.1
+django-filter==24.1
 djangorestframework==3.14.0
 docopt==0.6.2
 flake8==7.0.0
 idna==3.6
+Markdown==3.5.2
 mccabe==0.7.0
 mypy-extensions==1.0.0
 oauthlib==3.2.2

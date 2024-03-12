@@ -6,3 +6,4 @@ class GrocerySerializer(serializers.ModelSerializer):
     class Meta:
         model = Grocery
         fields = ["gname", "price", "stock"]
+        db_table = "groceryStore_grocery"
