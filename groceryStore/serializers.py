@@ -12,4 +12,4 @@ class GrocerySerializer(serializers.ModelSerializer):
 class GroceryStockUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grocery
-        fields = ['stock']
+        fields = ["stock"]

@@ -73,7 +73,7 @@ def update_grocery_stock(request, gname):
     except Grocery.DoesNotExist:
         return Response({"message": "Grocery not found"}, status=404)
 
-    if request.method == 'PUT':
+    if request.method == "PUT":
         serializer = GroceryStockUpdateSerializer(instance=grocery, data=request.data)
         if serializer.is_valid():
             serializer.save()
