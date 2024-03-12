@@ -104,24 +104,16 @@ WSGI_APPLICATION = "FoodSync.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-if os.environ.get("team1_db_name"):
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.environ["team1_db_name"],
-            "USER": os.environ["team1_db_user"],
-            "PASSWORD": os.environ["team1_db_password"],
-            "HOST": os.environ["team1_db_host"],
-            "PORT": os.environ["team1_db_port"],
-        }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["team1_db_name"],
+        "USER": os.environ["team1_db_user"],
+        "PASSWORD": os.environ["team1_db_password"],
+        "HOST": os.environ["team1_db_host"],
+        "PORT": os.environ["team1_db_port"],
     }
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": str(os.path.join(BASE_DIR, "db.sqlite3")),
-        }
-    }
+}
 
 
 # Password validation
