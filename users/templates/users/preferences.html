@@ -281,10 +281,10 @@
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
 
-    // function initialize() {
-    //     var input = document.getElementById('autocomplete');
-    //     new google.maps.places.Autocomplete(input);
-    // }
+    function initialize() {
+        var input = document.getElementById('autocomplete');
+        new google.maps.places.Autocomplete(input);
+    }
 
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
