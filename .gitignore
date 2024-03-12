@@ -5,6 +5,7 @@ venv/
 .coverage
 localenv.txt
 temp.json
+db.sqlite3
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
