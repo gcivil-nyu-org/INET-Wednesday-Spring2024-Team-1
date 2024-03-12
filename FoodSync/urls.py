@@ -14,12 +14,25 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.urls import path, include
 from FoodSync import views
+from recipe import views as recipe_views
+from django.contrib import admin
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('recipe/', include('recipe.urls')),
-    path('homepage/', include('homepage.urls')),
-    path('groceryStore/',include('groceryStore.urls')),
+    # path('', views.index, name='index'),
+    path("recipe/", include("recipe.urls")),
+    path("homepage/", include("homepage.urls")),
+    path("groceryStore/", include("groceryStore.urls")),
+    path("", include("users.urls")),
+    path("admin/", admin.site.urls),
+    path("addToCart/", recipe_views.add_to_cart, name="add_to_cart"),
+    path("fetch-cart-data/", recipe_views.fetch_cart_data, name="fetch_cart_data"),
+    path("update_cart/", recipe_views.update_cart, name="update_cart"),
+    path(
+        "check_session_variable/",
+        recipe_views.check_session_variable,
+        name="check_session_variable",
+    ),
 ]

@@ -15,9 +15,20 @@
 <body>
     <div class="fixed-top">
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-            FoodSync
-            </a>
+            <div class="container-fluid">
+                <a class="navbar-brand">FoodSync</a>
+                {% if user.is_authenticated %}
+                <button type="button" class="d-flex btn btn-primary btn-circle btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">{{user.socialaccount_set.all.0.extra_data.name}}</button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <form method="post" action="{% url 'account_logout' %}">
+                        {% csrf_token %}
+                        <button type="button submit" class="btn btn-primary" type="button">Logout</button>
+                    </form>
+                </div>
+                {% else %}
+                    <a href="/">Please login</a>
+                {% endif %}
+            </div>
         </nav>
     </div>
     <br><br><br>

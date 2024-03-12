@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import Grocery, Order, OrderItem, UserProfile
 
 # Register your models here.
 

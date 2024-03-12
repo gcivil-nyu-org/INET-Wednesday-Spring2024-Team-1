@@ -1,0 +1,11 @@
+[flake8]
+max-line-length = 120
+exclude =
+    __pycache__,
+    env,
+    venv,
+ignore =
+    F401,
+    E501,
+    W503,
+    E402
