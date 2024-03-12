@@ -2,7 +2,7 @@ import requests
 import os
 
 
-def homepage_recipes():
+def homepage_recipes(request):
 
     url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random"
 
@@ -15,7 +15,4 @@ def homepage_recipes():
 
     response = requests.get(url, headers=headers, params=querystring)
 
-    return response.json()
-
-
-homepage_recipes_info = homepage_recipes()
+    request.session["homepage_recipes_info"] = response.json()
