@@ -55,7 +55,8 @@ def get_user_data(request):
 def get_grocery_details(request, gname):
     try:
         # Fetch the grocery data using the provided gname from the groceryStore_grocery table
-        grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
+        # grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
+        grocery = Grocery.objects.get(gname=gname)
         # Serialize the grocery data
         serializer = GrocerySerializer(grocery)
         # Return the serialized data in the response
