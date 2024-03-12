@@ -16,10 +16,22 @@ def login(request):
 
 
 def preferences(request):
-    user_by_uid = CustomUser.objects.get(email=request.user.email)
-    print(user_by_uid.preferences)
-    if user_by_uid.preferences:
-        return redirect("homepage")
+    custom_user_instance = CustomUser.objects.get(email=request.user.email)
+    if custom_user_instance.preferences:
+        user_preferences = UserPreferences.objects.get(user=custom_user_instance)
+        cuisines = user_preferences.cuisines.values_list("name", flat=True)
+        allergies = user_preferences.allergies.values_list("name", flat=True)
+        preferences = {
+            "phone_number": user_preferences.phone_number,
+            "address": user_preferences.address,
+            "diet": user_preferences.diet,
+            "cuisines": list(cuisines),
+            "allergies": list(allergies),
+            "height": user_preferences.height,
+            "weight": user_preferences.weight,
+            "target_weight": user_preferences.target_weight,
+        }
+        return render(request, "users/preferences.html", {"preferences": preferences})
     return render(request, "users/preferences.html")
 
 
@@ -41,6 +53,27 @@ def set_preferences(request):
         height = form_data["height"]
         weight = form_data["weight"]
         target_weight = form_data["targetWeight"]
+
+        if custom_user_instance.preferences:
+            user_preferences = UserPreferences.objects.get(user=custom_user_instance)
+            user_preferences.phone_number = phone_number
+            user_preferences.address = address
+            user_preferences.diet = diet
+            user_preferences.cuisines.clear()  # Clear existing cuisines
+            user_preferences.allergies.clear()  # Clear existing allergies
+            # Add selected cuisines and allergies
+            cuisines = Cuisine.objects.filter(name__in=cuisine_names)
+            # Retrieve Allergy objects for each allergy name
+            allergies = Allergy.objects.filter(name__in=allergy_names)
+            # Add cuisines (assuming cuisines is a ManyToManyField)
+            user_preferences.cuisines.add(*cuisines)
+            user_preferences.allergies.add(*allergies)
+            user_preferences.height = height
+            user_preferences.weight = weight
+            user_preferences.target_weight = target_weight
+            user_preferences.save()
+            request.session["preferences_updated"] = True
+            return redirect("homepage")
 
         # Create UserPreferences instance
         user_preferences = UserPreferences.objects.create(
