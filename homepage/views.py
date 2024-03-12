@@ -17,4 +17,8 @@ def homepage(request):
         return render(request, "homepage/homepage.html", {"recipes": recipes_info})
     homepage_recipes(request)
     recipes_info = request.session.get("homepage_recipes_info")
-    return render(request, "homepage/homepage.html", {"recipes": recipes_info, "check_user_preferences": check_user_preferences})
+    return render(
+        request,
+        "homepage/homepage.html",
+        {"recipes": recipes_info, "check_user_preferences": check_user_preferences},
+    )
