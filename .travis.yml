@@ -18,11 +18,6 @@ after_success:
 env:
   global:
   - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
-  - team1_db_name: $team1_db_name
-  - team1_db_user: $team1_db_user
-  - team1_db_password: $team1_db_password
-  - team1_db_host: $team1_db_host
-  - team1_db_port: $team1_db_port
 
 deploy:
   provider: elasticbeanstalk
