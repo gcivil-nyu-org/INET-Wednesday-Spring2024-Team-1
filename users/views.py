@@ -72,7 +72,7 @@ def set_preferences(request):
             user_preferences.weight = weight
             user_preferences.target_weight = target_weight
             user_preferences.save()
-            request.session['preferences_updated'] = True
+            request.session["preferences_updated"] = True
             return redirect("homepage")
 
         # Create UserPreferences instance

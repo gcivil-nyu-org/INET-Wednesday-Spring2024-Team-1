@@ -7,7 +7,7 @@ from utils.homepage_utils import homepage_recipes
 
 
 def homepage(request):
-    preferences_updated = request.session.pop('preferences_updated', False)
+    preferences_updated = request.session.pop("preferences_updated", False)
     # Check if preferences have been updated
     if preferences_updated:
         homepage_recipes(request)
