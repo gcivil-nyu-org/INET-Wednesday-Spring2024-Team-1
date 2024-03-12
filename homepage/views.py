@@ -1,7 +1,16 @@
+import requests
+import os
+
 from django.shortcuts import render
 
-from .homepage import homepage_recipes_info
+from utils.homepage_utils import homepage_recipes
 
 
 def homepage(request):
-    return render(request, "homepage/homepage.html", {"recipes": homepage_recipes_info})
+    if request.session.get("homepage_recipes_info"):
+        recipes_info = request.session.get("homepage_recipes_info")
+        return render(request, "homepage/homepage.html", {"recipes": recipes_info})
+    homepage_recipes(request)
+    recipes_info = request.session.get("homepage_recipes_info")
+    print("homepage view hello")
+    return render(request, "homepage/homepage.html", {"recipes": recipes_info})

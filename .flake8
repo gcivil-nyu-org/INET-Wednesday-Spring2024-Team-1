@@ -7,4 +7,5 @@ exclude =
 ignore =
     F401,
     E501,
-    W503
+    W503,
+    E402
