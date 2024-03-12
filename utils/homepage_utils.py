@@ -6,13 +6,13 @@ from users import models
 
 def homepage_recipes(request):
 
-    if(request.user.email):
+    if request.user.email:
         user = models.CustomUser.objects.get(email=request.user.email)
         if user.preferences:
             user_preferences = models.UserPreferences.objects.get(user=user)
             diet = user_preferences.diet
-            cuisines = user_preferences.cuisines.values_list('name', flat=True)
-            allergies = user_preferences.allergies.values_list('name', flat=True)
+            cuisines = user_preferences.cuisines.values_list("name", flat=True)
+            allergies = user_preferences.allergies.values_list("name", flat=True)
             cuisines = ",".join([cuisine.lower() for cuisine in cuisines])
             allergies = ",".join([allergy.lower() for allergy in allergies])
             url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch"
