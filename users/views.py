@@ -41,7 +41,8 @@ def skip_preferences(request):
 
 def set_preferences(request):
     print("set_preferences")
-
+    if(request.user.is_anonymous or not request.user.email):
+        return redirect("/")
     if request.method == "POST":
         custom_user_instance = CustomUser.objects.get(email=request.user.email)
         form_data = request.POST
