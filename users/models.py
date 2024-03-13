@@ -7,7 +7,7 @@ class CustomUser(models.Model):
     username = models.CharField(max_length=150)
     email = models.EmailField(max_length=150, primary_key=True)
     preferences = models.BooleanField(default=False)
-
+    last_login = models.DateTimeField(null=True)
 
 class Cuisine(models.Model):
     name = models.CharField(max_length=50)
