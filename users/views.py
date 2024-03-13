@@ -99,6 +99,7 @@ def set_preferences(request):
                 user_preferences.save()
                 custom_user_instance.preferences = True
                 custom_user_instance.save()
+                request.session["check_user_preferences"] = True
         except Exception as e:
             # Handle exception
             print("Error occurred:", e)
