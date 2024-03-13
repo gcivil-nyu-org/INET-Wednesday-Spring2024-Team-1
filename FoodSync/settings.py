@@ -29,6 +29,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com",
     "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/",
+    "http://foodsync.us-east-2.elasticbeanstalk.com/"
+    "foodsync.us-east-2.elasticbeanstalk.com",
     "127.0.0.1",
 ]
 
