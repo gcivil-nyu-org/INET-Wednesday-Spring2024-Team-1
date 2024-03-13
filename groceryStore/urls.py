@@ -4,6 +4,7 @@ from .views import (
     get_orderitem_data,
     get_user_data,
     get_grocery_details,
+    update_grocery_stock,
 )
 from django.urls import path, include
 
@@ -14,4 +15,7 @@ urlpatterns = [
     path("get_orderitem_data/", get_orderitem_data, name="get_orderitem_data"),
     path("get_user_data/", get_user_data, name="get_user_data"),
     path("api/groceries/<str:gname>/", get_grocery_details, name="get_grocery_details"),
+    path(
+        "update_stock/<str:gname>/", update_grocery_stock, name="update_grocery_stock"
+    ),
 ]

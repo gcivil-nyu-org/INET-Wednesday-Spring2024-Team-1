@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import Grocery, Order, OrderItem, UserProfile
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import GrocerySerializer
+from .serializers import GrocerySerializer, GroceryStockUpdateSerializer
 
 
 # Create your views here.
@@ -64,3 +64,18 @@ def get_grocery_details(request, gname):
     except Grocery.DoesNotExist:
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
+
+
+@api_view(["PUT"])
+def update_grocery_stock(request, gname):
+    try:
+        grocery = Grocery.objects.get(gname=gname)
+    except Grocery.DoesNotExist:
+        return Response({"message": "Grocery not found"}, status=404)
+
+    if request.method == "PUT":
+        serializer = GroceryStockUpdateSerializer(instance=grocery, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
