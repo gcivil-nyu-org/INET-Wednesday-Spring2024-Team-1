@@ -37,12 +37,16 @@ def preferences(request):
                 "weight": user_preferences.weight,
                 "target_weight": user_preferences.target_weight,
             }
-            return TemplateResponse(request, "users/preferences.html", {"preferences": preferences})
+            return TemplateResponse(
+                request, "users/preferences.html", {"preferences": preferences}
+            )
         else:
-            return TemplateResponse(request, "users/preferences.html", {"preferences": None})
+            return TemplateResponse(
+                request, "users/preferences.html", {"preferences": None}
+            )
     except CustomUser.DoesNotExist:
         return redirect("/")
-    
+
     return HttpResponse("Something went wrong.", status=500)
 
 
@@ -91,7 +95,13 @@ def set_preferences(request):
             return redirect("homepage")
 
         print("else")
-        if not phone_number or not address or not height or not weight or not target_weight:
+        if (
+            not phone_number
+            or not address
+            or not height
+            or not weight
+            or not target_weight
+        ):
             return HttpResponse("Missing required fields", status=400)
         print("Creating UserPreferences instance")
         user_preferences = UserPreferences.objects.create(
@@ -109,7 +119,7 @@ def set_preferences(request):
         try:
             with transaction.atomic():
                 # Create UserPreferences instance
-                
+
                 # Add cuisines (assuming cuisines is a ManyToManyField)
                 user_preferences.cuisines.add(*cuisines)
                 user_preferences.allergies.add(*allergies)
@@ -122,6 +132,8 @@ def set_preferences(request):
         except Exception as e:
             print(e)
             return HttpResponse("Something went wrong", status=400)
-        return redirect("homepage")   
+        return redirect("homepage")
     else:
-        return TemplateResponse(request, "users/preferences.html", {"preferences_set_error": None})
+        return TemplateResponse(
+            request, "users/preferences.html", {"preferences_set_error": None}
+        )
