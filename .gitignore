@@ -1,0 +1,15 @@
+*.pyc
+__pycache__
+venv/
+.DS_Store
+.coverage
+localenv.txt
+temp.json
+db.sqlite3
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+swe-project/*
+
+.coverage
