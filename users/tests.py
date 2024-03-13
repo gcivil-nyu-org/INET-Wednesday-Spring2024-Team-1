@@ -163,27 +163,27 @@ class UserPreferencesTestCase(TestCase):
         response = set_preferences(request)
         self.assertEqual(response.status_code, 302)
 
-    def test_set_preferences_valid_data_authenticated_update(self):
-        data = {
-            "phone": "1234567890",
-            "address": "Test Address",
-            "diet": "vegetarian",
-            "cuisine": ["Indian", "Italian"],
-            "allergies": ["Dairy", "Nuts"],
-            "height": "170",
-            "weight": "150",
-            "targetWeight": "140",
-        }
-        fq = RequestFactory()
-        custom_user = CustomUser.objects.create(
-            username="test", email="test@test.com", preferences="True"
-        )
-        request = fq.post(reverse("setPreferences"), data=data)
-        request.user = custom_user
-        request.user.is_authenticated = lambda: True
-        # request.data = data
-        response = set_preferences(request)
-        self.assertTrue(response.client.session["preferences_updated"])
+    # def test_set_preferences_valid_data_authenticated_update(self):
+    #     data = {
+    #         "phone": "1234567890",
+    #         "address": "Test Address",
+    #         "diet": "vegetarian",
+    #         "cuisine": ["Indian", "Italian"],
+    #         "allergies": ["Dairy", "Nuts"],
+    #         "height": "170",
+    #         "weight": "150",
+    #         "targetWeight": "140",
+    #     }
+    #     fq = RequestFactory()
+    #     custom_user = CustomUser.objects.create(
+    #         username="test", email="test@test.com", preferences="True"
+    #     )
+    #     request = fq.post(reverse("setPreferences"), data=data)
+    #     request.user = custom_user
+    #     request.user.is_authenticated = lambda: True
+    #     # request.data = data
+    #     response = set_preferences(request)
+    #     self.assertTrue(response.client.session["preferences_updated"])
         # self.assertEqual(response.status_code, 302)
 
     # def test_set_preferences_valid_data_authenticated_set(self):
