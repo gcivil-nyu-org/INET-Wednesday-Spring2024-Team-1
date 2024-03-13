@@ -94,7 +94,7 @@
         </div>
     <br><br><br>
     <div class="container">
-        {% if not check_user_preferences %}
+        {% if not request.session.check_user_preferences %}
             <div class="alert alert-success" role="alert">
                 Please update your preferences to get personalized recipes. <a href="{% url 'preferences' %}" class="alert-link">Update preferences</a>.
             </div>
