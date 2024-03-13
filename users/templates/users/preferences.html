@@ -202,65 +202,85 @@
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label class="label-tag">Phone Number
-                            <input type="tel" id="phone" name="phone" required placeholder="(929) 551 7027"
-                                onkeypress="return isNumber(event)" maxlength="10" />
+                            <input required type="tel" id="phone" name="phone" placeholder="(123) 456 7890"
+                                onkeypress="return isNumber(event)" maxlength="10" required value="{{ preferences.phone_number }}"/>
                         </label>
                         <label class="label-tag">Address
-                            <input type="text" name="address" id="autocomplete" required placeholder="Your address" />
+                            <input required type="text" name="address" id="autocomplete" placeholder="Your address" value="{{ preferences.address }}"/>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Dietary Preferences</legend>
                         <div class="label-container">
-                            <label><input type="radio" name="diet" value="vegetarian" /><span>Vegetarian</span></label>
-                            <label><input type="radio" name="diet"
-                                    value="non-vegetarian" /><span>Non-vegetarian</span></label>
-                            <label><input type="radio" name="diet" value="vegan" /><span>Vegan</span></label>
+                            <label><input required type="radio" name="diet" value="vegetarian" 
+                                {% if preferences.diet == 'vegetarian' %} checked {% endif %} /><span>Vegetarian</span></label>
+                            <label><input required type="radio" name="diet" value="non-vegetarian" 
+                                {% if preferences.diet == 'non-vegetarian' %} checked {% endif %} /><span>Non-vegetarian</span></label>
+                            <label><input required type="radio" name="diet" value="vegan" 
+                                {% if preferences.diet == 'vegan' %} checked {% endif %} /><span>Vegan</span></label>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Cuisines</legend>
                         <div class="label-container">
-                            <label><input type="checkbox" name="cuisine" value="Chinese" /><span>Chinese</span></label>
-                            <label><input type="checkbox" name="cuisine" value="Indian" /><span>Indian</span></label>
-                            <label><input type="checkbox" name="cuisine" value="Italian" /><span>Italian</span></label>
-                            <label><input type="checkbox" name="cuisine" value="Mexican" /><span>Mexican</span></label>
-                            <label><input type="checkbox" name="cuisine" value="Thai" /><span>Thai</span></label>
-                            <label><input type="checkbox" name="cuisine"
-                                    value="Japanese" /><span>Japanese</span></label>
-                            <label><input type="checkbox" name="cuisine" value="French" /><span>French</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Chinese" 
+                                {% if 'Chinese' in preferences.cuisines %} checked {% endif %} /><span>Chinese</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Indian" 
+                                {% if 'Indian' in preferences.cuisines %} checked {% endif %} /><span>Indian</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Italian" 
+                                {% if 'Italian' in preferences.cuisines %} checked {% endif %} /><span>Italian</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Mexican" 
+                                {% if 'Mexican' in preferences.cuisines %} checked {% endif %} /><span>Mexican</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Thai" 
+                                {% if 'Thai' in preferences.cuisines %} checked {% endif %} /><span>Thai</span></label>
+                            <label><input type="checkbox" name="cuisine" value="Japanese" 
+                                {% if 'Japanese' in preferences.cuisines %} checked {% endif %} /><span>Japanese</span></label>
+                            <label><input type="checkbox" name="cuisine" value="French" 
+                                {% if 'French' in preferences.cuisines %} checked {% endif %} /><span>French</span></label>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Allergies</legend>
                         <div class="label-container">
-                            <label><input type="checkbox" name="allergies" value="Dairy" /><span>Dairy</span></label>
-                            <label><input type="checkbox" name="allergies" value="Egg" /><span>Egg</span></label>
-                            <label><input type="checkbox" name="allergies" value="Gluten" /><span>Gluten</span></label>
-                            <label><input type="checkbox" name="allergies" value="Nuts" /><span>Nuts</span></label>
-                            <label><input type="checkbox" name="allergies"
-                                    value="SeaFood" /><span>SeaFood</span></label>
-                            <label><input type="checkbox" name="allergies" value="Soy" /><span>Soy</span></label>
+                            <label><input type="checkbox" name="allergies" value="Dairy" 
+                                {% if 'Dairy' in preferences.allergies %} checked {% endif %} /><span>Dairy</span></label>
+                            <label><input type="checkbox" name="allergies" value="Egg" 
+                                {% if 'Egg' in preferences.allergies %} checked {% endif %} /><span>Egg</span></label>
+                            <label><input type="checkbox" name="allergies" value="Gluten" 
+                                {% if 'Gluten' in preferences.allergies %} checked {% endif %} /><span>Gluten</span></label>
+                            <label><input type="checkbox" name="allergies" value="Nuts" 
+                                {% if 'Nuts' in preferences.allergies %} checked {% endif %} /><span>Nuts</span></label>
+                            <label><input type="checkbox" name="allergies" value="SeaFood" 
+                                {% if 'SeaFood' in preferences.allergies %} checked {% endif %} /><span>SeaFood</span></label>
+                            <label><input type="checkbox" name="allergies" value="Soy" 
+                                {% if 'Soy' in preferences.allergies %} checked {% endif %} /><span>Soy</span></label>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Physical Health</legend>
 
-                        <label class="label-tag">Height <input type="text" name="height" required
-                                onkeypress="return isNumber(event)" placeholder="Height in cm (e.g., 170)" /></label>
-                        <label class="label-tag">Weight <input type="text" name="weight" required
-                                onkeypress="return isNumber(event)" placeholder="Weight in lbs (e.g., 170)" /></label>
-                        <label class="label-tag">Target Weight <input type="text" name="targetWeight" required
+                        <label class="label-tag">Height <input required type="text" name="height" required
+                                onkeypress="return isNumber(event)" placeholder="Height in cm (e.g., 170)" value="{{ preferences.height }}"/></label>
+                        <label class="label-tag">Weight <input required type="text" name="weight" required
+                                onkeypress="return isNumber(event)" placeholder="Weight in lbs (e.g., 170)" value="{{ preferences.weight }}" /></label>
+                        <label class="label-tag">Target Weight <input required type="text" name="targetWeight" required
                                 onkeypress="return isNumber(event)"
-                                placeholder="Target Weight in lbs (e.g., 170)" /></label>
+                                placeholder="Target Weight in lbs (e.g., 170)" value="{{ preferences.weight }}" /></label>
                     </fieldset>
-                    <button type="button submit" class="btn btn-success">Save</button>
+                    {% if preferences %}
+                        <button type="submit" class="btn btn-success">Update</button>
+                        <a href="{% url 'homepage' %}"><button class="btn btn-secondary">Cancel</button></a>
+                    {% else %}
+                        <button type="submit" class="btn btn-success">Save</button>
+                    {% endif %}
                 </form>
                 <br><br>
-                <button type="button submit" class="btn btn-secondary" type="button" id="skipPreferences">Skip For Now</button>
+                {% if not preferences %}
+                    <button type="submit" class="btn btn-secondary" id="skipPreferences">Skip For Now</button>
+                {% endif %}
             </section>
         </main>
         {% endif %}

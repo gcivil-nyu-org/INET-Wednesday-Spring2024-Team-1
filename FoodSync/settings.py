@@ -172,6 +172,5 @@ AUTHENTICATION_BACKENDS = {
     "allauth.account.auth_backends.AuthenticationBackend",
     # "users.backends.EmailBackend",
 }
-
-LOGIN_REDIRECT_URL = "/preferences/"
+LOGIN_REDIRECT_URL = "/homepage/"
 LOGOUT_REDIRECT_URL = "/"
