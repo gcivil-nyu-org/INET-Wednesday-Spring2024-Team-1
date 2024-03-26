@@ -16,4 +16,6 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("setPreferences/", views.set_preferences, name="setPreferences"),
     path("skipPreferences/", views.skip_preferences, name="skipPreferences"),
+    path("profile/", views.show_profile, name="showProfile"),
+    path('profile/callback/', views.callback, name='callback'),
 ]

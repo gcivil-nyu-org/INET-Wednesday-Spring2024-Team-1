@@ -9,20 +9,15 @@ before_script:
 - python manage.py migrate
 - python manage.py collectstatic --noinput
 script:
-- black --check .
+- black .
 - flake8 .
-- coverage run manage.py
+- coverage run --source=users manage.py test
 after_success:
 - coveralls
 
 env:
   global:
   - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
-  - team1_db_name: $team1_db_name
-  - team1_db_user: $team1_db_user
-  - team1_db_password: $team1_db_password
-  - team1_db_host: $team1_db_host
-  - team1_db_port: $team1_db_port
 
 deploy:
   provider: elasticbeanstalk

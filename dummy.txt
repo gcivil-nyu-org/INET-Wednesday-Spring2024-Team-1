@@ -1,0 +1,1 @@
+export RAPID_API_KEY=‘e1f6dd4db6msh8dbe78e37e8fa39p1bbd48jsnd32cb6a12af5’

@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com",
     "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/",
     "127.0.0.1",
+    "localhost",
 ]
 
 SITE_ID = 3
@@ -37,6 +38,7 @@ SITE_ID = 3
 
 INSTALLED_APPS = [
     "django.contrib.admin",
+    "django_extensions",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -52,6 +54,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
+    "rest_framework",
 ]
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
@@ -104,16 +107,24 @@ WSGI_APPLICATION = "FoodSync.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["team1_db_name"],
-        "USER": os.environ["team1_db_user"],
-        "PASSWORD": os.environ["team1_db_password"],
-        "HOST": os.environ["team1_db_host"],
-        "PORT": os.environ["team1_db_port"],
+if "RDS_HOSTNAME" in os.environ:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ["RDS_DB_NAME"],
+            "USER": os.environ["RDS_USERNAME"],
+            "PASSWORD": os.environ["RDS_PASSWORD"],
+            "HOST": os.environ["RDS_HOSTNAME"],
+            "PORT": os.environ["RDS_PORT"],
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": str(os.path.join(BASE_DIR, "db.sqlite3")),
+        }
+    }
 
 
 # Password validation
@@ -151,7 +162,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -163,6 +174,5 @@ AUTHENTICATION_BACKENDS = {
     "allauth.account.auth_backends.AuthenticationBackend",
     # "users.backends.EmailBackend",
 }
-
-LOGIN_REDIRECT_URL = "/preferences/"
+LOGIN_REDIRECT_URL = "/homepage/"
 LOGOUT_REDIRECT_URL = "/"

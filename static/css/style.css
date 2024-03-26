@@ -1,3 +1,13 @@
+.body{
+  margin: 0;
+  padding: 0;
+  /* Set the background image */
+  background-image: url("{% static 'background.png' %}");
+  /* Background image settings */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+}
+
 .btn-circle.btn-sm { 
     width: 50px; 
     height: 50px; 
@@ -6,28 +16,6 @@
     font-size: 10px; 
     text-align: center; 
 }
-
-#lblCartCount {
-    font-size: 12px;
-    background: #ff0000;
-    color: #fff;
-    padding: 0 5px;
-    vertical-align: top;
-    margin-left: -10px;
-}
-
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-  }
-  
-  .label-warning[href],
-  .badge-warning[href] {
-    background-color: #c67605;
-  }
 
   /* Styling for cart overlay */
 .cart-overlay {

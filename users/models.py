@@ -7,7 +7,7 @@ class CustomUser(models.Model):
     username = models.CharField(max_length=150)
     email = models.EmailField(max_length=150, primary_key=True)
     preferences = models.BooleanField(default=False)
-
+    last_login = models.DateTimeField(null=True)
 
 class Cuisine(models.Model):
     name = models.CharField(max_length=50)
@@ -34,9 +34,13 @@ class UserPreferences(models.Model):
         ("non-vegetarian", "Non-vegetarian"),
         ("vegan", "Vegan"),
     ]
-    diet = models.CharField(max_length=20, choices=DIET_CHOICES)
-    cuisines = models.ManyToManyField(Cuisine)  # Allow multiple cuisine selections
-    allergies = models.ManyToManyField(Allergy)  # Allow multiple allergy selections
+    diet = models.CharField(max_length=20, choices=DIET_CHOICES, null=True)
+    cuisines = models.ManyToManyField(
+        Cuisine, null=True
+    )  # Allow multiple cuisine selections
+    allergies = models.ManyToManyField(
+        Allergy, null=True
+    )  # Allow multiple allergy selections
     height = models.PositiveIntegerField()  # Assuming height is in cm
     weight = models.PositiveIntegerField()  # Assuming weight is in lbs
     target_weight = models.PositiveIntegerField()  # Assuming target weight is in lbs
