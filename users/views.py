@@ -162,7 +162,7 @@ def show_profile(request):
                 }},
         scopes=['https://www.googleapis.com/auth/fitness.activity.read']
         )
-        flow.redirect_uri = 'https://localhost:8000/profile/callback/'
+        flow.redirect_uri = 'https://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/profile/callback/'
         authorization_url, _ = flow.authorization_url(access_type='offline')
         request.session['authorization_url'] = authorization_url
         return redirect(authorization_url)
@@ -185,7 +185,7 @@ def callback(request):
                 }},
     scopes=['https://www.googleapis.com/auth/fitness.activity.read']
     )
-    flow.redirect_uri = 'https://localhost:8000/profile/callback/'
+    flow.redirect_uri = 'https://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/profile/callback/'
     try:
         flow.fetch_token(authorization_response=request.build_absolute_uri())
     except Exception as e:
