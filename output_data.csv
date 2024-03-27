@@ -1,0 +1,5001 @@
+ingredient,ingredientId,price,stock
+salt,2047,7.06,25
+olive oil,4053,5.57,59
+butter,1001,2.45,23
+sugar,19335,1.41,68
+water,14412,5.45,70
+flour,20081,7.64,92
+garlic,11215,6.33,28
+eggs,1123,2.58,88
+onion,11282,4.97,12
+vanilla extract,2050,7.5,2
+milk,1077,7.61,47
+kosher salt,1082047,2.4,49
+lemon juice,9152,2.92,47
+unsalted butter,1145,5.95,56
+black pepper,1002030,1.51,17
+baking powder,18371,3.59,0
+pepper,1002030,1.03,41
+salt and pepper,1102047,2.97,6
+egg,1123,2.72,64
+brown sugar,19334,7.51,59
+baking soda,18372,2.41,69
+garlic cloves,11215,4.67,23
+vegetable oil,4513,7.13,30
+granulated sugar,19335,9.82,81
+honey,19296,5.67,92
+ground cinnamon,2010,6.95,72
+ground pepper,1002030,5.62,60
+cream cheese,1017,8.71,84
+parmesan cheese,1033,4.25,97
+garlic powder,1022020,1.01,36
+carrots,11124,4.44,59
+cinnamon,2010,2.1,62
+oregano,2027,0.57,55
+red onion,10011282,6.05,17
+heavy cream,1053,3.42,43
+celery,11143,4.47,54
+chicken,1025006,5.76,5
+sour cream,1056,4.48,64
+vanilla,2050,5.29,70
+sea salt,1012047,5.73,95
+green onions,11291,9.21,78
+lime juice,9160,5.75,70
+soy sauce,16124,2.63,70
+powdered sugar,19336,5.88,69
+fresh parsley,11297,5.22,42
+bacon,10123,4.49,10
+cornstarch,20027,8.94,45
+ground cumin,1002014,7.15,39
+tomatoes,11529,5.96,87
+canola oil,4582,5.99,32
+oil,4582,7.06,36
+chicken broth,6194,7.29,78
+maple syrup,19911,1.18,100
+red bell pepper,11821,7.76,36
+canned tomatoes,10011693,5.68,22
+lemon zest,9156,7.23,63
+paprika,2028,4.1,24
+dijon mustard,1002046,3.65,47
+chili powder,2009,1.2,34
+chocolate,19081,5.44,58
+mayonnaise,4025,3.31,63
+white sugar,19335,3.31,18
+onions,11282,9.06,15
+fresh cilantro,11165,7.94,8
+parsley,11297,1.2,64
+cilantro,11165,0.98,62
+pecans,12142,3.02,99
+beef,23572,0.76,67
+ginger,11216,9.21,28
+garlic clove,11215,1.14,49
+red pepper flakes,1032009,6.45,6
+walnuts,12155,5.96,80
+cayenne pepper,2031,2.45,71
+extra virgin olive oil,1034053,2.98,80
+carrot,11124,9.96,28
+coconut oil,4047,7.35,66
+zucchini,11477,2.45,39
+strawberries,9316,6.16,90
+worcestershire sauce,6971,4.27,2
+sesame oil,4058,5.01,1
+food dye,10711111,7.54,46
+orange juice,9206,7.98,90
+potatoes,11362,4.83,100
+fish,10115261,9.96,51
+tomato,11529,4.97,26
+juice of lemon,9152,0.95,59
+avocado,9037,3.27,19
+buttermilk,1230,4.38,62
+light brown sugar,19334,3.27,68
+nutmeg,2025,8.46,87
+balsamic vinegar,2069,6.65,31
+ground ginger,2021,4.9,40
+yellow onion,10511282,5.15,4
+fresh ginger,11216,1.66,12
+egg whites,1124,4.01,34
+ground nutmeg,2025,7.02,91
+shredded cheddar cheese,1001009,1.75,7
+green bell pepper,11333,0.61,96
+almonds,12061,1.14,48
+whole milk,1077,5.88,5
+lemon,9150,2.61,46
+shrimp,15152,1.81,63
+tomato paste,11887,6.78,51
+scallions,11291,8.57,81
+onion powder,2026,9.8,8
+all purpose flour,20081,5.91,46
+chicken stock,6172,8.11,13
+egg yolks,1125,7.67,65
+cumin,1002014,6.75,80
+red wine vinegar,1022068,8.23,50
+confectioners' sugar,19336,0.56,6
+shallots,11677,6.74,7
+fresh basil,2044,6.35,51
+ground beef,10023572,4.9,74
+spinach,10011457,2.71,46
+mushrooms,11260,6.36,63
+blueberries,9050,0.5,34
+rye meal,98905,9.78,35
+fresh thyme,2049,8.07,53
+bread,18064,9.23,39
+peanut butter,16098,6.72,87
+dried thyme,2042,7.6,38
+skinless boneless chicken breasts,1055062,6.14,56
+juice of lime,9160,9.49,78
+bananas,9040,10.0,71
+cucumber,11206,3.94,27
+banana,9040,9.03,7
+cherry tomatoes,10311529,4.34,90
+coconut,12104,9.57,80
+heavy whipping cream,1053,0.6,56
+Salt & Pepper,1102047,8.33,70
+apple cider vinegar,2048,0.84,14
+bay leaf,2004,6.83,63
+bay leaves,2004,5.01,76
+sea-salt,1012047,2.56,95
+chocolate chips,10019146,4.23,55
+parmesan,1033,1.91,86
+cocoa powder,19165,1.16,1
+ketchup,11935,5.84,39
+shallot,11677,3.03,30
+dry white wine,14106,2.19,78
+orange zest,9216,5.19,55
+sesame seeds,12023,8.78,71
+salsa,6164,4.66,58
+feta cheese,1019,4.14,63
+raisins,9299,6.0,59
+vegetable broth,6615,9.78,95
+pasta,20420,4.52,43
+apple,9003,2.71,89
+apples,9003,2.74,12
+unsweetened cocoa powder,19165,3.57,73
+peas,11304,7.53,19
+rice,20444,7.16,87
+broccoli,11090,2.38,87
+ground cloves,2011,3.65,96
+cream,1053,1.27,100
+raspberries,9302,4.95,47
+almond milk,93607,3.83,55
+basil,2044,6.74,19
+thyme,2049,4.48,68
+hot sauce,6168,6.37,76
+green onion,11291,3.77,99
+dried basil,2003,9.9,97
+sweet potatoes,11507,2.19,78
+active yeast,18375,7.18,40
+kale,11233,9.28,62
+cheddar cheese,1009,2.68,90
+cooking oil,4582,1.52,49
+fresh rosemary,2063,3.68,34
+basil leaves,2044,8.98,97
+canned black beans,16018,5.11,98
+curry powder,2015,4.8,53
+bbq sauce,6150,5.16,90
+almond extract,1002050,8.78,4
+cauliflower,11135,1.35,88
+jalapeno,11979,0.85,98
+chicken breasts,5062,7.97,20
+coarse salt,2047,1.26,16
+asparagus,11011,2.98,82
+whipping cream,1001053,4.78,22
+italian seasoning,1022027,4.06,26
+chives,11156,7.91,36
+low sodium chicken broth,6970,2.87,36
+cider vinegar,2048,4.45,13
+corn syrup,19350,8.79,57
+rice vinegar,1022053,9.48,28
+smoked paprika,1012028,6.14,56
+quinoa,20035,5.48,79
+semisweet chocolate chips,10019903,0.68,45
+goat cheese,1159,9.37,9
+pineapple,9266,2.24,52
+ham,10151,4.02,44
+lime,9159,1.12,84
+ice,10014412,7.53,86
+cumin seeds,2014,1.0,37
+shredded mozzarella cheese,1001026,9.73,42
+capers,2054,7.04,57
+low sodium soy sauce,16424,3.46,43
+shortening,4615,6.42,38
+dark brown sugar,10019334,8.73,60
+sharp cheddar cheese,1031009,9.97,84
+fat-free milk,1085,8.0,58
+baby spinach,11457,4.99,83
+cabbage,11109,0.95,39
+coconut milk,12118,2.11,24
+white wine,14106,6.06,73
+butternut squash,11485,3.25,77
+whole wheat flour,20080,2.92,30
+mango,9176,9.14,49
+bread crumbs,18079,5.98,77
+rolled oats,8120,6.17,93
+fresh basil leaves,2044,4.37,25
+ground coriander,2012,0.63,55
+egg yolk,1125,2.33,45
+white wine vinegar,1002068,4.11,7
+whipped topping,42135,9.25,3
+flour tortillas,10218364,4.53,16
+orange,9200,9.65,23
+mustard,2046,3.95,62
+molasses,19304,4.3,3
+green beans,11052,7.12,42
+creamy peanut butter,10116098,8.25,47
+dried cranberries,9079,1.64,36
+greek yogurt,1256,9.27,39
+sweet potato,11507,8.6,96
+sweetened condensed milk,1095,4.01,59
+peaches,9236,6.21,7
+fresh chives,11156,2.06,64
+pine nuts,12147,3.85,18
+white vinegar,2053,6.23,25
+rosemary,2036,3.48,0
+cranberries,9078,1.78,43
+skinless boneless chicken breast halves,1045062,5.67,47
+pumpkin pie spice,1002035,6.36,96
+marshmallows,19116,1.77,30
+fresh mushrooms,11260,9.68,83
+bell pepper,10211821,3.08,7
+broccoli florets,10011090,0.85,37
+fresh dill,2045,6.39,16
+white onion,10611282,3.98,33
+canned tomato sauce,11549,9.47,24
+egg white,1124,8.02,11
+coriander,2012,7.46,76
+lettuce,11252,9.62,7
+chicken breast,5062,2.7,78
+fresh mint,2064,4.69,94
+almond flour,93740,0.96,87
+margarine,4073,2.63,28
+pumpkin puree,11424,3.93,68
+lime zest,1009159,5.88,35
+tomato sauce,11549,7.87,49
+lean ground beef,23557,7.76,44
+garlic salt,1062047,2.6,5
+jalapeno pepper,11979,8.87,37
+semi sweet chocolate chips,10019903,3.45,54
+cayenne,2031,1.61,48
+mint,2064,2.35,59
+turmeric,2043,5.42,62
+turkey,5165,3.5,19
+vegetable stock,6615,8.96,28
+evaporated milk,1214,4.49,0
+wine,14084,1.12,58
+beef broth,6008,2.97,28
+avocados,9037,2.01,55
+cookies,10118192,2.22,87
+fish sauce,6179,3.49,49
+healthy request cream of celery soup,6987,1.8,77
+monterey jack cheese,1001025,8.2,21
+corn tortillas,18363,3.96,66
+sweet onion,11294,4.99,28
+whipped cream,1054,1.44,77
+ground allspice,2001,7.39,61
+grape tomatoes,10111529,6.44,48
+cake flour,10020129,4.18,63
+vanilla ice cream,19095,3.92,22
+crushed red pepper,1032009,6.54,66
+turmeric powder,2043,6.2,40
+half & half,1049,8.79,88
+coconut flour,93747,2.45,87
+vodka,14051,0.91,74
+olives,9195,9.76,99
+garam masala,93663,7.4,55
+vinegar,2053,7.22,20
+swiss cheese,1040,8.24,63
+mozzarella cheese,1026,8.3,39
+cream of tartar,18373,5.3,42
+oats,8120,7.74,99
+rib tips,98937,2.17,34
+pepper sauce,6168,9.67,10
+salted butter,1001001,0.6,19
+pumpkin,11422,7.9,78
+plum tomatoes,10411529,2.53,14
+red potatoes,10011355,9.68,14
+beer,14003,9.14,89
+pork,10010219,6.14,11
+yellow bell pepper,11951,7.79,83
+dates,9087,9.28,98
+chilli powder,2009,2.44,62
+salad mix,21052,8.05,54
+ice cubes,10014412,8.98,50
+corn,11168,2.48,53
+mint leaves,2064,7.02,38
+black peppercorns,1022030,9.2,5
+potato,11362,1.9,39
+fresh flat-leaf parsley,11297,2.53,13
+pie crust,18334,2.43,54
+vanilla bean,93622,7.08,53
+yogurt,1116,7.68,59
+salmon,15076,1.54,15
+fruit,9431,7.1,58
+bittersweet chocolate,19903,8.4,58
+white pepper,2032,2.15,98
+breadcrumbs,18079,1.12,82
+black olives,1059195,2.14,97
+cheese,1041009,9.56,80
+cornmeal,35137,3.73,5
+cooked rice,10220445,5.5,56
+fresh thyme leaves,2049,2.4,56
+pineapple juice,9273,9.33,71
+real bacon recipe pieces,10862,3.18,78
+chia seeds,12006,8.96,92
+cherries,9070,9.45,85
+eggplant,11209,8.38,68
+lemon peel,9156,5.31,58
+nuts,12135,8.54,83
+russet potatoes,11353,1.68,62
+plain flour,20081,7.98,43
+coconut sugar,93831,5.09,74
+leeks,11246,1.34,6
+cilantro leaves,11165,8.24,79
+low fat milk,1174,8.76,75
+red wine,14096,8.73,50
+cinnamon stick,1002010,8.23,27
+romaine lettuce,10111251,2.69,76
+brussels sprouts,11098,8.73,88
+coffee,14209,7.22,16
+ground turkey,5662,4.85,78
+kalamata olives,1009195,2.18,96
+bread flour,10120129,2.95,74
+dark chocolate,19904,5.39,5
+dried parsley,2029,7.09,69
+ricotta cheese,1036,1.45,71
+ice cream,19095,7.05,16
+graham cracker crumbs,10018617,7.08,2
+semisweet chocolate,19903,8.34,76
+gelatin,19177,8.47,59
+ghee,93632,3.24,51
+puff pastry,18337,9.04,20
+canned chickpeas,16058,8.58,10
+club soda,14121,4.43,85
+peanut oil,4042,4.15,77
+black beans,16015,7.1,24
+fresh mint leaves,2064,2.38,25
+arugula,11959,1.11,30
+slivered almonds,10012061,6.02,90
+breakfast links,7919,8.16,97
+brown rice,20040,6.7,95
+spaghetti,11420420,6.49,36
+horseradish,1002055,8.91,40
+fresh cilantro leaves,11165,5.57,15
+plain greek yogurt,1256,3.53,27
+apple cider,1009016,7.18,89
+peanuts,16091,5.28,94
+radishes,11429,2.29,33
+barbecue sauce,6150,0.62,15
+unbleached flour,10020081,1.08,43
+tofu,16213,8.05,21
+tahini,12698,1.41,81
+blue cheese,1004,9.73,87
+dry mustard,1002024,5.83,91
+roma tomatoes,10211529,6.87,10
+plain yogurt,1116,3.18,75
+apple juice,9016,3.26,16
+dill,2045,7.54,76
+rum,14037,5.67,39
+almond butter,12195,6.4,18
+corn kernels,11172,4.95,99
+red pepper,11821,4.03,84
+bourbon,10014037,2.05,18
+artichoke hearts,93828,3.67,46
+ground pork,10219,4.86,13
+mustard seeds,2024,8.0,99
+lemons,9150,1.41,19
+blackberries,9042,9.79,17
+celery stalks,11143,6.03,1
+red onions,10011282,1.78,29
+rice wine vinegar,1022053,8.73,75
+pork chops,10010062,6.65,62
+red bell peppers,11821,3.58,73
+deep dish pie crust,18945,8.19,35
+yukon gold potatoes,10211362,5.12,0
+golden raisins,9297,2.33,24
+skinless boneless chicken thighs,5096,6.75,36
+frozen corn,11913,2.89,7
+yeast,18375,5.89,34
+white chocolate chips,10019087,9.77,34
+pistachios,12151,5.1,77
+cooked quinoa,20137,1.43,43
+marinara sauce,10111549,1.96,1
+hazelnuts,12120,9.48,91
+cashews,12087,1.48,97
+leek,11246,3.71,83
+orange peel,9216,9.9,36
+jalapenos,11979,1.45,81
+fennel seeds,2018,3.52,48
+green pepper,11333,6.04,19
+dried rosemary,2036,6.33,59
+white rice,10220444,4.93,11
+ground turmeric,2043,4.06,91
+summer savory,98961,2.5,52
+skinless boneless chicken breast,1055062,9.57,57
+lime wedges,9159,3.02,31
+prosciutto,10010123,7.31,68
+tortilla chips,19056,3.1,21
+cucumbers,11206,2.08,9
+panko bread crumbs,10018079,4.08,5
+simple syrup,90480,5.48,68
+jalapeno peppers,11979,1.54,73
+pecan,12142,7.7,26
+sprinkles,93645,1.74,7
+spring onions,11291,6.85,51
+creme fraiche,1001056,9.0,31
+curry leaves,93604,9.22,3
+kitchen bouquet,93768,4.68,17
+taco seasoning,2073,2.59,36
+brandy,10114037,3.38,13
+sausage,1017063,3.51,47
+cooked chicken,5112,3.42,62
+canned pumpkin,11424,6.91,59
+seasoned salt,1042047,2.88,47
+pears,9252,7.07,97
+quick cooking oats,8402,8.73,2
+half and half,1049,2.94,26
+agave nectar,19912,4.2,55
+poppy seeds,2033,9.95,4
+green chillies,31015,5.74,37
+allspice,2001,1.06,9
+bell peppers,10211821,1.05,10
+fresh sage,2038,9.24,74
+stevia,93628,4.29,28
+ground cardamom,2006,2.44,34
+flat-leaf parsley,11297,8.52,19
+tequila,10814037,0.96,7
+fresh parsley leaves,11297,4.11,52
+chickpeas,16057,6.36,58
+hoisin sauce,6175,5.88,79
+sriracha,1016168,5.53,66
+roasted red peppers,11916,3.19,70
+yellow onions,10511282,3.46,4
+corn starch,20027,9.76,38
+green chilies,31015,2.49,51
+skim milk,1085,0.76,77
+coriander seeds,2013,4.19,69
+cocoa,19165,5.16,63
+leafy vegetables,21052,6.46,96
+table salt,2047,9.79,66
+pesto,93698,7.81,13
+beef stock,6170,7.33,45
+peppers,10111333,4.42,73
+dry red wine,14097,8.02,5
+chili sauce,6972,2.5,10
+fennel bulb,11957,8.6,77
+button mushrooms,11260,9.17,26
+salmon fillets,15076,5.67,79
+graham crackers,18617,7.74,17
+granny smith apples,1089003,4.66,21
+lemon rind,9156,6.67,44
+dark chocolate chips,10019071,0.64,84
+berries,1009054,1.76,78
+unsweetened applesauce,9019,4.04,38
+mayo,4025,5.24,32
+canned coconut milk,12117,7.57,44
+applesauce,9019,1.05,1
+nutritional yeast,93690,4.03,83
+thyme sprigs,2049,7.48,75
+hamburger buns,18350,2.17,95
+baking mix,18010,9.36,61
+baguette,18033,2.6,3
+frozen spinach,11463,7.74,94
+ears corn,11167,7.83,8
+rhubarb,9307,3.47,5
+white cake mix,18137,3.09,21
+part-skim mozzarella cheese,1028,0.56,15
+icing sugar,19336,2.4,77
+white chocolate,19087,2.15,69
+roasted garlic,11215,8.26,83
+pear,9252,7.1,3
+seasoning,1042027,5.38,45
+red cabbage,11112,7.31,20
+lemon wedges,9150,4.24,85
+beets,11080,3.81,9
+limes,9159,2.29,77
+feta,1019,6.77,8
+shredded chicken,5348,1.92,57
+ice water,14412,2.72,12
+liquid smoke,93627,3.69,72
+sherry vinegar,1012068,1.07,45
+watermelon,9326,9.63,24
+thyme leaves,2049,2.24,4
+nonfat cool whip,1200,3.38,11
+cream of chicken soup,6016,9.47,100
+cinnamon sticks,1002010,4.26,77
+oranges,9200,7.39,40
+flat leaf parsley,11297,3.37,17
+ground mustard,1002024,2.79,95
+peach,9236,8.27,66
+sunflower seeds,12036,6.64,19
+pepperoni,7057,1.86,6
+tomato puree,11547,4.41,84
+provolone cheese,1035,4.58,25
+canned diced tomatoes,11531,4.56,57
+scallion,11291,1.73,0
+canned pineapple,9354,9.57,100
+pita breads,18413,2.91,17
+vegetable shortening,4615,3.76,45
+food coloring,10711111,6.64,29
+parsley leaves,11297,4.24,10
+canned pumpkin puree,11424,2.62,51
+canned kidney beans,16034,6.51,98
+pot roast,23612,9.05,85
+french bread,18029,1.07,74
+mushroom,11260,0.82,79
+pancetta,10410123,3.72,73
+yellow cornmeal,35137,9.16,14
+english cucumber,10111205,1.46,69
+pork tenderloin,10218,3.93,94
+unsweetened chocolate,19078,6.78,27
+chili,11819,7.48,87
+pizza sauce,11549,2.46,46
+unsweetened shredded coconut,10012108,2.45,93
+xanthan gum,93626,4.57,98
+parmigiano reggiano,1033,3.34,10
+shredded cheese,1011026,6.94,59
+dal,16069,6.12,51
+chicken thighs,5091,7.46,23
+baby carrots,11960,2.29,100
+flank steak,23657,3.93,86
+dried apricots,9032,8.81,51
+confectioners sugar,19336,7.84,59
+cheddar,1009,5.53,81
+vegan cheese,93701,1.33,49
+yellow mustard,2046,5.85,31
+extra-virgin olive oil,1034053,2.09,69
+oregano leaves,2027,1.38,35
+dried coriander leaves,2012,0.95,26
+cajun seasoning,1032028,7.95,59
+ranch dressing,4639,3.07,45
+oyster sauce,6176,9.87,78
+sun-dried tomatoes,11955,6.59,86
+dry sherry,10114106,7.33,96
+lettuce leaves,93623,2.68,77
+full-fat milk,1077,2.69,25
+gruyere cheese,1023,1.69,43
+dry bread crumbs,18079,9.14,18
+coarse sea salt,1012047,8.7,25
+rice flour,20061,5.58,34
+fresh tarragon,2041,8.36,33
+semi-sweet chocolate,19903,0.77,18
+white bread,18069,3.87,7
+roast beef,93713,2.01,90
+juice,1019016,2.14,32
+white whole wheat flour,93824,2.38,28
+low fat sour cream,1179,4.65,54
+chillies,11819,8.96,90
+instant yeast,10118375,2.05,65
+pineapple chunks,1029354,5.82,82
+condensed cream of mushroom soup,6147,2.55,73
+mirin,93830,2.72,2
+roasted peanuts,16092,9.83,14
+snow peas,11300,9.15,84
+yellow cake mix,18144,9.35,65
+sub rolls,98940,6.92,38
+yellow squash,11641,5.13,47
+almond,12061,2.19,84
+herbs,1002044,5.51,7
+maraschino cherries,9328,4.33,39
+cremini mushrooms,11266,0.59,30
+meat,1015006,4.68,11
+white distilled vinegar,2053,6.9,46
+italian sausage,7036,8.82,79
+mozzarella,1026,1.71,45
+fat-free less-sodium chicken broth,6984,4.62,67
+dark rum,14037,1.19,30
+pizza dough,93610,3.89,40
+milk chocolate chips,10019146,3.9,42
+peppercorns,1022030,8.25,56
+penne pasta,11120420,2.45,97
+cooked ham,7214,7.87,45
+chicken wings,5100,3.09,86
+peppermint extract,1022050,0.73,55
+swerve sweetener,99084,6.87,67
+cottage cheese,1012,4.7,70
+golden brown sugar,19334,6.55,19
+egg noodles,20409,4.48,87
+parsnips,11298,9.11,61
+grapeseed oil,4517,1.77,91
+mascarpone cheese,93820,7.25,87
+dessert wine,10014057,3.91,23
+baby spinach leaves,11457,7.82,30
+baking potatoes,11353,9.77,41
+avocado oil,4581,0.63,74
+salad dressing,4114,2.09,10
+parmigiano reggiano cheese,1033,1.2,35
+star anise,1012002,1.58,11
+green cabbage,11109,2.51,43
+thick-cut bacon,10310123,6.75,64
+pumpkin seeds,12014,9.54,24
+coriander powder,2012,5.67,63
+juice of orange,9206,2.83,14
+basmati rice,10020444,2.8,84
+granny smith apple,1089003,1.53,64
+whole wheat pastry flour,10020080,8.35,13
+old fashioned rolled oats,8120,6.3,94
+caramel sauce,19364,8.85,69
+shiitake mushrooms,11238,2.78,86
+dairy milk,1077,3.76,36
+baking bar,19078,3.4,78
+chilies,11819,9.17,66
+iceberg lettuce,11252,5.25,93
+sage,2038,4.45,39
+elbow macaroni,10120499,5.75,78
+tea,14355,3.73,91
+red beans,16033,2.12,93
+lemongrass,11972,6.42,3
+spaghetti sauce,10011549,2.51,98
+cardamom,2006,5.95,53
+bacon strips,10123,0.58,99
+old-fashioned oats,8120,6.26,91
+arborio rice,10020052,5.08,60
+greens,21052,8.05,32
+m&m candy,19157,6.14,10
+panko breadcrumbs,10018079,3.44,38
+baby-back ribs,10010204,1.05,93
+saffron,2037,3.66,78
+whole eggs,1123,4.78,52
+spinach leaves,10011457,2.05,20
+seafood stock,6963,7.98,2
+pretzels,19047,7.69,46
+medjool dates,9421,7.7,69
+sunflower oil,4584,2.13,85
+pepper jack cheese,1025,5.71,15
+oatmeal,8121,6.77,45
+coconut cream,12115,1.18,59
+oat flour,20132,7.29,100
+shredded mexican cheese blend,1251,8.1,30
+sweet paprika,1002028,9.67,42
+cranberry juice,43382,0.83,100
+noodles,20420,1.8,22
+sheeps milk cheese,1011019,6.16,50
+pasta sauce,10011549,2.6,34
+cane sugar,19335,1.65,49
+tortillas,18364,2.68,66
+asparagus spears,11011,9.26,39
+cream of mushroom soup,6147,9.39,76
+fresh green beans,11052,1.29,13
+maca powder,99079,3.12,43
+nutella,19125,3.35,64
+double cream,1011053,1.79,62
+chorizo,7019,2.18,31
+ground chicken,5332,1.47,30
+cumin powder,1002014,5.76,80
+couscous,20028,3.07,89
+gluten-free flour,93620,3.19,85
+canned corn,11177,6.5,16
+whole chicken,5006,7.91,74
+green olives,1029195,3.61,65
+tomato soup,6159,2.44,38
+asafoetida,1032035,6.42,98
+red food coloring,10711111,6.02,11
+brownie mix,18632,9.95,58
+condensed cream of chicken soup,6016,5.91,61
+light soy sauce,10216124,3.0,37
+celery seed,2007,7.15,51
+unsweetened cocoa,19165,8.03,69
+watercress,11591,8.41,60
+crackers,18621,2.5,51
+sweetened coconut,12109,5.84,16
+cup cake,18139,3.95,85
+raw cashews,12087,1.69,49
+cauliflower florets,10011135,7.67,91
+sugar snap peas,10011300,1.0,33
+poultry seasoning,2034,8.43,24
+baby arugula,11959,0.86,28
+bean sprouts,11043,8.15,15
+lb cake,18133,1.96,36
+whole kernel corn,11177,4.89,15
+spaghetti squash,11492,9.8,98
+tomatillos,11954,7.43,7
+eggplants,11209,1.52,17
+strong coffee,14209,8.73,94
+old fashioned oats,8120,8.18,92
+cooked brown rice,20041,1.96,47
+pizza mix,98924,1.69,78
+dried cherries,93822,2.58,100
+paneer,98847,8.04,15
+rice noodles,20133,4.26,90
+light coconut milk,99009,0.63,42
+red grapes,9132,9.77,84
+refried beans,16202,9.2,97
+swiss chard,11147,6.45,55
+raw honey,19296,1.18,49
+orange marmalade,19303,2.1,19
+beef stew meat,10013411,5.52,53
+fresh corn kernels,10011167,3.53,55
+mustard powder,1002024,5.12,90
+panko,10018079,1.83,80
+tomato juice,11886,2.4,0
+napa cabbage,11119,9.13,1
+instant chocolate pudding mix,19184,9.66,11
+oreo cookies,10018166,1.95,78
+chiles,11819,1.27,7
+whiskey,14052,9.81,4
+extra firm tofu,16163,9.6,19
+new potatoes,11352,8.83,19
+cereal,8029,6.8,91
+pink himalayan salt,1032047,9.79,6
+cookie,10118192,1.68,56
+mussels,15164,8.65,28
+half n half cream,1049,8.35,6
+hummus,16158,8.66,53
+light mayonnaise,4641,0.99,89
+carp,15008,0.98,57
+lentils,16069,1.25,85
+tapioca flour,93696,5.24,93
+taco seasoning mix,2073,9.36,16
+cornflour,20027,4.99,35
+linguine,10720420,5.45,34
+gin,10514037,9.57,28
+deli ham,10010151,4.73,68
+coarse kosher salt,1082047,9.14,20
+corn chips,19003,3.12,74
+fontina cheese,1020,2.69,87
+vegetarian bacon,16542,6.41,45
+okra,11278,2.49,21
+almond meal,93740,9.32,15
+low-salt chicken broth,6970,1.13,87
+celery salt,1052047,4.42,3
+rotisserie chicken,5112,3.95,34
+nonfat greek yogurt,1001256,9.6,47
+unsweetened coconut milk,12117,3.09,14
+baking cocoa,19165,7.11,41
+pasta salad mix,99036,3.26,69
+flat leaf parsley leaves,11297,4.92,94
+live lobster,15147,7.88,27
+green peas,11304,6.92,86
+pizza crust,93770,2.2,39
+edamame,11212,4.64,68
+stock,1006615,0.95,47
+broth,1006615,1.92,2
+pork loin chops,10062,9.89,54
+turkey breast,5696,4.46,78
+fennel,11957,6.86,83
+caraway seeds,2005,1.25,68
+orange rind,9216,6.53,58
+canned pinto beans,16044,3.93,96
+lean ground turkey,5662,7.54,13
+romano cheese,1038,9.89,93
+lamb,10017224,2.31,51
+celery stalk,11143,9.65,43
+chocolate syrup,14181,5.26,35
+canned cannellini beans,10016051,2.57,5
+pomegranate seeds,9286,7.5,42
+shredded mozzarella,1001026,1.8,93
+self-rising flour,20129,7.81,89
+tabasco sauce,6168,2.98,33
+caramel,19074,9.08,25
+biscuits,18009,8.46,97
+macadamia nuts,12131,0.71,48
+steak,23232,2.92,11
+enchilada sauce,6599,3.64,44
+dark sesame oil,1004058,1.81,50
+spring onion,11291,9.52,18
+anchovy,15001,8.02,6
+rice paper,10118368,2.43,62
+guacamole,1009037,2.63,38
+smoked salmon,15077,2.55,90
+salad greens,21052,6.32,9
+beef chuck roast,13786,1.4,79
+egg substitute,1226,8.48,49
+lasagna noodles,10620420,8.96,38
+fresh ginger root,11216,3.24,80
+grapes,9132,8.99,37
+sourdough bread,10118029,7.36,75
+dry roasted peanuts,16090,4.17,48
+strawberry,9316,9.18,76
+seeds,93818,6.29,54
+raspberry jam,10719297,9.72,27
+cacao powder,19165,7.07,61
+lemon extract,12311111,4.62,0
+breakfast syrup,19113,0.85,85
+apricots,9021,8.89,87
+apricot preserves,19719,2.15,90
+salmon fillet,15076,7.26,8
+granola,8212,9.23,7
+baby potatoes,11352,2.94,87
+sharp cheddar,1031009,6.93,56
+onion soup mix,6094,2.22,60
+diced ham,99186,8.64,32
+erythritol,98887,8.65,87
+fresh sage leaves,2038,3.19,70
+american cheese,1253,0.95,63
+potato starch,11413,4.87,57
+low fat cream cheese,43274,0.53,78
+instant vanilla pudding mix,19206,8.76,14
+crusty bread,10018029,2.58,52
+canned garbanzo beans,16058,4.76,9
+chilli,11819,1.88,97
+gf chocolate cake mix,99040,3.42,87
+popcorn,19034,3.42,99
+halloween sprinkles,93645,7.7,21
+sherry,10114106,2.97,21
+vegetable,11583,0.96,17
+saffron threads,2037,6.41,40
+cherry,9070,3.2,91
+figs,9089,4.48,10
+curry paste,93605,8.3,28
+icing,10019230,7.56,70
+low fat mayonnaise,4641,3.77,82
+dried onion,11284,4.55,53
+red pepper powder,2031,7.29,24
+orange juice concentrate,9214,2.04,1
+paleo wrap,99066,6.67,86
+baby bella mushrooms,11266,5.15,52
+great northern beans,16025,8.41,93
+clams,15157,0.73,8
+seasoning salt,1042047,2.03,55
+ground almonds,93740,4.77,45
+full fat coconut milk,12118,9.3,26
+ready to use piecrust,18334,3.73,46
+chocolate chip cookies,28027,8.62,12
+ginger root,11216,4.4,37
+italian dressing,4114,1.69,57
+low fat buttermilk,1088,9.23,55
+cupcakes,18139,3.2,67
+jam,19297,3.95,7
+coconut aminos,98929,3.13,71
+adobo sauce,6979,2.27,96
+canned beef broth,6008,8.37,40
+cooked white rice,10220445,5.38,93
+dark chocolate candy bars,10019904,8.11,36
+nonfat milk,1085,9.11,33
+whole wheat bread,18075,9.46,7
+sweetened shredded coconut,12179,5.71,87
+teriyaki sauce,6112,4.15,98
+rice wine,43479,9.38,79
+polenta,10035137,2.74,62
+green bell peppers,11333,4.4,53
+fresh mozzarella,1026,5.11,98
+dried sage,1002038,2.66,32
+dried parsley flakes,2029,7.2,16
+baby dill,2045,2.07,0
+urad dal,93718,0.76,64
+dinner rolls,18064,7.98,55
+condensed milk,1095,6.68,32
+steel cut oats,93695,2.01,45
+tuna,10015121,4.8,6
+tart apples,1029003,5.11,73
+blanched almonds,12062,3.72,60
+sake,43479,3.88,3
+low-fat cream cheese,43274,3.84,57
+turbinado sugar,19908,5.25,32
+green chilli,31015,1.88,50
+sauerkraut,11439,8.81,96
+vanilla yogurt,1119,9.21,22
+cherry pie filling,19314,7.98,56
+crystallized ginger,93751,8.93,51
+wonton wrappers,10018368,2.48,4
+Dairy Free Cheese,93701,3.81,89
+baked beans,16009,9.32,73
+tamari,10116124,0.99,19
+tarragon,2041,0.85,72
+sage leaves,2038,6.58,10
+dry yeast,18375,2.6,52
+acorn squash,11482,3.97,81
+canned water chestnuts,11590,5.08,95
+date,9087,1.77,8
+plums,9279,2.82,62
+roasted red pepper,11916,4.14,6
+pork belly,10005,1.41,21
+cheese curds,98921,3.94,53
+basil pesto,93698,6.79,60
+hard-boiled eggs,1129,5.61,33
+triple sec,14534,1.36,39
+mangoes,9176,7.19,94
+smooth peanut butter,16150,6.02,97
+rajma masala,10193663,7.85,4
+hard cooked eggs,1129,7.11,71
+apple pie spice,1032027,7.54,26
+wheat germ,20078,7.79,5
+fresh coriander,11165,5.22,74
+pomegranate juice,9442,0.93,26
+chili paste,6973,4.8,74
+all-purpose flour,20081,9.87,26
+low sodium chicken stock,1006970,6.37,30
+red peppers,11821,1.22,81
+toast,18070,5.17,49
+pimento stuffed olives,1049195,6.94,14
+ground cayenne pepper,2031,9.68,7
+sea scallops,10015172,2.24,98
+salami,7071,9.44,74
+chile powder,2009,4.52,68
+dill weed,2045,1.45,42
+asiago cheese,1001033,0.81,37
+slaw dressing,43016,9.81,71
+white balsamic vinegar,1012069,9.66,73
+fresh rosemary leaves,2063,3.99,98
+granulated garlic,1002020,9.0,68
+ricotta,1036,0.52,36
+whole cranberry sauce,9081,4.55,0
+low fat plain yogurt,1117,2.81,70
+chicken breast halves,1045062,3.06,26
+red chilli,11819,2.64,12
+radicchio,11952,6.61,45
+cantaloupe,9181,2.41,35
+canned tuna,10115121,6.52,71
+portobello mushrooms,11265,6.97,57
+soy milk,16235,7.34,10
+vanilla bean paste,93813,1.52,82
+instant coffee granules,14214,8.18,51
+spicy brown mustard,2046,7.8,65
+turnips,11564,0.93,26
+white mushrooms,11260,5.66,41
+milk chocolate,19081,9.17,10
+processed american cheese,1253,5.38,81
+pork links,1007063,9.11,17
+brown rice flour,20090,8.13,88
+round steak,23617,8.51,16
+clam juice,14187,9.99,52
+chocolate milk,1103,4.58,93
+champagne vinegar,1002068,8.01,29
+coleslaw mix,10011109,6.33,1
+green chiles,31015,3.62,4
+meatballs,10110219,2.34,23
+dried marjoram,2023,3.9,24
+coconut extract,1032050,6.45,26
+jicama,11603,5.85,23
+grapefruit,9112,2.22,73
+peanut butter cups,19150,9.06,47
+chili flakes,1032009,9.41,17
+lump crabmeat,10115136,3.85,2
+sriracha sauce,1016168,4.94,38
+raw shrimp,15152,4.79,76
+old bay seasoning,1052034,5.8,24
+game,1015006,6.31,29
+caramels,19074,8.17,90
+jack cheese,1001025,2.45,36
+seasoned bread crumbs,18376,1.12,97
+italian bread,10028033,8.78,31
+cardamom pods,1002006,1.14,74
+mix of brownies,18632,0.57,51
+artichokes,11007,7.92,56
+rice syrup,93784,9.54,44
+capsicum,10211821,3.42,67
+plum tomato,10411529,2.5,34
+fresh herbs,1012024,0.62,51
+tapioca starch,93696,3.39,72
+orange bell pepper,10011821,4.74,24
+coconut butter,93746,9.57,2
+creole seasoning,1002031,8.66,92
+canned green chiles,11980,0.81,47
+Spice Rub,1012034,3.18,11
+tea bags,10111111,8.72,48
+instant vanilla pudding,19206,9.69,40
+cheese soup,6038,3.03,37
+leg of lamb,17013,9.51,69
+diet pop,14146,0.88,84
+green peppers,11333,4.24,71
+long grain rice,10220444,2.9,33
+lemon pepper,1012030,3.24,70
+beef brisket,13023,0.51,63
+baking chocolate,19078,4.92,50
+pork sausage,1007063,8.61,1
+beet,11080,9.95,67
+cardamom powder,2006,9.09,47
+gingerbread kids,10118192,1.27,61
+white flour,20081,7.09,54
+grand marnier,10314534,3.86,32
+chocolate ice cream,19270,3.9,50
+low fat shredded cheddar cheese,1001168,2.62,46
+fettuccine,10020409,3.59,39
+canned mandarin oranges,9218,5.33,43
+instant espresso powder,10014214,9.41,87
+corn kernel,11172,8.16,68
+tea bag,10111111,8.81,100
+queso fresco,1228,2.41,22
+croutons,18242,1.12,63
+frosting,19230,6.45,89
+roasted pork,10010225,9.35,91
+fleur de sel,1022047,0.57,44
+ginger ale,14136,3.11,11
+blanched almond flour,93740,5.97,88
+pretzel sandwiches,19047,8.63,66
+multi-grain bread,18075,0.72,57
+crisp rice cereal,8066,2.45,83
+5 spice powder,1002002,2.08,68
+thai red curry paste,93605,4.45,44
+prawns,15152,7.91,27
+marshmallow creme,93644,6.32,0
+champagne,10043155,2.86,67
+wheat flour,20081,1.56,59
+pumpkin spice mix,1002035,2.93,19
+salsa verde,27028,5.76,14
+italian cheese blend,93651,3.14,78
+winter squash,10111485,2.28,71
+macaroni dinner,32004,5.8,11
+orange liqueur,10414534,3.89,50
+pearl onions,10111282,7.35,65
+full-fat coconut milk,12118,1.55,76
+dry breadcrumbs,18079,1.0,39
+Top Sirloin,23584,8.55,51
+ground flaxseed,12220,6.85,3
+yellow bell peppers,11951,5.9,40
+steaks,23232,5.79,4
+roma tomato,10211529,7.3,97
+marinated artichoke hearts,93828,3.41,13
+coconut flakes,12108,1.23,23
+low sodium beef broth,10093741,6.55,21
+candy melts,93775,5.61,88
+liquid stevia,10811111,9.76,15
+bamboo shoots,11028,4.61,97
+cod,15015,8.85,51
+chocolate chip cookie,28027,5.85,19
+squash,10011485,1.61,51
+bok choy,11116,9.89,29
+angel food cake mix,18087,8.57,52
+canned white beans,16051,8.69,17
+spring mix,21052,8.38,67
+butterscotch chips,19070,6.96,57
+hot dogs,21118,2.5,24
+instant coffee,14214,0.69,100
+fried onions,93709,7.61,27
+eggnog,1057,4.16,47
+pound cake,18133,2.9,35
+dried tarragon,2041,6.03,21
+natural sugar,19335,6.64,52
+queso dip,1188,8.68,18
+canned mushrooms,11264,4.41,40
+peanut butter chips,93762,5.11,81
+filo pastry,18338,7.25,8
+ground lamb,17224,3.78,61
+self-raising flour,20129,5.47,20
+fresh peas,11304,4.93,97
+phyllo dough,18338,5.95,40
+chicken tenders,1015062,7.14,52
+vanilla frosting,10019230,1.65,56
+grapefruit juice,98926,5.48,71
+lime peel,1009159,1.7,25
+pork loin,10225,7.66,68
+balsamic glaze,98998,3.72,59
+dried porcini mushrooms,10011268,3.61,99
+red sweet pepper,11821,8.67,43
+sun dried tomatoes,11955,4.67,85
+ground sausage,7063,7.64,45
+raw sugar,19908,3.54,30
+graham cracker crust,18942,2.93,60
+vegetable oils,4513,2.44,38
+stuffing mix,18081,1.54,78
+real cheese,1041009,0.69,47
+top blade steak,13523,2.81,91
+cloves,1002011,6.08,97
+chocolate cookies,18157,4.02,14
+black sesame seeds,10012023,4.04,86
+food color,10711111,9.67,10
+red lentils,10016069,6.19,24
+hemp seeds,93602,5.73,22
+hash brown potatoes,11390,6.66,3
+red chili powder,2009,8.85,39
+tomato ketchup,11935,1.35,84
+cinnamon sugar,10219335,5.67,6
+jumbo shrimp,15152,4.03,97
+chipotle peppers in adobo,11632,1.61,30
+thai basil,2044,7.98,40
+serrano chile,11977,9.74,1
+grain blend,10020088,2.3,2
+silken tofu,16161,5.22,72
+roasted red bell peppers,11916,1.22,82
+red curry paste,93605,6.92,13
+toffee bits,19383,5.01,91
+green food coloring,1441111,4.21,41
+chili pepper,11819,2.94,61
+fennel seed,2018,5.59,55
+chile paste,6973,8.51,75
+gingerroot,11216,4.74,55
+english muffins,18439,8.44,13
+wild rice,20088,1.3,48
+honey mustard,4703,3.07,0
+dried dill,2017,5.08,24
+cream cheese block,1186,0.74,25
+pecorino romano cheese,1038,1.18,51
+fresh corn,11167,4.81,27
+chicken bouillon granules,1006080,7.03,22
+vine ripened tomatoes,11529,8.31,34
+minute rice,20048,2.87,47
+marjoram,2023,1.32,39
+ranch dressing mix,93733,4.11,84
+salted peanuts,16092,8.99,3
+white sandwich bread,18069,9.65,41
+sub buns,98940,8.24,36
+instant brown rice,10020048,1.84,40
+fresh gingerroot,11216,6.74,15
+brie,1006,3.26,48
+ears of corn,11167,5.3,26
+brie cheese,1006,0.65,100
+pork shoulder,10072,6.51,96
+herbes de provence,1012042,2.32,0
+walnut halves,12155,7.7,22
+pb cups,19150,0.73,90
+duck fat,4574,7.75,16
+jasmine rice,10120444,2.12,74
+bacon bits,10862,9.99,63
+solid pack pumpkin,11424,5.77,72
+oreos,10018166,6.96,63
+coconut water,12119,0.82,68
+cotija cheese,1001019,5.67,73
+mint chutney,98991,7.57,82
+ready-to-serve Asian fried rice,93721,0.64,21
+angel hair pasta,10020420,5.6,40
+strawberry jam,10819297,3.86,92
+whole egg,1123,4.19,6
+sweet onions,11294,1.31,86
+corn flour,20019,4.52,24
+vanilla wafers,18609,2.53,79
+cod fillets,15015,6.65,98
+beef top sirloin steak,23584,6.87,30
+apricot jam,19719,2.93,38
+romaine,10111251,8.94,42
+quinoa flour,93773,0.7,82
+rum extract,12211111,4.56,3
+vanilla protein powder,99076,5.65,98
+flaxseed meal,12220,7.26,59
+pesto sauces,93698,4.53,56
+rye bread,18060,0.74,76
+cannellini beans,10716050,8.39,46
+scallops,10015172,6.18,88
+froyo bars,93629,2.02,70
+bread bowl,99169,0.63,89
+gorgonzola cheese,1011004,3.5,4
+Miso Soybean Paste,16112,8.97,16
+bulk pork sausage,1057063,3.87,93
+corn oil,42289,1.47,83
+mixed veggies,11583,2.68,100
+vanilla essence,1012050,6.79,5
+prunes,9291,4.14,95
+plain nonfat yogurt,1118,7.09,94
+chicken drumsticks,5066,4.09,22
+pear liqueur,98988,1.2,76
+chive & onion cream cheese spread,93748,6.71,98
+espresso powder,10014214,5.06,30
+gingerbread people,18192,8.78,95
+unsweetened coconut flakes,12108,8.8,44
+dried currants,9085,4.2,43
+dried dill weed,2017,7.78,29
+kidney beans,16033,2.71,76
+chocolate chunks,10419903,7.17,99
+pecan pieces,10012142,4.96,91
+cognac,10414037,2.79,18
+spices,2035,7.69,55
+pico de gallo,27027,3.99,47
+fresh mozzarella cheese,1026,8.72,81
+chicken bouillon,6480,1.71,58
+seasoned rice vinegar,1032053,5.05,17
+summer squash,11641,1.65,13
+light cream cheese,43274,2.84,93
+dill pickles,10011937,0.72,50
+pork butt,10084,9.9,61
+fudge,19100,1.78,68
+cinnamon bread,18047,5.45,20
+collard greens,11161,4.78,0
+mexican rub,1032027,4.34,38
+tart apple,1029003,6.51,77
+jelly,19297,2.76,43
+sweet corn,11168,2.39,62
+chuck roast,13786,3.04,52
+red chili flakes,1032009,4.47,72
+orzo pasta,10920420,1.11,12
+heirloom tomatoes,11529,7.8,54
+papaya,9226,3.42,48
+cacao nibs,98846,5.64,6
+zucchinis,11477,6.55,93
+cooked chicken breast,5064,0.53,80
+macaroni,20499,8.98,20
+fennel bulbs,11957,9.6,9
+sparkling water,14121,3.88,39
+agave syrup,19912,0.65,14
+mascarpone,93820,5.86,37
+sausage links,1037063,9.15,1
+wine vinegar,2068,9.12,80
+beef steak,23232,2.7,99
+ground flax seed,12220,9.1,12
+pinto beans,16043,4.59,8
+green grapes,9132,8.35,100
+whole-wheat flour,20080,3.37,50
+agave,19912,6.26,45
+chipotle powder,1052009,5.0,14
+vidalia onion,11294,5.23,15
+shredded cheddar,1001009,6.46,74
+berry,1009054,1.95,30
+currants,9085,8.69,3
+garlic paste,10111215,9.67,14
+miracle whip,4014,5.75,75
+chicken sausage,93668,9.53,83
+truffle oil,1024053,5.62,29
+ginger paste,93754,8.51,27
+walnut pieces,12155,4.65,12
+tilapia fillets,15261,7.72,34
+russet potato,11353,8.33,4
+orzo,10920420,8.49,33
+corned beef,13346,6.75,91
+baby bok choy,93636,5.38,85
+ancho chile powder,1022009,8.59,16
+whole almonds,12061,4.07,35
+candy canes,93759,1.59,89
+rotini pasta,11320420,8.29,41
+bulk sausage,7063,6.31,68
+gouda cheese,1022,0.8,84
+sweetened dried cranberries,9079,9.26,23
+bittersweet chocolate chips,10019071,1.04,95
+potato chips,19411,6.76,14
+extravirgin olive oil,1034053,0.98,15
+dried green lentils,10016069,2.56,95
+fruits,9431,0.69,60
+irish cream,93764,2.14,48
+pimientos,11943,5.64,53
+apricot,9021,3.06,36
+water chestnuts,11590,7.68,70
+pork ribs,10204,4.68,84
+balsamic vinaigrette,4135,4.1,42
+cheese tortellini,10093727,6.38,61
+store bought polenta,1008166,6.85,97
+kiwi,9148,7.5,37
+alfredo sauce,93606,5.91,54
+fenugreek seeds,2019,7.52,75
+sweet pickle relish,11945,3.14,32
+dutch process cocoa powder,10019165,6.04,100
+oysters,15167,2.92,65
+rice krispies cereal,8065,5.27,21
+clarified butter,93632,3.39,66
+gruyere,1023,6.63,40
+spelt flour,93823,1.81,45
+chilli flakes,1032009,8.44,94
+olive,9195,3.31,47
+andouille sausage,7064,5.47,67
+pork tenderloins,10218,3.26,15
+chile,11819,5.39,4
+snack peppers,10311821,4.18,54
+oil packed sun dried tomatoes,11956,9.53,34
+light olive oil,4053,1.3,22
+mixed salad greens,21052,8.53,47
+rubbed sage,2038,8.65,25
+stuffing,18082,0.9,15
+unsweetened coconut,12108,8.86,97
+easter ham,10151,1.01,70
+grill cheese,10093624,2.22,73
+vermouth,14132,5.02,84
+smoked sausage,7916,6.26,49
+poblano peppers,10011333,7.89,85
+crabmeat,10015136,8.89,76
+radish,11429,9.83,63
+wide egg noodles,20409,2.28,58
+port,10114057,5.88,7
+big shells,10520420,0.58,68
+fat-free chicken broth,6984,6.5,2
+navel oranges,9202,8.64,34
+whole-grain mustard,1012046,9.13,46
+harissa,1006972,6.39,71
+extra lean ground beef,23557,4.47,26
+peppermint baking chips,98858,1.29,59
+condensed tomato soup,6159,0.82,13
+lunch meat,1015006,6.9,98
+colby jack cheese,1011,3.98,78
+raspberry,9302,4.94,36
+desiccated coconut,12108,8.74,34
+chickens,5006,3.09,52
+parsnip,11298,4.91,29
+fire roasted canned tomatoes,98849,3.09,67
+skim milk yogurt,1118,8.82,42
+baby beet,10111080,3.54,4
+jaggery,99002,1.75,27
+poblano pepper,10011333,2.2,20
+light butter,4602,3.02,34
+whole grain mustard,1012046,5.88,72
+chicken pieces,1005006,2.68,66
+caramel ice cream topping,19364,3.23,15
+ginger garlic paste,10093754,4.09,89
+pita bread,18413,6.0,63
+poppy seed,2033,1.04,28
+seasoning blend,1032027,7.29,55
+lemon curd,93834,1.63,98
+canned great northern beans,16026,5.82,53
+pepitas,12014,8.42,0
+penne,11120420,3.88,57
+protein powder,1223,9.88,25
+allergy friendly chocolate chips,98848,7.2,94
+chicken meat,1015006,2.53,85
+water-packed tuna,15121,0.97,27
+italian salad dressing,4114,4.61,52
+lemonade concentrate,14292,9.68,55
+pie shell,18334,3.59,37
+tilapia,15261,8.16,69
+pearl barley,20005,7.55,67
+candy coating,98857,2.18,80
+whole berry cranberry sauce,9081,3.6,21
+farro,10020005,3.38,40
+sirloin steak,23625,2.11,96
+kahlua,93716,4.12,25
+crunchy peanut butter,10016098,0.62,77
+orange extract,12511111,5.07,38
+whole garlic,11215,9.29,60
+taco shells,18360,1.84,48
+sweet chili sauce,98962,6.83,98
+apple butter,19294,9.79,68
+dry onion soup mix,6094,2.19,0
+maple,19911,9.8,79
+clear honey,19296,2.03,98
+m&m candies,19157,3.29,70
+walnut oil,4528,9.45,99
+dill pickle,11937,6.84,15
+black eyed peas,16063,4.71,85
+miso,16112,1.6,57
+fingerling potatoes,10111352,5.87,84
+mixed greens,21052,5.62,19
+lime rind,1009159,8.86,94
+chipotle chili powder,1052009,1.57,34
+ranch,4639,3.12,93
+part-skim ricotta cheese,1037,0.5,94
+chocolate hazelnut spread,19125,5.22,18
+cumin seed,2014,4.81,87
+arrowroot powder,20003,3.74,91
+sparkling wine,43155,1.21,23
+dark corn syrup,19349,6.79,24
+light-brown sugar,19334,9.97,23
+cup cakes,18139,0.65,23
+butter lettuce,11250,8.07,94
+cooked black beans,16015,0.51,68
+unbleached all purpose flour,20581,6.15,73
+asian pear,9252,2.26,21
+sprouts,11001,8.65,4
+turkey sausage,7955,1.65,10
+ramen noodles,6583,6.51,7
+crimini mushrooms,11266,6.55,63
+soba noodles,20114,3.01,74
+chile garlic sauce,93749,6.99,89
+canadian bacon,10130,4.39,40
+filo dough,18338,2.17,19
+red kidney beans,16033,0.92,10
+yellow summer squash,11641,8.06,63
+beef tenderloin,13926,5.51,71
+bread cubes,18064,3.82,72
+dark chocolate bar,10019904,5.56,24
+ginger powder,2021,8.47,100
+white onions,10611282,0.96,93
+cinnamon roll,99020,9.57,69
+hungarian paprika,1002028,4.07,41
+sugar cookie dough,18205,8.38,57
+palm sugar,93831,9.74,52
+cashew nuts,12087,6.79,13
+dairy-free chocolate chips,98848,6.03,96
+baby corn,10011168,0.52,64
+turkey bacon,42130,9.62,53
+nori,11446,7.31,27
+serrano chiles,11977,4.65,38
+tempeh,16114,4.99,6
+angel food cake,18088,5.67,87
+canned red kidney beans,10016034,4.55,93
+romaine lettuce leaves,10111251,2.72,5
+dried figs,9094,6.95,29
+vegan chocolate chips,98848,9.01,11
+mango chutney,10119297,9.15,64
+refrigerated crescent rolls,93618,7.65,69
+deli turkey,7259,6.97,46
+ground chuck,10023572,5.53,75
+pita,18413,3.54,22
+espresso,14210,8.42,81
+breakfast sausage,1027063,8.45,94
+shiitake mushroom caps,11238,2.34,52
+mild cheddar cheese,1009,3.74,92
+candy corn,93637,7.74,64
+ground sirloin,10023567,6.24,87
+red delicious apple,1029003,2.45,61
+ahi tuna steaks,15117,2.7,38
+ritz crackers,18621,6.3,27
+white cheddar cheese,1011009,8.74,32
+stevia extract,93628,6.15,6
+onion salt,1072047,1.75,3
+sweet tea,14355,8.97,100
+parsley flakes,2029,1.1,45
+tomato & basil sauce,6233,5.51,61
+salad oil,1004582,9.85,11
+jalapeno chile,11979,5.7,93
+besan,16157,6.12,31
+pumpkin pie mix,11426,1.2,48
+wraps,10018364,6.8,11
+skirt steak,23167,8.2,88
+light rum,14037,5.69,2
+celery root,11141,0.85,62
+beetroot,11080,9.22,90
+kaffir lime leaves,93633,4.47,81
+saltine crackers,18228,4.53,42
+rose hips,35203,3.96,34
+chickpea flour,16157,3.87,10
+cornbread,18023,1.6,53
+lemon lime soda,14144,9.01,53
+turnip,11564,3.19,75
+tofu skin,98891,4.79,46
+hot dog buns,10018350,0.68,51
+skim vanilla greek yogurt,99033,9.42,28
+red delicious apples,1059003,8.9,66
+green chili,31015,9.77,60
+barley,20004,2.57,2
+crescent rolls,93618,9.78,76
+fat-free plain yogurt,1118,2.35,88
+rub,1012034,4.68,53
+chili oil,1014053,1.09,84
+apple pie filling,19312,4.92,94
+dried basil leaves,2003,1.51,36
+red skinned potatoes,10011355,9.26,10
+candy coated chocolate pieces,19157,1.63,23
+sausages,1017063,9.06,75
+pineapple tidbits,1039354,8.46,100
+nut meal,93620,5.58,89
+crab,15136,6.46,3
+baby peas,11304,8.02,23
+fire-roasted tomatoes,98849,2.49,81
+lavender,93811,5.45,27
+steak sauce,27048,8.07,76
+duck,5139,4.78,33
+cooked pasta,20421,1.53,28
+mat bean,99144,6.79,18
+chicken legs,5075,7.27,55
+cinnamon powder,2010,5.82,22
+vanilla pudding mix,19206,0.6,46
+chocolate frosting,19226,4.25,91
+fine grain sea salt,1012047,0.54,7
+chili garlic sauce,93749,3.96,89
+ez-sweets,10119868,5.69,95
+cheese sticks,98970,2.3,42
+pancake mix,18292,5.06,3
+dried oregano,2027,7.7,21
+celery sticks,11143,2.87,35
+guar gum,93765,1.83,10
+reduced sodium soy sauce,16424,8.62,54
+pickled jalapenos,10011632,5.16,100
+nut butter,12195,4.52,89
+tamari soy sauce,10116124,4.96,9
+banana bread,18019,8.52,35
+ginger-garlic paste,10093754,6.16,31
+marsala wine,14057,1.74,33
+wheat bran,20077,1.47,39
+barbeque sauce,6150,8.13,89
+savoy cabbage,11114,8.86,30
+red chilies,11819,3.63,3
+anchovies,15001,8.78,100
+amaretto,10014534,3.39,60
+lean pork tenderloin,10060,5.41,83
+rocket,11959,8.96,57
+buckwheat flour,20011,8.33,15
+cauliflower rice,10111135,4.42,35
+sorghum flour,20648,1.3,21
+chili beans,43112,8.88,59
+lower sodium soy sauce,16424,7.73,4
+nectarines,9191,8.66,79
+chestnuts,12098,3.61,76
+anchovy paste,10015002,1.88,63
+pretzel sticks,10119047,9.16,3
+mexican cheese,1251,7.32,90
+condensed cream of celery soup,6010,6.11,13
+broccoli rabe,11096,5.52,12
+alo drink,99095,6.69,6
+applewood smoked bacon,10123,9.61,40
+purple cabbage,11112,6.8,94
+semolina,20066,5.73,27
+raspberry preserves,10719297,9.84,13
+ground thyme,2042,7.58,49
+hominy,20030,1.53,72
+chorizo sausage,7019,9.45,90
+cooked spaghetti,11420421,6.17,5
+process american cheese,1253,9.8,99
+cream-style corn,11174,1.15,26
+turkey burgers,99026,0.51,85
+garbanzo beans,16057,8.19,49
+pitas,18413,9.44,24
+gnocchi,98853,2.2,41
+halibut fillets,15036,4.36,46
+0% fat greek yogurt,1001256,6.06,87
+pickles,11937,4.38,50
+romaine hearts,10011251,6.98,99
+oat bran,20033,7.23,5
+light cream,1052,8.64,84
+rib tip,98937,3.84,34
+juniper berries,93613,2.63,1
+flax seeds,10012220,2.49,88
+unseasoned rice vinegar,1022053,8.23,53
+chili peppers,11962,9.58,57
+serrano pepper,11977,9.08,88
+oil cured black olives,1039195,6.94,1
+stone ground mustard,1002046,2.03,100
+baker's white chocolate,19087,2.24,93
+sandwich bun,18353,2.82,42
+gravy,6997,8.52,68
+cherry juice,93677,9.54,74
+lettuce leaf,93623,6.32,91
+stewed tomatoes,11533,2.83,78
+roasted cashews,12085,4.43,46
+wrap,10018364,9.27,10
+fresh tarragon leaves,2041,9.62,88
+masa harina,20317,9.74,67
+coffee liqueur,93716,7.2,96
+tabasco,6168,4.13,62
+picante sauce,1006164,9.0,49
+lime wedge,9159,5.67,31
+bottled garlic,10011215,0.83,94
+long pasta,11420420,1.44,18
+bicarbonate of soda,18372,2.49,4
+lemonade,99184,4.39,52
+natural spices,2035,1.45,15
+lower-sodium beef broth,10093741,5.84,23
+shaoxing wine,43479,2.95,23
+blueberry,9050,2.2,49
+monterey jack,1001025,1.75,12
+tamarind,1019322,4.06,17
+fresh coriander leaves,11165,9.11,82
+bread dough,99063,4.68,72
+fresh figs,9089,1.77,12
+whole wheat tortillas,93675,1.37,49
+cashew butter,12088,7.19,59
+bulgur,20012,8.13,54
+thai chili,11670,0.81,77
+mixed vegetables,11583,8.03,60
+sweet chilli sauce,98962,8.61,29
+chipotle chiles in adobo,11632,4.8,19
+lemon pie filling,93753,4.83,2
+chocolate covered raisins,19127,1.75,71
+milk powder,1090,3.8,44
+asian fish sauce,6179,0.53,49
+almond bark,98857,2.87,92
+salad kit,21052,2.95,37
+ranch salad dressing mix,93733,0.61,97
+escarole,11213,0.76,87
+cream of potato soup,6053,7.26,93
+extra sharp cheddar cheese,1021009,5.67,16
+buttermilk biscuits,18009,9.73,90
+pomegranate,1009286,4.1,32
+fun size almond joy bar,19065,0.94,97
+patty pan squash,11475,2.52,13
+splenda,10019868,7.44,7
+non-fat greek yogurt,1001256,9.77,68
+dry vermouth,14132,5.65,18
+hash browns,11390,6.21,8
+plantains,9277,4.62,48
+almond paste,12071,0.73,10
+hing,1032035,2.12,23
+poblano chiles,10011333,8.33,36
+fresh fruit,9431,5.89,52
+maple extract,12111111,8.57,74
+coconut palm sugar,93831,9.9,14
+sun dried tomato,11955,8.66,50
+pulled pork,10983,3.5,7
+reese pieces,10019151,3.82,51
+beef short ribs,13147,0.51,19
+mandarin oranges,9218,0.54,82
+skim milk ricotta cheese,93630,8.71,69
+seasoning mix,1032027,5.67,64
+ground sage,1002038,3.55,93
+lemon pepper seasoning,1012030,5.83,43
+white beans,10516050,3.87,27
+sesame seed,12023,1.22,38
+short grain rice,10120052,6.3,55
+seafood seasoning,1032034,1.7,99
+sweet cherries,9070,2.79,18
+golden syrup,93829,3.56,63
+spiced rum,10914037,6.0,95
+cheddar cheese soup,6038,0.76,11
+real bacon bits,10862,2.29,8
+pomegranate arils,9286,5.87,39
+mustard seed,2024,6.66,31
+grilling cheese,10093624,5.23,32
+purple onion,10011282,1.59,2
+fish stock,6963,4.68,65
+navel orange,9202,6.28,53
+powdered milk,1090,5.24,32
+rock salt,2047,7.36,56
+pecorino romano,1038,8.41,71
+bean curd,16162,4.87,35
+dried fruit,9426,9.45,20
+ground flax seeds,12220,5.25,37
+celery seeds,2007,2.12,68
+baking potato,11353,6.2,71
+chow mein noodles,93803,2.07,17
+ancho chili powder,1022009,6.41,99
+littleneck clams,10015157,7.06,90
+pasta shells,11020420,8.04,65
+roasting chicken,5109,9.08,32
+pork shoulder roast,10072,7.07,28
+ale,10414003,3.55,3
+dulce de leche,98861,3.19,96
+lentil,16069,4.99,49
+top round steak,23636,4.84,37
+whey protein powder,1001223,6.42,69
+chocolate sandwich cookies,18166,5.08,43
+veal,17142,2.63,24
+gluten free flour,93620,0.73,9
+white button mushrooms,11260,5.99,8
+lemon-pepper seasoning,1012030,7.71,3
+fruit cocktail,9099,5.76,71
+canned whole tomatoes,10011531,6.41,20
+instant lemon pudding mix,19332,9.31,29
+fat-free mayonnaise,42193,2.81,31
+chervil,2008,4.06,17
+cookie crumbs,10018192,6.44,33
+vanilla pod,93622,2.15,16
+yellow food coloring,1431111,0.62,87
+chile pepper,11819,2.79,65
+white miso,10116112,4.16,78
+cashew,12087,2.19,82
+boneless pork shoulder,10958,4.24,4
+flax seed meal,12220,8.75,40
+90% lean ground beef,23562,3.62,13
+lemon grass,11972,7.26,100
+green apple,1069003,8.72,6
+splenda brown sugar blend,98842,6.43,55
+lamb chops,17305,9.03,32
+roasted chicken,5112,8.24,66
+cob corn,11167,9.66,10
+pie crusts,18334,7.05,92
+low fat cottage cheese,1016,4.76,40
+corn muffin mix,10018022,5.46,34
+colby monterey jack cheese,1011,2.14,87
+white-wine vinegar,1002068,7.98,33
+marshmallow fluff,93644,1.44,44
+store-bought phyllo,18338,7.41,35
+vanilla wafer cookies,18609,1.61,50
+peas and carrots,11322,9.29,76
+blood orange juice,1009206,1.77,9
+stew meat,10013411,9.53,66
+quinoa flakes,93816,1.1,92
+blood orange,1009200,4.73,11
+burger buns,18350,9.36,26
+manchego cheese,93821,1.43,13
+grainy mustard,1012046,5.93,77
+cream of coconut,93745,8.21,43
+whole garlic cloves,11215,9.0,2
+self raising flour,20129,8.46,96
+low-fat milk,1082,4.19,2
+beef heart,13321,0.94,10
+no bake cookie,10118192,4.18,82
+arrowroot,20003,3.26,67
+yukon gold,10211362,9.15,16
+sweetened whipped cream,1054,5.57,5
+pickle relish,11944,5.11,42
+white sesame seeds,12023,4.4,94
+gf sugar cookie mix,99046,9.85,8
+root beer,14157,8.44,52
+green cardamoms,1022006,1.59,28
+fish fillets,10115261,5.76,72
+gorgonzola,1011004,8.17,37
+pomegranate molasses,10042040,4.58,22
+boneless pork loin roast,10225,7.55,27
+squid,15175,0.77,84
+dinner yeast rolls,18347,9.97,89
+french baguette,18033,9.55,95
+blue cheese crumbles,1001004,7.44,56
+half n half,1049,7.65,19
+vanilla paste,93813,0.51,37
+ear corn,11167,5.32,84
+honeydew melon,9184,8.93,12
+safflower oil,4511,5.36,44
+portobello mushroom caps,11265,7.54,7
+cooked egg noodles,20410,2.31,37
+sundried tomatoes,11955,7.72,42
+velveeta cheese,1192,4.06,30
+veggie lunch meat,98982,1.1,91
+cooked shredded chicken breast,5348,9.25,33
+demerara sugar,10019908,5.84,61
+semisweet chocolate morsels,10019903,4.83,68
+bacon rashers,10123,9.43,36
+cheesecake mix,98951,6.16,92
+rose water,10411111,6.83,95
+pecorino cheese,1038,7.05,80
+chipotle,11632,3.29,28
+fat of choice,1011001,3.84,66
+rosemary leaves,2036,3.02,99
+beef bouillon granules,1006076,2.17,59
+marshmallow cream,93644,1.14,12
+fresh shiitake mushrooms,11238,8.92,3
+vinaigrette,4135,3.82,93
+rutabaga,11435,7.01,67
+belgian endive,11151,4.24,31
+salmon filets,15076,8.52,54
+vanilla sugar,10319335,7.9,82
+idaho potatoes,11353,6.83,62
+chili-garlic sauce,93749,1.11,61
+shells,11020420,3.7,78
+white potatoes,10111362,9.77,53
+bacon fat,4609,6.96,4
+caramel topping,19364,1.77,74
+jalapeno chiles,11979,0.81,67
+canned black-eyed peas,10016063,7.15,30
+short ribs,10013149,7.66,30
+arugula leaves,11959,9.85,89
+chipotle pepper in adobo,11632,4.57,85
+pastry flour,10020080,3.97,56
+palm oil,4055,3.14,20
+red enchilada sauce,6599,8.26,21
+matzo meal,18217,9.8,64
+bibb lettuce,11250,3.5,31
+beef tenderloin steaks,10023583,3.49,43
+dried onion flakes,11284,4.57,43
+slider buns,93646,1.92,94
+beef bouillon,6008,0.7,0
+dry cider,93807,9.13,6
+tamarind paste,9322,6.68,33
+halibut,15036,1.87,73
+blue cheese dressing,43020,8.6,72
+rice vermicelli,20133,8.98,8
+dog,21118,9.03,23
+red apple,1079003,7.17,3
+buffalo wing sauce,98878,9.59,10
+flax meal,12220,3.51,9
+cornflakes,8020,5.9,13
+italian seasoned breadcrumbs,18376,2.29,46
+mango powder,98964,9.34,31
+spice mix,1032027,8.32,24
+frisee,11152,1.67,96
+italian seasoned bread crumbs,18376,4.21,75
+yoghurt,1116,1.77,8
+colored sprinkles,93645,4.84,36
+chocolate sauce,10019348,5.01,6
+lemon cake mix,10018144,6.0,56
+green tomatoes,11527,3.62,77
+fresh marjoram,1022024,5.73,54
+fat free milk,1085,3.75,24
+chicken cutlets,1025062,3.94,8
+chocolate shavings,10219903,0.86,31
+rye flour,20064,0.82,62
+unbaked pie crust,18334,3.07,86
+bone-in chicken thighs,1005091,1.15,38
+brown rice syrup,93784,9.1,78
+stick margarine,1004073,3.05,23
+celery leaves,11143,2.81,56
+candied cherries,93742,3.69,72
+chocolate cake mix,18099,6.63,30
+bone broth,98904,2.99,11
+whole allspice,1002001,3.06,66
+ground mace,2022,8.05,29
+fresh lemon juice,9152,4.31,63
+oreo,10018166,1.21,5
+ancho chiles,10211962,1.38,83
+chard,11147,2.1,63
+country ham,10151,0.73,30
+candied ginger,93751,9.19,34
+creme soda,14130,5.74,36
+pesto sauce,93698,5.5,25
+neufchatel cheese,1031,8.84,24
+sea bass,10015004,6.15,73
+grenadine,10042040,5.29,34
+veggie mix,11583,8.29,77
+brown lentils,16069,4.53,87
+ham cubes,99186,4.01,17
+boneless pork loin,10225,6.99,39
+fava beans,16053,7.09,2
+farfalle pasta,10120420,4.53,0
+havarti cheese,93838,5.85,3
+bitters,93653,3.85,95
+whole star anise,1012002,3.55,39
+ginger beer,10014136,1.47,76
+whole peppercorns,1022030,1.27,89
+kielbasa,7059,0.92,64
+corn tortilla chips,19056,5.35,68
+methi,98963,4.38,85
+warm water,14412,5.77,69
+beef sirloin tip roast,23653,4.67,4
+peanut,16091,7.53,16
+worcestershire,6971,2.86,35
+angostura bitters,93653,1.41,79
+lima beans,16072,4.73,20
+vanilla cake mix,18137,3.92,48
+dark beer,10014003,0.63,40
+coconut rum,10314037,3.64,69
+baby greens,21052,8.18,80
+shell topping,99015,2.71,80
+chex party mix,19033,3.19,0
+stew vegetables,11583,7.0,27
+port wine,10114057,2.84,98
+mangos,9176,3.44,47
+active dry yeast,18375,0.76,97
+creamed corn,11174,2.44,21
+chipotle chile in adobo,11632,3.09,34
+ground cornmeal,35137,6.71,4
+steak seasoning,1022034,2.73,51
+unbaked pie shell,18334,1.09,17
+ground pork sausage,7063,1.33,8
+tater tots,11398,2.84,97
+string beans,11052,5.24,1
+taro,11518,6.42,42
+spice blend,1032027,8.16,41
+rice drink,93761,2.94,38
+fresh bay leaves,1002004,3.3,70
+bosc pears,9252,7.39,66
+sweet pickle juice from the jar,93640,9.23,93
+mint extract,1022050,7.98,89
+mung bean sprouts,11043,8.72,84
+yam bean,11603,7.55,65
+millet,20031,4.8,69
+risotto rice,10020052,6.27,35
+ground paprika,2028,2.53,85
+bone-in pork chops,10036,1.25,98
+rolls,18064,1.93,87
+chocolate wafers,10118157,8.85,67
+pecorino,1038,2.58,75
+Semi-Sweet Chocolate Baking Chips,10019903,1.95,41
+unsweetened baking cocoa,19165,9.35,31
+dried bay leaves,2004,7.03,49
+catfish fillets,15010,4.45,17
+peppermint candies,98859,8.86,46
+nonfat milk powder,1154,5.06,58
+bread machine yeast,10218375,7.95,87
+dutch processed cocoa powder,10019165,3.46,42
+red chile,11819,7.85,91
+arrowroot starch,20003,5.88,74
+beans,16069,5.44,11
+truvia,93628,1.66,21
+frozen waffles,28015,4.82,13
+pistachio nuts,12151,4.86,28
+italian turkey sausage,7927,7.22,91
+southern comfort,93782,5.44,63
+oyster mushrooms,11987,5.67,24
+boneless chicken breast,5062,8.82,68
+celeriac,11141,9.78,50
+ladyfingers,18423,6.27,78
+cinnamon rolls,99020,5.62,33
+hass avocado,9037,1.2,92
+mac n cheese,32004,0.68,67
+sweetened coconut flakes,12109,4.99,16
+mixed berries,9054,1.25,39
+baby back pork ribs,10010204,1.69,79
+provolone,1035,0.97,3
+quick cooking tapioca,93660,0.99,77
+soda water,14121,3.9,20
+vital wheat gluten,48052,5.49,96
+fenugreek leaves,98963,1.14,68
+deep dish pie shell,18945,7.84,52
+pea protein,98890,7.73,92
+fresh flat leaf parsley,11297,4.57,26
+haricots verts,11052,2.26,61
+EVOO,1034053,9.6,6
+roasted red bell pepper,11916,0.84,73
+poultry,1015006,1.37,16
+thai chiles,11670,8.86,95
+kiwifruit,9148,1.32,55
+thai fish sauce,6179,2.28,100
+no calorie sweetener,19868,2.16,63
+dutch process cocoa,10019165,3.8,73
+soy pulp,16130,7.25,10
+roast chicken,5112,0.84,71
+candy cane,93759,2.32,88
+spam,7908,2.27,7
+sesame seed oil,4058,1.35,8
+ranch salad dressing,4639,9.42,9
+chile peppers,11819,9.23,61
+pretzel,19047,5.37,26
+potato flakes,11378,3.7,8
+blood oranges,1009200,4.51,10
+gala apples,1109003,7.59,5
+creole mustard,1002046,2.35,30
+mozzarella balls,93790,4.51,18
+dark molasses,19304,0.84,49
+grape seed oil,4517,1.34,18
+corn meal,35137,2.55,44
+caesar salad dressing,43015,9.17,2
+corn flakes,8020,4.07,40
+turkey stock,1006172,1.03,41
+mixed spice,1022035,9.49,75
+grits,8160,3.26,16
+crescent roll dough,93618,0.6,93
+fat free greek yogurt,1001256,8.86,36
+noodle,20420,7.61,25
+lemon wedge,9150,8.19,15
+long-grain rice,10220444,2.7,91
+hamburger meat,10023572,3.86,64
+virgin olive oil,4053,9.48,42
+bacon grease,4609,1.87,1
+corn bread mix,18022,1.8,3
+dried shiitake mushrooms,11268,2.68,60
+gouda,1022,7.83,43
+crispy rice cereal,8066,6.01,82
+snap peas,10011300,2.18,29
+vidalia,11294,3.91,74
+bisquick,18010,7.14,87
+buttery round crackers,18621,3.52,97
+egg roll wrappers,18368,2.69,58
+brown onion,10511282,3.51,45
+strawberry preserves,10819297,9.45,83
+bacon drippings,4609,2.03,51
+thousand island dressing,4017,4.33,38
+fries,11408,7.58,54
+red currant jelly,10319297,7.84,60
+pineapple in juice,9354,6.55,82
+red chili,11819,3.35,76
+beef base,1016076,7.24,33
+lemon lime pop,14144,7.59,60
+apple sauce,9019,0.73,38
+crab meat,10015136,4.45,85
+dried chickpeas,16056,2.7,50
+whole grain dijon mustard,1012046,9.36,66
+dried mint,2066,3.58,77
+peanut sauce,99028,5.4,77
+adobo seasoning,1012020,1.61,64
+solid vegetable shortening,4615,6.36,64
+red capsicum,11821,4.94,28
+daikon radish,11430,9.73,35
+kiwis,9148,3.68,71
+chocolate pudding mix,19184,0.77,98
+sumac,10211111,2.57,4
+baby cut carrots,11960,5.29,84
+no salt added diced tomatoes,11885,2.26,63
+aluminum free baking powder,18371,8.1,97
+pimiento,11943,9.06,73
+black mustard seeds,2024,5.92,81
+lite coconut milk,99009,2.26,75
+high gluten flour,98883,9.4,20
+dried blueberries,93686,2.32,22
+vanilla beans,93622,9.63,33
+butter flavor shortening,4615,5.58,91
+yellow mustard seeds,2024,1.05,26
+soymilk,16223,3.61,45
+part skim mozzarella cheese,1028,7.36,25
+meyer lemon juice,1009152,5.23,27
+gingersnap cookies,18172,3.23,82
+buffalo sauce,98878,1.67,51
+fat-skimmed chicken broth,6984,2.39,71
+pretzel twists,10219047,2.93,2
+ground coffee,10093715,2.95,41
+sherry wine vinegar,1012068,4.07,2
+croissants,18239,3.93,100
+rigatoni,11220420,0.89,18
+ground beef chuck,10023572,7.22,66
+natural yogurt,1116,3.19,17
+skim milk ricotta,93630,2.5,24
+angel hair,10020420,7.13,66
+instant coffee powder,14214,8.73,32
+thai chile,11670,3.57,47
+korean marinade,99000,1.26,7
+refrigerated crescent dinner rolls,93618,3.72,1
+shortbread cookies,18192,8.07,25
+bay scallops,15172,5.5,68
+chocolate wafer cookies,10118157,0.61,46
+yams,11601,7.04,53
+broccoli slaw,11741,7.02,94
+light muscovado sugar,10119334,6.91,29
+cheese ravioli,93832,8.22,17
+refrigerated pie crust,18334,5.17,80
+chocolate mint,2064,2.47,51
+red chile flakes,1032009,5.66,26
+dried lentils,16069,3.67,18
+grape juice,9135,5.28,8
+cooked wild rice,20089,6.54,33
+fig spread,11519297,5.81,19
+semolina flour,10020066,8.12,47
+napa cabbage leaves,10011970,7.72,87
+red chiles,11819,4.58,38
+bow tie pasta,10120420,0.52,57
+fudge ice cream topping,19348,9.1,90
+roast beef deli slices,10093713,4.05,66
+nacho cheese sauce,98901,9.54,62
+cow pea,16063,4.64,83
+hot fudge sauce,10019348,5.58,70
+boston lettuce,11250,0.58,90
+clabber girl baking powder,18371,7.78,29
+broccolini,98840,4.3,44
+yukon gold potato,10211362,5.05,83
+walnut,12155,7.83,27
+chocolate protein powder,99075,2.71,88
+peach schnapps,93736,3.12,65
+pork loin roast,10225,2.73,0
+cream cheese frosting,19228,1.62,96
+raw pumpkin seeds,10012014,7.9,83
+trimmed watercress,11591,8.33,19
+dried chives,11615,4.32,43
+duck breast,98912,4.5,2
+spice cake mix,18114,1.67,41
+kalamata olive,1009195,2.22,47
+pimento,11943,8.93,23
+marsala,14057,1.0,93
+baked chicken breast,5064,2.15,19
+chicken livers,5027,7.37,0
+endive,11213,9.2,95
+ground veal,17142,7.65,90
+leftover fried rice,93721,6.55,44
+ham bone,12011111,8.94,39
+vanilla cream filled sandwich style cookies,18210,0.91,63
+orange blossom water,12411111,5.67,31
+freeze-dried strawberries,98946,2.15,28
+candied orange peel,9426,9.52,25
+chicken breast meat,5062,8.06,22
+smoked ham,7216,1.92,77
+carom seeds,99017,2.94,66
+ciabatta bread,93655,6.86,9
+edible gold,12611111,6.55,96
+lamb shoulder,17047,3.58,8
+plum,9279,6.3,85
+wholegrain mustard,1012046,7.89,30
+pickled ginger,10111216,5.77,48
+sesame,12023,3.2,96
+lacinato kale,10011233,3.12,18
+catsup,11935,2.92,71
+crepes,93732,3.7,61
+mace,2022,4.04,43
+fresh ground black pepper,2030,5.03,63
+fresh nutmeg,2025,4.72,90
+rainbow sprinkles,93645,5.6,60
+dashi,1006963,7.7,76
+mixed baby greens,21052,7.89,45
+allergy free chocolate chips,98848,4.33,46
+swerve,99084,8.66,53
+caraway seed,2005,1.59,39
+arrowroot flour,20003,4.39,13
+english muffin,18439,1.72,65
+rustic loaf,10028033,7.01,88
+sandwich rolls,18353,5.03,10
+instant espresso,10014214,2.98,47
+caviar,15012,2.11,45
+pita chips,25037,9.63,32
+limeade concentrate,14303,3.26,25
+red velvet cake mix,10018099,5.31,10
+dill pickle relish,11944,8.83,42
+lady fingers,18423,3.32,19
+spiral pasta,11320420,5.72,28
+maple sugar,19340,3.47,86
+spaghetti noodles,11420420,2.59,49
+bartlett pears,9412,9.33,61
+turkey meat,5166,6.32,17
+pasta water,14412,3.42,41
+chicken base,6080,8.25,91
+cola,14400,5.66,91
+cheese curd,98921,9.05,33
+cornbread mix,18022,5.46,67
+lobster,15147,6.49,74
+petite peas,11304,8.91,100
+courgettes,11477,2.16,80
+tortilla,18364,5.32,25
+serrano peppers,11977,4.9,20
+reduced fat shredded cheddar cheese,1001168,7.6,88
+cream of celery soup,6010,1.3,3
+malted milk powder,14311,2.26,31
+green chile peppers,31015,6.15,94
+light corn syrup,19350,1.13,39
+zucchini squash,11477,9.24,70
+single cream,1052,7.97,53
+chocolate curls,10119903,6.4,87
+sole,10115028,5.69,51
+burrito-size tortilla,10118364,3.05,39
+liquor,14037,4.9,38
+sourdough starter,93819,9.3,77
+lamb shanks,17009,5.75,76
+peach preserves,11319297,0.68,61
+cookie mix,98856,7.3,42
+bouquet garni,1012023,5.16,34
+vanilla powder,93812,8.29,44
+ground black pepper,1002030,1.92,14
+cranberry juice cocktail,14242,2.45,64
+caesar dressing,43015,7.66,76
+Chocolate Easter Eggs,99112,1.82,62
+clementines,9433,7.89,99
+cake flour blend,10020129,2.61,89
+yam,11601,2.38,61
+brussel sprouts,11098,6.72,76
+shrimps,15152,3.94,61
+regular chex,1008082,1.17,69
+microwave popcorn,25026,9.35,0
+shortcrust pastry,10018338,0.82,97
+graham cracker,18617,3.68,84
+tarragon leaves,2041,7.13,48
+marshmallow,19116,9.78,81
+rustic bread,10028033,8.51,95
+peanut butter cookie mix,99047,2.22,94
+sunflower seed butter,98928,6.81,73
+navy beans,16038,7.51,76
+unsweetened baking chocolate,19078,2.03,30
+duck breasts,98912,1.81,78
+chickpea,16057,1.6,26
+trout filet,15114,8.27,72
+lump crab meat,10115136,4.31,76
+Low Moisture Part-Skim Mozzarella Cheese,1029,0.89,60
+red apples,1079003,9.89,92
+preserves,19297,2.0,99
+fresh bean sprouts,11043,1.67,30
+coriander seed,2013,9.15,91
+ground chipotle chile pepper,1052009,7.42,70
+popcorn kernels,25002,5.7,42
+canned white cannellini beans,10016051,2.72,98
+rice chex,8064,0.8,36
+sushi rice,10220054,3.63,64
+chicken bouillon cubes,6080,9.38,31
+mixed mushrooms,10011238,4.62,47
+brioche,93730,9.0,81
+gochujang,1016973,1.43,77
+allspice berries,1002001,6.79,56
+chicken tenderloins,1015062,9.32,75
+english cucumbers,10111205,0.54,40
+vidalia onions,11294,4.09,68
+flax seed,10012220,5.97,74
+italian sausage links,7036,9.12,62
+aged balsamic vinegar,1002069,5.83,82
+sorbet,93691,3.54,68
+brown mustard seeds,2024,1.88,35
+crisco,4615,2.55,53
+maraschino cherry,9328,9.38,93
+millet flour,20647,8.22,13
+glass noodles,16082,8.69,92
+greek olives,1019195,1.93,94
+strawberry ice cream,19271,3.34,49
+biscuit dough,18009,4.4,54
+plantain,9277,9.41,62
+unsalted pistachios,12152,5.9,14
+flax egg,10112220,8.98,71
+gelatine,19177,9.63,83
+whole-wheat pastry flour,10020080,2.02,62
+hass avocados,9037,9.7,0
+naan,93723,8.81,22
+tamarind pulp,1009322,8.84,100
+self rising flour,20129,7.59,1
+cashew milk,99088,9.81,28
+bagels,18408,9.42,100
+shell pasta,11020420,0.95,72
+sherry wine,10214106,3.15,43
+wasabi paste,10011990,3.51,57
+graham cracker pie crust,18942,0.63,60
+mustard greens,11270,2.99,55
+polish sausage,7059,7.36,21
+pea pods,11300,3.85,51
+lobster meat,10115147,1.29,98
+wasabi,11990,9.02,69
+unsalted peanuts,16390,7.47,28
+quick cooking grits,8092,6.65,77
+m&m's,19157,4.07,20
+daikon,11430,7.58,99
+sultanas,9297,8.88,89
+stout beer,93619,6.27,75
+green cardamom pods,1022006,1.19,98
+rice milk,93761,7.03,9
+flavor shot,10242040,4.29,100
+part skim ricotta,1037,5.21,69
+ground round,10023562,2.58,70
+flake coconut,12108,3.96,89
+courgette,11477,7.57,88
+campari,93788,9.26,18
+beefsteak tomatoes,10011529,5.72,99
+five spice powder,1002002,8.7,35
+fat free mayo,42193,4.56,33
+alfalfa sprouts,10111001,4.99,4
+refrigerated pie crusts,18334,8.82,35
+lobster tails,10015147,3.04,78
+cooked noodles,20421,6.06,86
+AP flour,20081,8.42,9
+reduced fat cream cheese,43274,0.51,5
+poblano chile,10011333,3.63,31
+raspberry vinegar,1002048,4.63,29
+whey protein,1223,0.83,16
+ground meat,10023572,6.14,85
+italian sausages,7036,2.62,97
+pork fat,4002,4.96,15
+delicata squash,11643,3.28,14
+canned crabmeat,15141,2.76,79
+beef round roast,13411,3.2,0
+ranch mix,93733,2.4,4
+montreal steak seasoning,1022034,3.8,3
+soy pudding,93700,4.32,98
+edible flowers,10011416,9.65,14
+muenster cheese,1030,3.26,76
+seltzer water,14121,4.39,64
+kirsch,10614037,4.01,31
+apple jelly,10019297,6.99,17
+cooked chicken breasts,5064,6.26,14
+reduced fat milk,1174,0.67,65
+udon noodles,98966,6.74,76
+dried herbs,1022042,3.18,83
+rapeseed oil,4582,1.07,51
+strawberry yogurt,1197,9.81,66
+ground clove,2011,5.11,38
+refrigerated pizza dough,93610,8.55,20
+pickle,11937,6.92,14
+mustard oil,4583,0.85,92
+pimentos,11943,6.39,99
+malt vinegar,1002053,8.02,33
+italian herbs,1022027,6.58,65
+maple flavoring,11111111,6.35,77
+fig,9089,7.78,66
+reduced sodium chicken broth,6970,1.5,65
+habanero pepper,10011819,1.22,20
+galangal,93656,8.14,71
+sriracha hot sauce,1016168,1.61,95
+dried garlic,2020,6.66,39
+tahini paste,12698,3.53,75
+cooked basmati rice,10020445,5.79,61
+pecan nuts,12142,6.61,50
+turkey breast cutlets,1015696,5.61,6
+cornish game hens,5307,3.44,67
+fat free chicken broth,6984,1.12,82
+jumbo pasta shells,10520420,2.31,36
+reduced fat cheese,1168,4.64,67
+strawberry fruit spread,10819297,5.77,21
+rigatoni pasta,11220420,2.67,50
+texas toast,98915,5.11,2
+baby back ribs,10010204,8.57,1
+craisins,9079,6.93,35
+italian herb mix,1022027,5.41,65
+taco cheese,1251,1.2,28
+red beets,11080,4.06,78
+hemp hearts,93602,2.04,58
+fresh lime juice,9160,5.83,47
+german chocolate,93744,3.69,93
+heath bar,98978,4.31,45
+sandwich buns,18353,4.73,76
+low fat ricotta cheese,1037,8.57,53
+cooked lasagna noodles,10620421,8.66,84
+cupcake,18139,1.21,90
+Seasonal Fruit,9431,4.12,40
+flour tortilla,10218364,6.45,96
+mexican cream,93772,7.51,8
+packaged no-boil lasagna noodles,10620420,3.42,17
+green tea,10014355,3.79,93
+wedding cookies,10118192,1.39,93
+buffalo chicken sauce,98878,7.8,68
+pineapple rings,1009354,4.86,16
+part-skim ricotta,1037,9.89,79
+dried black beans,16014,4.09,66
+fire roasted tomatoes,98849,4.6,21
+colby cheese,1011,1.79,69
+white grape juice,9135,4.41,75
+mexican crema,93772,6.18,1
+horseradish sauce,2055,3.95,73
+vegetable juice,31008,5.08,39
+potato salad,22971,5.85,34
+london broil,23636,2.36,91
+puff pastry sheets,18337,3.16,96
+custard,19170,4.04,69
+Stone-Ground Mustard,1002046,5.32,17
+cat fish,15010,2.52,87
+brown gravy,6998,8.11,75
+sweet butter,1145,0.97,97
+kimchi,98860,1.71,33
+cooked elbow macaroni,20400,2.08,63
+portabella mushrooms,11265,6.67,85
+low fat vanilla yogurt,1001119,9.38,70
+chocolate sprinkles,10093645,1.77,80
+fresh dill weed,2045,1.44,67
+wasabi powder,10111990,7.35,56
+pumpernickel bread,18044,9.35,63
+bone-in skin-on chicken thighs,1005091,1.38,93
+lasagna pasta,10620420,6.08,89
+baby arugula leaves,11959,3.87,99
+bagel,18408,9.03,47
+coconut milk beverage,99001,3.28,1
+pistachio,12151,1.89,80
+granulated onion,1002026,7.24,99
+green curry paste,10093605,9.35,49
+dairy free margarine,4673,1.13,17
+imitation crabmeat,93735,1.47,33
+shucked oysters,15167,0.94,53
+petite tomatoes,10311693,7.92,51
+venison,17164,0.51,26
+beef consomme,6008,2.0,92
+orange food coloring,1461111,9.94,13
+strawberry gelatin,10219172,7.32,31
+gala apple,1109003,7.42,11
+sub roll,98940,4.36,84
+french roll,18349,8.09,91
+butterscotch,19085,4.57,36
+dried bay leaf,2004,0.9,60
+soya sauce,16124,9.59,46
+yellow peppers,11951,4.97,96
+rib eye,23232,6.61,51
+pork roast,10010225,8.55,1
+seaweed,11445,0.64,46
+jerk seasoning,1012009,6.84,53
+unsweetened apple sauce,9019,4.95,49
+extra large egg,1123,6.41,35
+apricot nectar,9036,5.01,8
+cracker crumbs,10018621,4.34,44
+pepperoncini,11976,0.8,72
+cloves garlic,11215,9.31,98
+blue 1,10711111,2.4,9
+liquid egg whites,93833,7.08,2
+unrefined sea salt,1002047,5.96,79
+nonfat sour cream,1180,3.89,53
+corned beef brisket,10013346,1.87,26
+cheese dip,1188,9.54,22
+fudge topping,19348,1.92,77
+amaretto liqueur,10014534,2.44,27
+foie gras,1005150,1.33,47
+grape jelly,10519297,4.92,81
+grill seasoning,1022034,1.71,25
+coca cola,14400,9.12,98
+matcha powder,98932,5.64,26
+gingersnaps,18172,3.73,47
+brown mustard seed,2024,5.57,74
+canned navy beans,16039,6.6,19
+red sweet peppers,11821,4.65,82
+green onion tops,11291,9.06,15
+beef bouillon cubes,6076,8.01,31
+blueberry pie filling,44158,0.55,63
+salt pork,10165,3.91,64
+skim milk greek yogurt,1001256,7.45,9
+twix bar,19160,6.25,10
+peppercorn,1022030,2.36,45
+strawberry jell-o,10219172,6.97,95
+tangerine juice,9221,3.78,54
+israeli couscous,10020028,8.38,6
+crawfish tails,15243,0.66,54
+cornish hens,5307,5.89,89
+spicy pepper,11819,8.83,62
+cloves ground,2011,5.69,43
+pie dough round,18334,5.86,54
+almond meal flour,93740,2.19,28
+m&ms,19157,4.45,51
+pine nut,12147,1.31,23
+cooked lentils,16070,8.01,88
+gluten free all purpose baking flour,93620,3.49,79
+aubergine,11209,1.02,48
+blanched slivered almonds,10012062,2.94,77
+fusilli pasta,11320420,4.96,32
+red-skinned potatoes,10011355,1.61,68
+burger skillet,99037,4.26,21
+salmon steaks,10015076,1.56,34
+dark muscovado sugar,10019334,4.99,67
+whole wheat pasta,20124,2.81,1
+turkish bay leaf,2004,5.78,51
+red potato,10011355,2.61,65
+canned salmon,15260,5.26,27
+meat balls,10110219,2.8,65
+yellow pepper,11951,3.98,85
+pea shoots,98945,4.37,23
+white peppercorns,1002032,9.98,34
+white cheddar,1011009,8.49,76
+coffee flavored liqueur,93716,6.88,83
+lightly sweetened whipped cream,93814,6.41,49
+toffee,10019383,1.7,39
+limoncello,99021,5.0,55
+banana flower,98987,4.22,14
+vanilla instant pudding mix,19206,6.97,73
+lemon thyme,2049,0.94,88
+brown mushrooms,11266,5.95,94
+banana peppers,11976,2.99,14
+kumquats,9149,5.96,40
+malt drink mix,14311,1.15,69
+ciabatta,93655,2.19,81
+grape,9132,9.37,97
+liquid honey,19296,6.74,42
+rabbit,17180,6.16,23
+garlic oil,1004053,3.89,14
+cedar plank,11911111,9.01,55
+boursin herb cheese,99188,4.0,100
+lemon oil,10911111,1.26,78
+condensed french onion soup,6354,2.28,89
+skinless chicken thighs,5096,8.99,56
+boneless chicken thighs,5091,7.18,16
+ravioli,93832,2.45,28
+yogurt smoothie,1116,1.68,38
+veal stock,6170,2.08,38
+citric acid,93789,6.46,46
+beet root,11080,9.09,60
+cherry preserves,10619297,2.99,48
+buckwheat,20008,3.74,40
+lowfat greek yoghurt,93652,1.06,85
+serrano ham,93680,5.53,34
+margarita mix,93815,5.26,13
+yellow cherry tomatoes,10011696,3.87,61
+brine,93798,1.39,28
+red food color,1451111,2.33,39
+haddock,15033,8.67,5
+kit-kat,19109,7.67,87
+kombu,11445,9.73,78
+all-bran cereal,8001,2.67,74
+tarragon vinegar,1042053,7.82,70
+flatbread,10018413,7.76,27
+whole tomatoes,10011531,3.23,46
+whole turkey,5165,5.63,4
+tartar sauce,27049,2.14,3
+swordfish steaks,15110,4.55,36
+short pasta,20499,2.89,19
+crusty rolls,18349,9.35,68
+hawaiian rolls,98871,1.49,25
+red chili pepper,11819,8.08,45
+cornichons,11941,8.95,53
+baby artichokes,93631,3.44,75
+dried cilantro,2012,1.77,12
+orange pepper,10011821,4.86,35
+free range egg,1123,6.06,63
+cherry tomato,10311529,1.3,68
+demi glace,93612,1.27,41
+dried fenugreek leaves,98963,6.41,64
+butter lettuce leaves,10011250,6.18,86
+sweet rice flour,10020061,9.19,41
+salmon filet,15076,9.79,94
+lime jell-o,10019172,1.65,87
+pork and beans,16009,8.6,98
+buffalo,17330,9.03,53
+spring roll wrappers,10118368,4.88,64
+ghee butter,93632,8.01,88
+blackberry jam,10419297,5.46,41
+dairy free butter,4628,5.29,45
+sunflower seed,12036,6.61,48
+corn muffins,18023,3.66,77
+multigrain bread,18075,3.38,21
+skim milk mozzarella cheese,42304,2.33,22
+bow-tie pasta,10120420,7.76,55
+rotini,11320420,7.22,33
+pork rinds,98873,3.79,44
+fuji apple,1019003,7.84,26
+tapioca,20068,8.05,98
+red snapper fillets,15101,3.92,13
+black licorice,98851,9.54,10
+pork sausages,1007063,2.33,95
+za'atar,1002042,5.67,64
+file powder,11311111,3.67,40
+colby jack,1011,8.39,89
+bibb lettuce leaves,10011250,3.84,58
+baguettes,18033,9.16,51
+calvados,10214037,6.09,36
+white cabbage,11109,2.16,63
+fresh bay leaf,1002004,6.33,46
+beef gravy,6997,1.44,24
+veggie patty,16147,1.68,9
+boneless chicken breast halves,1045062,7.86,45
+meyer lemon,1009150,9.52,94
+scallion greens,11291,4.74,18
+flax eggs,10112220,4.22,75
+tomatillo salsa,27028,1.51,26
+fresh ricotta,1036,6.41,93
+natural cane sugar,93625,0.85,70
+flaxseed,10012220,2.71,14
+seasoned breadcrumbs,18376,2.6,30
+pork chop,10010062,6.22,60
+cooked jasmine rice,10120445,9.26,67
+ham steak,10149,6.01,4
+sucanat,19908,1.25,40
+string cheese,98970,4.15,27
+ziti,11520420,5.1,79
+chestnut mushrooms,11266,9.48,6
+phyllo pastry,18338,9.13,49
+green apples,1069003,7.94,62
+chick peas,16057,2.79,87
+chicken sausages,93668,3.25,69
+chipotle pepper,11632,3.89,84
+frying oil,4513,3.63,19
+ahi tuna,15117,3.97,92
+chicken thigh,5091,9.18,29
+dried pinto beans,16042,7.42,46
+brewed House Blend,14209,2.42,2
+asian toasted sesame dressing,4016,8.77,100
+part-skim mozzarella,1028,2.74,4
+chipotle peppers,11632,3.08,19
+goji berries,98863,2.87,97
+golden beet,10011080,3.82,51
+burger bun,18350,9.68,1
+less-sodium beef broth,10093741,7.32,39
+low fat mayo,4641,3.99,45
+chocolate wafer crumbs,10018157,8.85,27
+chia seed,12006,2.36,17
+powdered ginger,2021,5.83,10
+semi sweet chocolate morsels,10019903,8.62,85
+guajillo chiles,10011962,4.69,38
+low-fat cheese,1168,2.36,34
+pepperoncini peppers,11976,1.79,53
+solid white tuna packed in water,15126,7.78,46
+ice cube,10014412,7.21,91
+agar,11663,4.65,8
+nilla wafers,18609,2.08,87
+striped bass,10115004,6.98,95
+kohlrabi,11241,8.09,91
+chicken strips,1015062,6.8,1
+golden beets,10011080,2.95,38
+asafetida,1032035,2.57,14
+baked tortilla chips,19433,9.05,77
+coconut coffee creamer,98976,8.56,5
+bread bowls,99169,0.51,54
+phyllo cups,93817,9.17,28
+italian salad dressing mix,93670,5.16,20
+pepperjack cheese,1025,6.65,9
+kabocha squash,10311643,7.74,6
+sirloin steaks,23625,9.95,13
+onion flakes,11284,8.71,75
+cod fillet,15015,7.06,81
+chili seasoning mix,1022028,3.45,92
+tortellini,93727,2.98,74
+reese's pieces,10019151,3.09,47
+caribbean jerk seasoning,1012009,9.05,46
+fat-free half-and-half,1199,3.91,99
+hard-boiled egg,1129,7.39,65
+chicken parts,1005006,6.31,79
+hearts of palm,43392,5.61,84
+meat ball,10110219,9.79,17
+tangerines,1019218,7.82,90
+nonfat buttermilk,93650,2.09,31
+baby beets,10111080,1.92,64
+breadcrumb,18079,7.21,53
+orange bell peppers,10011821,6.63,47
+queso fresco cheese,1228,6.77,43
+sponge cake,10018133,2.12,47
+mango puree,1009176,4.13,50
+instant pistachio pudding mix,19202,1.27,26
+soy buttery spread,4673,0.89,30
+hard cooked egg,1129,0.96,61
+calamari,15175,8.31,51
+grapefruits,9112,6.74,47
+whole coriander seeds,2013,0.61,85
+crÃ¨me de cacao,93712,4.6,74
+instant lemon pudding,19332,6.61,91
+bulgur wheat,20012,2.06,74
+chicken leg quarters,1005091,9.02,22
+Biscoff spread,99011,9.69,53
+wax gourd,99179,4.35,79
+white fish fillets,10015261,4.9,77
+orange sections,1019200,0.95,50
+bird's eye chile,11670,9.86,22
+stout,93619,3.64,86
+oreo cookie,10018166,1.39,55
+leafy greens,21052,8.62,22
+canned butter beans,10016073,4.51,97
+dried apricot,9032,3.35,26
+cooked couscous,20029,7.21,22
+broad beans,16053,1.46,26
+whole wheat spaghetti,10020124,9.65,8
+banana chips,19400,7.34,70
+sweet soy sauce,10016124,3.16,22
+lowfat milk,1174,6.52,41
+tangerine,1019218,9.08,73
+whole cumin seeds,2014,7.42,90
+lamb stew meat,17059,5.83,50
+cabernet sauvignon,14097,8.04,54
+passata,10011547,5.49,8
+roasted pumpkin seeds,12516,4.65,99
+ziti pasta,11520420,8.18,66
+plum sauce,6151,2.41,48
+Barbeque Dipping Sauce,6150,3.02,84
+meatless bacon,16542,9.8,94
+low fat shredded mozzarella cheese,1001028,3.9,96
+vegan margarine,4673,4.43,8
+turkey gravy,6326,2.77,31
+ciabatta rolls,93699,2.91,4
+snickers,19155,1.37,79
+lobsters,15147,8.76,70
+ricotta salata,1036,6.03,4
+macaroni n cheese,32004,4.26,18
+dogs,21118,7.89,37
+mild cheddar,1009,6.66,66
+hershey's cocoa,19165,2.45,56
+waxy potatoes,11355,7.98,55
+peach nectar,9251,9.93,60
+green grams,16080,5.75,29
+curly parsley,11297,3.18,91
+turkey pepperoni,7278,2.56,24
+crema,93772,6.59,16
+strawberry cake mix,99065,8.56,74
+ginger juice,93752,5.05,9
+light beer,14006,0.95,96
+farfalle,10120420,6.13,9
+vinaigrette dressing,4135,4.1,82
+meatloaf mix,98865,9.38,58
+anise seeds,2002,0.56,47
+jalapeno chili,11979,7.02,74
+refrigerated pizza crust,93610,0.58,55
+oil packed tuna,15119,9.41,52
+crÃ¨me de menthe,14034,2.38,27
+masa flour,20317,9.53,29
+mandarin orange segments,9218,0.99,70
+sourdough loaf,10118029,4.0,51
+arbol chiles,11962,6.22,21
+dried rubbed sage,2038,9.31,78
+all spice,2001,3.17,12
+super fine sugar,10119335,9.09,99
+corn bread,18023,1.79,12
+belgian endives,11151,5.28,10
+frozen vanilla yogurt,19293,3.54,67
+pretzel rods,10019047,3.64,100
+pickle juice,93640,5.65,74
+honeydew,9184,0.9,60
+flounder fillets,15028,5.86,16
+fresh ricotta cheese,1036,8.57,27
+braggs liquid aminos,93767,7.35,28
+refrigerated sugar cookie dough,18205,6.42,27
+hazelnut,12120,4.57,82
+red snapper,15101,6.92,14
+duck legs,5317,6.27,29
+hazelnut liqueur,93755,8.15,82
+red chilli flakes,1032009,1.22,98
+top sirloin steak,23584,2.78,28
+tree nuts,12135,2.98,85
+halloumi cheese,93624,2.99,76
+unsulphured molasses,19304,5.71,37
+sugar-free jam,10043028,9.47,22
+turkey broth,1016194,5.1,23
+bottom round roast,13411,1.7,71
+egg replacer,1144,3.62,69
+cornflakes cereal,8020,2.24,90
+aioli,93758,8.25,95
+slaw mix,10011109,3.99,61
+flat beans,10011052,7.03,82
+cajun spice,1032028,7.11,41
+cole slaw mix,10011109,5.44,42
+dried apples,9011,8.87,85
+cauliflowerets,10011135,6.81,90
+unsulfured molasses,19304,4.9,53
+vegan mayonnaise,98975,4.2,23
+refrigerated classic pizza crust,93610,7.79,29
+madeira,10014106,1.25,27
+pink lady apple,1099003,8.38,50
+low fat greek yogurt,93652,8.52,61
+gumdrops,19106,3.93,63
+black forest ham,93756,2.12,73
+finger chili,10211819,9.71,61
+K-Cups,14209,5.59,39
+wood apple,99140,2.2,47
+mince beef,10023572,5.43,93
+raspberry liqueur,10114534,9.28,30
+monk fruit extract,13911111,0.7,90
+corn cereal,8020,5.15,42
+passion-fruit,9231,0.52,79
+soured cream,1056,7.21,21
+fruit pectin,19310,8.4,66
+hershey kisses,93743,4.71,57
+powdered fruit pectin,19310,8.9,46
+iced tea,14475,7.42,84
+fresh ground pepper,2030,9.78,78
+tortilla strips,98977,9.27,67
+semi-skimmed milk,1174,9.48,18
+chicory,11213,5.02,46
+red chile pepper,11819,3.07,32
+fat-free buttermilk,93650,7.63,17
+xylitol,99005,7.45,8
+dry ranch dressing mix,93733,4.93,46
+caramelized onions,10211282,8.62,31
+soy beans,16409,7.82,76
+puffed rice cereal,8066,4.44,15
+chocolate cookie pie crust,28111,7.27,26
+skinless bone-in chicken thighs,1005096,1.2,78
+hot dog,21118,8.83,78
+chicken bouillon cube,6080,6.9,86
+portobello mushroom cap,11265,7.79,79
+Oven Roasted Chicken Breast,1015006,6.25,8
+whole allspice berries,1002001,2.36,14
+chive,11156,3.41,69
+evaporated skim milk,1097,4.34,89
+green bean pieces,11052,6.07,44
+sea bass fillets,10015004,1.26,32
+beef bouillon cube,6076,1.58,38
+orange bitters,10093653,4.67,56
+marzipan,93704,5.4,72
+pimenton de la vera,1042009,2.59,96
+candied fruit,98925,4.6,2
+kiwi fruits,9148,4.27,91
+pinot noir,14099,8.57,93
+nut mix,12135,1.05,66
+salted cashews,12585,2.35,14
+puff pastry shells,10018337,6.65,73
+lamb loin chops,17023,4.37,25
+sugar syrup,90480,5.97,21
+matcha,98932,3.79,17
+biscuit mix,18010,5.22,3
+wheat flatbreads,10018042,3.86,100
+cooked penne pasta,11120421,1.97,88
+nonfat yogurt,1118,4.51,49
+vegan cream cheese,93634,4.74,0
+fresh oregano,1002027,5.38,13
+chile flakes,1032009,5.38,44
+M&M'S Chocolate Candies,19157,7.51,6
+canned beans,10216034,2.01,27
+heirloom tomato,11529,8.22,97
+stir fry mix,11583,2.11,67
+fusilli,11320420,6.11,85
+tart shells,98852,6.1,5
+anise seed,2002,7.82,17
+fat free low sodium beef broth,93741,8.67,42
+star apple,99171,8.62,80
+sweet potato puree,10011508,1.46,14
+cob sweetcorn,11167,4.26,4
+musk melon,98936,1.12,57
+prime rib,13833,6.38,81
+kraft singles,1190,3.91,29
+saltines,18228,0.86,81
+flat iron steak,23059,7.96,85
+refrigerated piecrusts,18334,2.66,6
+orange roughy,15073,7.89,19
+wheat berries,98872,3.89,51
+italian tomatoes,10211529,6.42,10
+boston lettuce leaves,10011250,8.66,73
+plant oil,4513,1.38,19
+honey dijon mustard,4703,9.8,4
+caramel candies,19074,3.11,74
+italian seasonings,1022027,1.92,40
+gluten free flour mix,10093620,6.1,23
+naan bread,93723,6.9,8
+canned red beans,10016034,1.3,64
+green enchilada sauce,6599,4.02,50
+coffee beans,93715,3.22,15
+japanese 7 spice,1002009,9.21,29
+crab boil,1002034,4.14,29
+pectin,19310,2.79,52
+beef hot dogs,7241,5.2,59
+whole wheat bread crumbs,99025,4.35,99
+strawberry puree,1009316,9.96,70
+quick cooking barley,20005,7.62,1
+digestive biscuits,18173,5.66,4
+non-fat milk,1085,5.5,12
+red leaf lettuce,11257,2.11,70
+ham hock,93669,2.48,84
+caster sugar,19335,9.11,58
+chili seasoning,1022028,9.46,100
+curacao,99029,9.22,64
+roast pork,10010225,5.15,4
+golden delicious apple,9501,1.79,21
+velveeta,1192,3.63,28
+cod fish fillet,15015,3.44,75
+canned albacore tuna,15126,5.1,91
+lean pork tenderloins,10060,8.72,53
+turkey thighs,98913,2.96,58
+kefir,93611,7.67,90
+calumet baking powder,10018371,4.36,26
+zucchini noodles,10111477,5.9,66
+carrot juice,11655,1.24,85
+psyllium husk powder,98893,6.94,44
+tumeric,2043,2.56,31
+mini chocolate chips,10019146,3.79,23
+custard powder,19169,8.05,88
+butter flavored shortening,4615,6.94,52
+cassava flour,98927,7.44,91
+low-fat yogurt,1117,4.57,25
+enoki mushrooms,11950,6.84,34
+ramps,93793,2.56,90
+almond joy bar,19065,0.99,57
+browning sauce,93768,3.66,40
+clove,1002011,8.09,77
+celery ribs,11143,7.3,100
+elbow pasta,10120499,6.99,76
+ramen,6583,7.83,6
+hazelnut oil,4532,0.84,4
+nutritional yeast flakes,93690,9.38,99
+bottle gourd,99105,4.9,83
+hot chocolate mix,14197,7.12,94
+yellow tomatoes,11696,5.9,35
+sugar pumpkin,11422,1.57,81
+ice cream cones,18271,3.89,1
+romano,1038,2.87,87
+puff pastry shell,10018337,3.77,6
+full bodied red wine,14096,6.92,67
+preserved lemon,99093,7.35,28
+ditalini pasta,10020499,3.96,92
+1 percent milk,1082,1.55,74
+part skim ricotta cheese,1037,9.92,80
+matcha tea,98932,3.06,68
+lemon essence,11411111,7.09,30
+gluten free flour blend,10093620,3.45,68
+dried navy beans,16037,7.44,18
+sirloin,23625,8.72,37
+butterscotch pudding mix,10019206,8.86,29
+catfish,15010,9.01,50
+wholemeal rye flour,20064,6.29,34
+chicken bites,1015006,8.86,97
+tomatoes in juice,10211693,2.96,86
+corn tortilla,18363,6.4,18
+frozen baby lima beans,11039,6.2,12
+ponzu sauce,93729,0.61,2
+stevia drops,10811111,4.57,53
+low fat vanilla ice cream,19088,5.9,77
+garden cress seed,99119,4.02,22
+vegetable cooking oil,4513,9.93,45
+red cinnamon candies,93737,5.79,1
+persimmons,9265,3.58,79
+hamburger bun,18350,9.22,6
+besan gram flour,16157,8.99,11
+orecchiette,10820420,3.84,25
+egg pastry,10018338,8.92,43
+roast turkey breast,7259,3.14,58
+guinness,93619,2.06,86
+quick-cooking brown rice,10020048,7.48,68
+dried cane syrup,93625,8.18,50
+farmers cheese,98933,8.78,68
+lean ground lamb,17353,7.6,14
+sun-dried tomato pesto,93697,1.65,92
+nectarine,9191,8.4,12
+pickled beets,11084,5.16,62
+dried raisins,9299,4.17,86
+andes mints,98917,5.26,6
+wax beans,93711,6.16,43
+sticky rice,10120054,5.88,79
+rib-eye steaks,23232,2.93,27
+butter nut pumpkin,11485,7.24,28
+sweet cream butter,1145,0.89,33
+cocoa nibs,98846,2.61,97
+cooked long grain rice,10220445,9.54,12
+pimento cheese spread,99060,1.39,80
+whole cloves,1002011,2.93,78
+natural yoghurt,1116,0.63,55
+sherbet,19097,2.97,65
+orecchiette pasta,10820420,7.88,60
+pepper rings,98903,8.26,60
+white corn tortillas,18363,6.32,83
+spelt,20140,2.58,86
+bragg's liquid aminos,93767,6.07,48
+watercress leaves,11591,5.73,43
+chevre,1159,6.65,44
+canned chick peas,16058,3.16,32
+orange segments,1019200,6.87,90
+fresh mixed herbs,1012024,3.89,41
+refrigerated cheese tortellini,10093727,4.52,7
+biscuit,18009,1.2,44
+puff pastry dough,18337,1.74,47
+mini marshmallows,10119116,1.96,25
+merlot,14602,3.41,34
+lamb rib chops,17032,1.48,41
+rainbow trout,15115,5.45,69
+lillet blanc,93786,7.6,21
+chai tea,14355,8.88,20
+farm raised catfish filet,15234,4.28,25
+evaporated cane juice,93625,8.97,11
+candied pecans,93783,5.64,89
+chocolate morsels,10019146,8.66,5
+anjou pears,1009252,0.57,29
+mackerel,15050,8.01,49
+bean thread noodles,16082,2.44,69
+oyster crackers,10018228,8.11,49
+bourbon vanilla extract,2050,1.4,58
+burrito-size tortillas,10118364,9.47,80
+black vinegar,1012053,0.54,47
+long grain brown rice,20036,6.68,78
+alfredo pasta sauce,93606,5.72,43
+seasonings,1042027,9.76,96
+wheat gluten,93654,6.76,70
+mayonaise,4025,7.76,15
+trout fillets,15114,8.65,87
+beefsteak tomato,10011529,2.5,40
+tri-tip roast,13958,8.43,20
+orange flavor gelatin,10119172,1.04,82
+jelly beans,19108,5.36,15
+cooked linguine,10720421,1.5,69
+caramel syrup,19364,8.32,48
+semi-sweet chocolate chips,10019903,3.38,9
+grenadine syrup,42040,9.75,16
+chanterelle mushrooms,11239,4.01,13
+aleppo pepper,1062009,2.94,9
+vegan sour cream,93608,5.44,9
+chex wheat cereal,99180,1.62,21
+piquillo peppers,98841,9.35,6
+chipotle in adobo,11632,9.44,28
+bacon pieces,10862,7.77,36
+cream sherry,10214106,4.41,4
+cracked pepper,2030,1.5,30
+fresh blueberries,9050,2.76,13
+turkey kielbasa,7955,7.28,25
+patis,6179,6.32,68
+live lobsters,15147,8.38,18
+green peppercorns,93836,8.64,48
+pork skins,98873,1.55,69
+chocolate covered caramel candy,19152,7.61,80
+bratwurst,7013,3.85,45
+tia maria,10093716,1.13,61
+shrimp paste,93657,1.57,27
+pepper jack,1025,0.61,36
+broccoli crowns,11090,2.76,30
+french stick,18029,2.04,14
+ahi tuna steak,15117,0.56,19
+chocolate crumb crust,28111,0.85,42
+turkey neck,5179,1.4,78
+hershey cocoa,19165,5.16,47
+sauvignon blanc,14134,3.26,78
+pernod,14551,0.67,19
+dutch processed cocoa,10019165,9.34,40
+pastry dough,10018338,4.33,94
+yard long beans,11199,3.82,88
+goat's cheese,1159,5.19,72
+fine sea salt,1012047,5.26,43
+sorghum,20067,4.5,75
+bonito flakes,98898,5.8,87
+coco sugar,93831,8.95,47
+cocktail onion,11294,3.07,33
+won ton wrappers,10018368,3.36,26
+split peas,16085,6.88,87
+reduced fat ice cream,19088,0.61,85
+ear of corn,11167,2.1,7
+burrata cheese,93617,2.54,6
+aniseed,2002,4.32,100
+cream style corn,11174,7.45,47
+blackberry,9042,8.86,77
+japanese eggplant,10011209,7.54,57
+potato gnocchi,98853,8.0,16
+yellow split peas,16085,9.5,51
+bakers white chocolate,19087,7.09,39
+peanut flour,16100,9.97,39
+rutabagas,11435,2.68,80
+fresh horseradish,98949,4.55,7
+canned peas,11306,8.26,5
+tri color pasta,12020420,7.03,92
+gluten-free flour blend,10093620,3.22,69
+chilis,11819,6.93,15
+fruit juice,1029016,9.06,21
+guava,9139,7.31,22
+cobs corn,11167,2.79,98
+habanero chile,10011819,6.98,53
+guinness stout,93619,0.58,40
+bleu cheese,1004,1.57,34
+liver,13325,1.53,21
+whole wheat hamburger buns,18351,9.84,28
+nonfat vanilla yogurt,43261,3.14,58
+raisin,9299,2.33,94
+dried rosemary leaves,2036,6.59,50
+dandelion greens,11207,6.7,86
+glace cherries,93742,8.65,96
+dried great northern beans,16024,1.45,40
+purple plum,9279,6.61,46
+ribs,23236,0.88,63
+kiwi fruit,9148,1.75,38
+rosewater,10411111,6.93,24
+banana leaves,10011111,1.13,66
+garlic puree,10111215,8.24,31
+bone in chicken thighs,1005091,2.09,99
+seltzer,14121,6.46,90
+mung beans,16080,7.02,61
+soy chunks,98854,9.37,7
+white chocolate morsels,10019087,1.31,66
+marinated artichokes,93828,2.71,45
+serrano chili,11977,6.88,72
+canned tomato,10011693,2.64,44
+dill pickle juice,93640,4.91,13
+chardonnay,14160,2.74,89
+cheerios,8013,6.5,41
+vegetable mix,11583,4.12,68
+peppermint,2064,6.99,74
+cookie butter,99011,3.65,72
+groundnut oil,4042,5.02,91
+pizza cheese,93651,7.04,38
+artichoke,11007,2.48,73
+persian cucumber,10011205,7.93,95
+unsweetened soy milk,16222,0.74,10
+raita,1001116,8.32,62
+korean chile,1072009,7.73,61
+pineapples,9266,3.63,21
+lime jello,10019172,1.45,61
+goat milk,1106,7.53,66
+cashew halves,12087,1.31,2
+chocolate covered espresso beans,19268,0.74,58
+mango nectar,9436,4.93,73
+catalina dressing,93649,7.41,49
+buns,18064,8.68,25
+cornmeal mix,20024,8.22,65
+red chile peppers,11819,4.12,60
+chicken gravy,6999,1.89,23
+soy protein,16122,6.52,12
+bran,20077,0.57,18
+graham cracker squares,10218617,9.62,77
+italian cheese,93651,3.71,48
+rib eye steaks,23232,8.88,12
+golden raisin,9297,5.13,100
+raspberry gelatin,10319172,0.77,31
+canned green chile peppers,11980,8.45,25
+nitrate free bacon,10123,6.03,13
+egg beaters,93833,8.6,94
+cornish game hen,5307,2.43,45
+chilly powder,2009,5.44,69
+strawberry pie filling,99183,6.83,71
+pizza crusts,93770,5.43,100
+low fat shredded mexican cheese blend,1209,2.63,1
+fresh yeast,18374,1.07,48
+amaranth,20001,7.84,5
+chocolate graham cracker crumbs,18608,9.32,47
+plain full fat yogurt,1116,1.87,7
+flaxseeds,10012220,3.74,37
+green leaf lettuce,11253,8.6,13
+sukrin,99190,4.12,40
+sour milk,1077,7.83,44
+95% lean ground beef,23557,2.48,23
+mahi mahi,15023,7.7,11
+grape leaves,11974,4.3,91
+anaheim chiles,10031015,2.87,84
+chai,14355,7.79,22
+riesling,14132,3.18,1
+ribbon fish,99161,4.53,89
+madeira wine,10014106,7.68,29
+pumpkin pie filling,11426,1.89,58
+morel mushrooms,11240,7.23,99
+corn chex,8019,9.84,19
+powdered peanut butter,99089,2.28,10
+refrigerated pie dough,18334,7.0,9
+veal cutlets,17094,3.96,44
+coke,14400,6.42,14
+butter beans,10116072,0.84,49
+chocolate cookie crust,28111,3.89,77
+Potato Starch Flour,11413,9.63,88
+boston butt,10084,4.35,73
+gummy worms,93642,0.99,69
+peppermint chips,98858,7.79,92
+food colouring,10711111,5.63,63
+linguini,10720420,8.1,89
+ground hazelnuts,93810,4.93,90
+healthy request cream of chicken soup,6195,8.87,70
+vegetable stock cube,98845,4.89,56
+sardines,15088,1.7,86
+rice-wine vinegar,1022053,2.26,47
+tostada shells,18952,7.57,62
+whole wheat penne pasta,99182,1.31,87
+haddock fillets,15033,2.25,51
+cinnamon raisin bread,18047,7.27,13
+vegetable bouillon,6615,0.58,96
+coarse grain mustard,1012046,3.32,25
+lager,10114003,4.11,4
+albacore tuna in water,15126,6.48,8
+confectioners swerve,99084,5.21,28
+fig jam,11519297,7.8,3
+fat-free cool whip,1200,7.15,37
+green salsa,27028,9.25,55
+cracker,18621,0.53,78
+corn husks,98922,8.4,51
+cool whip,42135,7.44,11
+cooked fettuccine,10020410,6.21,53
+brazil nuts,93710,2.56,3
+runny honey,19296,8.39,43
+prawn,15152,7.8,57
+roasted cashew nuts,12085,1.65,47
+fig preserves,11519297,1.92,58
+gingerbread man cookies,10118192,8.32,86
+distilled vinegar,2053,7.86,29
+paneer cheese,98847,4.91,20
+pinenuts,12147,8.93,32
+grissini breadsticks,98914,3.5,94
+bread roll dough,99063,8.05,58
+canned white kidney beans,10116034,5.74,70
+snapper,15101,6.21,45
+liquid egg substitute,1226,3.58,26
+pickling cucumbers,11206,6.39,57
+green chile,31015,3.43,11
+non-dairy creamer,1067,8.21,30
+straw mushrooms,11989,9.43,36
+brinjal,11209,1.72,78
+green capsicum,11333,0.88,96
+whisky,14052,3.27,41
+reduced sodium cream of mushroom soup,6182,4.72,91
+pear nectar,9262,9.73,26
+ground fennel,98953,7.29,1
+fat free yogurt,1118,1.78,39
+hazel nut milk,99132,4.9,60
+anise extract,10611111,4.09,34
+purple potatoes,10011352,5.1,13
+half-and-half,1049,9.6,20
+all natural eggs,1123,6.4,91
+broccoli crown,11090,0.67,36
+gluten free all purpose flour,93620,8.59,71
+roll,18064,9.7,27
+clementine juice,9221,3.05,75
+hot cocoa mix,14197,6.36,4
+crescent dinner rolls,93618,5.73,53
+dried onions,11284,0.82,26
+liquid pectin,42063,2.18,52
+won ton wraps,10018368,2.22,14
+bowtie pasta,10120420,6.61,18
+beet greens,11086,1.69,76
+fat-free whipped topping,1200,6.1,98
+garlic scapes,93750,4.56,36
+alcohol,14037,6.32,63
+french fries,11408,8.56,53
+red miso,10016112,0.64,73
+red bean paste,99082,9.18,32
+roquefort cheese,1039,6.13,59
+milk chocolate morsels,10019146,9.63,37
+black tea bags,10111111,8.08,87
+ground coffee beans,10093715,7.67,84
+iceberg lettuce leaves,10011252,0.71,58
+blood orange zest,1009216,8.5,51
+bosc pear,9252,1.9,43
+pastry cream,10019170,7.44,29
+lean beef,23557,3.25,34
+french style green beans,11052,6.63,57
+bone in skin on chicken breasts,1005057,8.18,7
+dry milk,1090,3.84,57
+cola flavored carbonated beverage,14400,2.5,33
+oriental sesame oil,4058,7.33,73
+sweet pickles,11940,7.74,14
+tuna in olive oil,15119,5.26,88
+mincemeat,93706,9.28,9
+chex mix,19033,7.32,72
+seasoned flour,98980,8.84,70
+ancho chile,10211962,4.38,85
+nacho chips,19056,3.5,74
+buffalo mozzarella,98870,7.32,98
+hardboiled eggs,1129,3.49,17
+candy melting wafers,93775,9.58,3
+diced tomatoes with green chilies,10011885,5.27,47
+canned beets,11609,6.81,75
+fat free half and half,1199,9.72,19
+pork mince,10219,0.94,72
+M&M'S Brand Chocolate Candies,19157,8.05,13
+halibut steaks,15036,8.17,90
+chex cereal,8082,7.39,52
+black rice,10020036,6.3,50
+pappardelle,10120409,3.16,1
+peppermint candy,98859,2.89,91
+poached eggs,1131,1.85,97
+strip steak,13913,9.45,41
+bitter gourd,11024,1.24,79
+yellow miso,10216112,4.2,19
+butterfinger candy bar,19069,5.44,49
+hersheys kisses brand milk chocolate,93743,1.3,8
+spaghetti pasta,11420420,9.0,59
+jarlsberg cheese,93791,9.81,65
+amaretti cookies,93766,3.87,78
+banana liqueur,93779,7.47,76
+brioche buns,10093730,8.19,63
+sorrel,93621,6.73,65
+sprite,14144,1.62,34
+gluten free breadcrumbs,93694,3.43,83
+93% lean ground turkey meat,5665,3.4,11
+bouillon,1006008,4.01,10
+lemon pudding mix,19332,1.61,90
+scotch bonnet pepper,10011819,8.25,97
+carob chips,19071,2.73,39
+squash flowers,11416,7.22,24
+smoked trout,15214,1.41,85
+beef bones,11611111,7.6,75
+dried plums,9291,2.7,28
+pear juice,43408,4.0,87
+yellow capsicum,11951,8.72,70
+currant,9085,4.38,97
+filet mignon,10013926,6.72,81
+ground coriander seed,2012,1.77,98
+funfetti cake mix,98866,7.23,1
+halibut fillet,15036,5.55,80
+dairy free buttery spread,4673,3.09,24
+watermelon cubes,9326,9.69,36
+fresh spinach,10011457,4.98,56
+swordfish,15110,1.92,49
+mexicorn,11176,9.37,84
+lamb rack,17029,3.04,18
+shiso leaves,10311111,3.17,80
+amchur,98964,1.52,72
+white shoepeg corn,11901,9.31,98
+prune,9291,6.68,21
+sugar cookies,10118192,6.48,18
+pastry cup,10018337,8.45,33
+chambord,10514534,9.46,39
+light sour cream,1179,3.2,38
+vinaigrette salad dressing,4135,8.06,9
+mahi mahi fillets,15023,0.95,25
+soy yogurt,16252,8.16,49
+pak choi,11116,9.65,8
+sazon,98999,1.02,87
+dill seed,2016,7.44,34
+sprouted grain bread,98895,6.25,16
+wheat thin crackers,93728,1.37,57
+corn on the cob,11167,9.57,41
+steel oats,93695,0.71,89
+coarse ground mustard,1012046,4.29,81
+crab boil seasoning,1002034,8.94,55
+rump roast,13411,4.61,63
+strawberry jello,10219172,9.03,16
+bartlett pear,9412,9.51,73
+ground all spice,2001,8.77,45
+low fat yogurt,1117,3.21,72
+orange flower water,12411111,1.9,84
+seitan,93654,2.88,95
+condensed skim milk,98880,9.58,74
+teff flour,93760,2.27,47
+grapefruit zest,1009156,5.04,35
+cracked wheat,93684,8.58,12
+hot pepper sauce,6168,4.39,9
+cooked macaroni,20400,0.67,6
+puffed rice,8156,1.12,55
+dairy free chocolate chips,98848,4.02,22
+chicken stock cube,6080,8.38,53
+soya flour,16115,8.35,92
+nonpareils,93645,3.02,71
+dried shrimp,10093657,9.26,85
+cherry gelatin,10419172,6.15,100
+cipollini onions,10311282,1.65,86
+half and half cream,1049,6.32,3
+unsweetened almond milk,93607,8.63,68
+salad,21052,7.95,1
+ribeye steaks,23232,2.3,100
+chia egg,10012006,1.48,19
+dairy nut soy free chocolate chips,98848,4.51,45
+chocolate ice cream sauce,19348,4.92,1
+tiger prawns,10115149,5.32,66
+quail,5157,3.92,62
+poppyseeds,2033,7.22,5
+jerusalem artichokes,11226,8.26,99
+coffee extract,13111111,4.61,39
+red grapefruit,1009112,8.77,4
+vegan buttery spread,4673,7.41,10
+rice malt syrup,93784,5.55,40
+hershey's kisses brand milk chocolate,93743,10.0,89
+biscotti,98843,6.55,69
+blue food coloring,1421111,1.04,5
+icecream sandwiches,98882,6.51,36
+red pepper paste,1016973,3.27,54
+bocconcini,93790,8.93,75
+dried pineapple,93639,2.42,87
+dried chilli flakes,1032009,3.59,79
+beef shank,13227,5.73,59
+ground coriander seeds,2012,7.81,31
+chex snack mix,19033,3.22,84
+ground sumac,10211111,7.94,30
+grouper fillets,15031,2.9,81
+flax,10012220,2.85,27
+ripe bananas,9040,5.54,73
+unsweetened dried coconut,12108,7.19,92
+shichimi togarashi,1002009,4.01,89
+spring water,14412,2.55,11
+whole-wheat spaghetti,10020124,2.2,28
+white cornmeal,35136,2.32,56
+pineapple preserves,10219297,8.63,54
+garbanzo bean flour,16157,2.03,1
+dungeness crabs,15143,4.16,17
+achiote,10711111,7.24,83
+ragi,99128,8.04,19
+chestnut,12098,2.54,13
+green chilis,31015,2.77,1
+mortadella,7050,5.14,2
+decorating gel,98881,9.36,48
+yolk,1125,1.26,67
+old-fashioned rolled oats,8120,7.66,18
+fresh basil leaf,2044,2.46,69
+canned lima beans,16073,0.68,10
+racks of lamb,17029,8.31,48
+octopus,15166,2.76,86
+bee pollen,93603,4.54,98
+quince,9296,6.83,54
+canned chicken,5311,5.72,26
+asparagus tips,11011,6.87,19
+pre-cooked farro,10020006,5.11,39
+salted roasted cashews,12585,4.39,71
+ham hocks,93669,0.53,29
+artichoke heart quarters,93828,2.29,97
+pickling spices,1012001,8.55,16
+eggs yolks,1125,4.68,32
+pancake syrup,19113,1.46,70
+skinless chicken drumsticks,5071,1.14,27
+spirulina,11667,1.15,19
+skin on bone in chicken thighs,1005091,1.7,52
+rockfish,15070,4.56,12
+yuca,11134,9.23,73
+olive tapenade,98862,7.54,10
+quail eggs,1140,0.61,55
+turnip greens,11568,1.57,90
+mounds candy bar,19142,9.9,24
+almond oil,4529,3.48,39
+psyllium husk,98892,3.41,33
+peppermint patties,19091,4.29,38
+elk round roast,35177,0.5,69
+red plums,9279,1.05,55
+prime rib roast,13833,5.89,18
+glutinous rice,10020054,3.91,51
+lemon jell-o,19172,7.51,73
+shrimp stock,6963,6.05,4
+smoked ham hocks,93669,2.31,0
+tamarind concentrate,9322,7.2,31
+red food colour,1451111,4.02,87
+penne rigate,11120420,7.99,80
+cod filets,15015,7.19,96
+fillo shells,93817,3.87,89
+cherry jam,10619297,5.37,70
+turkey breast tenderloins,99008,8.95,29
+tagliatelle,10220409,8.05,10
+microgreens,11001,1.62,15
+oat flakes,98899,5.1,86
+bone-in beef short ribs,10013147,6.11,17
+meatball,10110219,4.82,16
+carob powder,16055,0.93,19
+lower sodium shoyu,10016424,9.4,74
+lemon gelatin,19172,1.35,17
+canned chipotle chile,11632,8.14,19
+whole wheat couscous,99024,2.94,63
+low fat swiss cheese,43589,1.51,64
+superfine sugar,10119335,8.97,82
+soy creamer,1067,2.36,51
+black peppercorn,2030,6.19,33
+standing rib roast,13833,4.67,78
+flounder,15028,3.21,39
+cake mix,18010,6.53,30
+limeade,99185,0.84,100
+whitefish,10015261,3.6,28
+scotch,10014052,1.56,64
+fat-free cottage cheese,1014,2.02,15
+boursin cheese,99188,9.34,15
+ginger snap cookies,18172,8.92,27
+canned chipotle chiles in adobo,11632,4.62,3
+nutri grain cereal,1008029,0.91,15
+habanero chili,10011819,1.83,27
+anise,2002,2.46,83
+green food color,1441111,6.51,63
+bird's eye chili pepper,11670,6.68,17
+cracker sandwiches,18621,0.91,93
+lemonade mix,14287,3.12,100
+squash blossoms,11416,1.5,69
+acai juice,98896,1.15,64
+caper berries,1002054,9.2,72
+wakame,11669,3.37,21
+chicken bouillon powder,1016080,9.02,69
+manila clams,10015157,8.67,17
+lime leaves,93633,7.39,84
+dill pickle chips,11937,9.81,89
+yolks,1125,5.01,80
+shortcrust pastry case,18334,9.24,45
+tomatillo,11954,7.12,95
+graham cracker sheets,18617,9.21,50
+Ener-G egg replacer,93658,9.18,84
+turkish bay leaves,2004,2.63,6
+watermelon chunks,9326,1.99,58
+passion fruit juice,9232,4.46,27
+matzo,10018217,6.22,91
+ready to use pie crust,18334,3.42,42
+corn flakes cereal,8020,2.55,82
+lemonade drink mix,14287,5.8,22
+whole wheat breadcrumbs,99025,1.93,30
+burrata,93617,7.25,14
+cooked farro,10020006,4.85,11
+instant tapioca,93660,9.38,38
+85% lean ground beef,23567,1.62,63
+chipotle chilies,11632,4.09,12
+orange gelatin,10119172,1.22,56
+sal ammoniac,18375,5.09,25
+chicken drumsticks and thighs,1005006,7.38,95
+montreal brand steak seasoning,1022034,4.28,17
+pink lady apples,1099003,5.46,49
+crostini,10018033,8.67,30
+sesame seed paste,12698,7.28,69
+flank steaks,23657,5.09,52
+shoyu,16123,9.55,84
+snapper fillets,15101,2.45,86
+reduced fat mayo,4641,2.99,52
+caramelized onion,10211282,4.55,91
+fruit cake mix,98925,7.47,10
+brown eggs,1123,6.56,30
+focaccia,93837,6.49,79
+chicken sausage links,93668,2.01,23
+dried tomatoes,11955,4.41,75
+soy flour,16115,3.77,73
+chayote,11149,3.29,19
+rice protein powder,93707,1.71,51
+black tea,14355,9.68,68
+full fat milk,1077,6.7,84
+jumbo shells,10520420,6.25,24
+cooked rice noodles,20134,2.25,13
+ground venison,17343,3.67,89
+chocolate glaze,19375,7.96,51
+gold potatoes,10211362,8.08,73
+hersheys kisses brand milk chocolates,93743,5.36,0
+egg nog,1057,3.7,51
+decorating sugar,19335,1.02,44
+mango pulp,93688,9.81,80
+bucatini,11620420,5.64,97
+mÃ¢che,11190,9.55,50
+idaho potato,11353,8.8,97
+taco salad shell,98985,5.0,67
+speck,10110123,6.7,51
+peeps,98850,6.78,48
+tzatziki,93777,7.8,16
+purified water,14412,9.99,34
+asiago,1001033,3.43,59
+coffee cake mix,18010,7.19,43
+raw prawns,15152,5.97,95
+tzatziki sauce,93777,6.32,35
+cellophane noodles,16082,8.31,96
+ice cream sandwiches,98882,6.61,59
+dried ginger,2021,3.41,14
+jackfruit,9144,7.22,71
+meat free bacon,16542,9.81,82
+cilantro leaf,11165,6.36,1
+light mayo,4641,0.97,44
+mesclun,21052,5.92,85
+gluten-free breadcrumbs,93694,2.04,69
+turkey legs,5193,6.11,51
+clementine,9433,2.26,26
+chicken breast tenderloins,1015062,9.89,81
+chipotle chilies in adobo,11632,6.73,42
+mandarin orange,9218,3.29,7
+unbaked pie crusts,18334,3.9,7
+spring roll paper,10118368,2.33,53
+coffee powder,14214,2.68,28
+black grapes,9129,7.54,69
+aubergines,11209,2.31,52
+butter flavor vegetable shortening,4615,2.74,77
+chipotle puree,11632,6.44,18
+chicken seasoning,2034,8.42,55
+kelp,11445,8.4,67
+pate brisee,10018338,8.87,38
+pearled barley,20005,4.03,82
+pork loin steaks,10062,2.91,63
+strawberry jelly,11019297,1.79,27
+beef strip loin,13923,0.54,10
+jimmies,93645,4.7,39
+filet mignon steaks,10013926,3.87,97
+salt cod,15018,9.59,66
+wings,5100,8.61,81
+lebanese cucumber,10211205,1.1,86
+stilton cheese,1021004,7.97,26
+toast bread,18070,1.11,78
+italian loaf,10028033,2.36,41
+phyllo shells,93817,3.84,23
+cornflake crumbs,1008020,5.15,17
+muesli,42184,8.79,42
+cachaca,93787,9.01,60
+beef soup bone,10511111,3.92,37
+lean bacon,99006,5.47,80
+bone-in pork shoulder,10072,8.66,48
+teriyaki glaze,6112,6.83,14
+frank's redhot sauce,98878,0.66,71
+mnm minis,19157,2.47,71
+candied citron,9426,4.77,22
+cooked angel hair pasta,10020421,7.82,40
+Asian medley,10111583,6.82,91
+fresh cranberries,9078,9.07,60
+cinnamon sugar butter,93674,6.4,49
+garlic-infused oil,1004053,5.07,16
+hollandaise sauce,93801,3.66,49
+ground cardamon,2006,5.84,93
+Crema Mexicana,93772,1.49,98
+white corn,11901,9.43,22
+instant cheesecake pudding mix,99192,2.34,93
+crawfish,15243,1.43,35
+macaroni pasta,20499,8.41,50
+waffle cone,18272,0.72,41
+whole wheat pitas,18042,3.74,89
+baby-cut carrots,11960,2.05,35
+cooked orzo,10920421,6.0,91
+cheerios cereal,8013,9.36,14
+crusty roll,18349,7.63,92
+low-fat greek yogurt,93652,3.84,64
+anchovy filets,15001,9.16,74
+carbonated water,14121,3.62,46
+chicken wing,5100,9.47,60
+pork sausage roll,1057063,5.73,5
+brown rice noodles,99038,7.07,89
+soy cheese,93701,1.18,49
+fat-free ricotta cheese,93630,2.78,83
+besan flour,16157,9.65,93
+smoked ham hock,93669,2.01,87
+chuck steak,23145,8.4,73
+goose,93714,1.19,85
+chicken thigh fillets,5091,0.78,96
+anchovy fillets,15001,0.86,3
+grilled salmon,15076,5.19,92
+quick-cooking oats,8120,8.33,85
+andouille,7064,6.99,78
+lo mein noodles,99027,3.79,72
+yellowfin tuna,15127,6.65,62
+instant oatmeal,8640,6.09,2
+ground flaxseeds,12220,2.75,32
+flat bread,10018413,9.65,2
+gluten-free bagel,99073,1.97,15
+lemon basil,2044,1.14,63
+graham flour,98886,0.88,18
+fat free plain yogurt,1118,3.56,24
+gum drops,19106,1.67,49
+hearts of romaine,10011251,4.36,33
+color added,10711111,6.3,83
+British cheese,1041009,7.79,19
+garlic flakes,2020,5.85,91
+instant potatoes,11378,0.9,53
+orange oil,12511111,6.05,41
+ground ancho chile,1022009,3.54,36
+lard,4002,7.43,26
+canned lentils,10016070,0.58,67
+bajra,99151,1.69,35
+whole wheat tortilla,93675,5.23,28
+gumbo file,11311111,7.23,92
+whole chicken legs,5075,1.14,10
+passion fruit,9231,4.64,61
+macaroni noodles,20499,7.1,23
+freshly cracked black pepper,2030,2.87,57
+hamburger rolls,18350,3.43,12
+midori melon liqueur,93781,7.81,30
+hazelnut meal,93810,6.76,89
+boneless pork roast,10225,9.54,60
+dried chili flakes,1032009,2.19,85
+raw pepitas,10012014,3.57,11
+lime gelatin,19172,2.92,21
+beef shoulder roast,13943,8.15,78
+gingersnap crumbs,18172,3.16,10
+carrot cake mix,18010,5.14,11
+challah roll,99189,0.65,87
+raspberry vinaigrette,98952,8.54,40
+shortbread,18192,4.15,34
+pork cutlets,10010066,2.29,40
+chai spice,1012035,6.56,97
+pepperoni sausage,7057,7.95,83
+chipotles in adobo,11632,4.11,51
+acini di pepe pasta,93647,5.38,21
+cavatappi pasta,10320420,0.88,50
+dill seeds,2016,5.25,43
+quark,93676,2.31,32
+thai chili peppers,11670,7.72,92
+blueberry jam,11119297,4.83,25
+malt mix,14311,9.84,28
+granola cereal,8212,9.18,47
+bottled ginger,10011216,9.01,11
+reduced sodium broth,1016970,3.31,30
+orange food color,1461111,4.75,21
+slab bacon,10210123,8.86,72
+cracker crumb,10018621,9.27,22
+sun butter,98928,3.46,43
+hershey's kisses brand milk chocolates,93743,3.27,73
+Sushi Nori,11446,9.46,27
+veal bones,13811111,8.39,75
+pearl couscous,10020028,8.34,69
+minute tapioca,93776,1.24,53
+chocolate extract,13411111,5.56,70
+lean lamb loin chops,17026,0.66,61
+stuffing cubes,18082,0.72,28
+iodized salt,2047,2.55,19
+hollandaise sauce mix,93802,2.51,58
+light tuna,15184,4.25,50
+buffalo chicken wing,5100,3.39,38
+seasoned rice wine vinegar,1032053,0.74,94
+salmon roe,15072,9.73,18
+flax seed oil,98934,7.79,72
+bagel chips,99098,9.16,68
+marmalade,19297,9.69,54
+curly endive,11152,1.12,95
+maui onion,11294,9.73,13
+chicken bones,11711111,5.22,28
+lite beer,14006,8.96,26
+asafoetida powder,1032035,9.7,10
+duck leg,5317,7.47,41
+pie dough,18334,8.3,25
+concord grapes,1009132,7.1,57
+cooked pork,10073,3.18,89
+drumsticks,5066,0.81,47
+jalapeno jelly,93685,0.87,21
+candied walnuts,93785,4.2,65
+macaroni & cheese dinner,32004,6.98,94
+fenugreek leaf,98963,8.64,99
+mocha,14209,1.87,61
+broccoli carrot cauliflower mix,11583,2.88,32
+gluten-free chex,8019,9.53,47
+dried yeast,18375,5.17,74
+glazed pecans,93783,1.85,73
+orange peppers,10011821,9.13,94
+green tomato,11527,0.52,34
+roasted chicken breast,5064,7.15,49
+yellow food color,1431111,5.6,13
+hoisin,6175,8.59,13
+gherkins,11941,7.74,12
+coconut milk powder,98979,0.75,78
+soybeans,16409,9.99,31
+hot chocolate powder,14197,9.02,23
+reese cups,19150,7.53,32
+beef franks,7241,8.6,1
+lamb mince,17224,9.05,42
+reduced fat shredded mozzarella cheese,1001028,4.82,95
+apple butter spread,19294,1.44,62
+rib roast,13833,2.38,17
+ground bison,17330,7.51,37
+tortilla chip scoops,10019056,2.7,63
+root vegetable,10011298,8.63,48
+peanut butter candies,19151,6.78,60
+whole wheat buns,18351,8.89,78
+chevre cheese,1159,1.86,4
+cooked penne,11120421,6.42,98
+fritos,19003,4.78,36
+chicken feet,5335,6.48,86
+beetroots,11080,3.21,16
+goats cheese,1159,5.18,34
+nondairy creamer,1067,1.8,38
+icecream treat,19095,8.97,20
+maple flavor,11111111,8.31,26
+meyer lemons,1009150,7.74,74
+yellow wax beans,93711,2.03,4
+taleggio cheese,93792,4.83,31
+red pepper flake,1032009,1.03,38
+butter crackers,18621,3.56,88
+ras el hanout,1062027,9.07,48
+haas avocado,9037,2.59,37
+table sugar,19335,7.03,76
+short-grain brown rice,10020040,1.2,73
+vegetable blend,11583,1.37,61
+fat-free vanilla yogurt,43261,8.45,58
+reduced-fat shredded mexican cheese blend,1209,8.11,71
+spare ribs,10088,2.93,81
+canned anchovies,15002,2.84,45
+fennel powder,98953,2.88,60
+raspberry sauce,10019137,2.04,58
+red skin potatoes,10011355,8.66,62
+lemon balm,2064,6.07,92
+poblano,10011333,3.66,100
+hazelnut flour,93810,5.86,69
+cheerios oat cereal,8013,2.73,70
+veal chops,17104,7.96,95
+whole wheat lasagna noodles,10120124,0.57,31
+dried brown lentils,16069,9.64,75
+diced tomatoes with green chiles,10011885,3.47,21
+green gram,16080,3.66,55
+canned crab meat,15141,5.95,12
+chicken fat,4542,7.07,65
+chicken liver,5027,5.3,57
+cremini mushroom,11266,6.37,9
+rock shrimp,10115152,1.5,56
+mahi-mahi,15023,5.66,36
+haas avocados,9037,8.63,56
+buffalo wings sauce,98878,9.78,41
+oreo pie crust,28111,2.1,56
+low sodium shoyu,10016424,1.41,53
+yellow tomato,11696,3.2,68
+cheese cake mix,98951,0.58,77
+pattypan squash,11475,6.64,67
+anaheim chile,10031015,2.33,16
+baby zucchini,11953,8.2,96
+tater tot,11398,3.59,70
+onion rolls,99061,8.44,30
+deer,17164,8.26,16
+mocha beans,19268,4.33,30
+onion leaves,11291,7.93,54
+Asian dumplings,99034,8.73,99
+granulated cane sugar,19335,0.85,21
+scoop tortilla chips,10019056,3.32,18
+low fat evaporated milk,98993,6.39,78
+almondmilk,93607,8.78,32
+chipotle chili peppers in adobo,11632,9.14,91
+red jalapeno,10111819,6.26,62
+chipotle chiles,11632,5.6,21
+suet,13335,4.14,22
+green tea powder,98932,1.17,40
+pistachio oil,93800,2.75,21
+confectioner's sugar,19336,0.74,63
+brown rice vinegar,1022053,5.21,45
+halloumi,93624,2.24,63
+large shells,10520420,7.73,18
+unsmoked back bacon,10130,7.52,14
+fat free vanilla yogurt,43261,3.39,75
+cooked polenta,1008166,5.26,60
+celtic sea salt,1002047,5.65,78
+sesame seed hamburger buns,10018350,2.35,29
+peanut butter candy,19151,1.97,58
+crescent roll,93618,5.99,43
+butterscotch pudding,19201,2.56,50
+broccoli slaw mix,11741,6.53,50
+gluten free bread,10099050,1.7,41
+pimento filled olives,1049195,7.07,88
+portabella mushroom caps,11265,6.53,64
+cream soda,14130,4.37,73
+bbq chicken wings,5100,8.27,44
+lamb stock,10098844,9.75,30
+plain lowfat yogurt,1117,2.08,87
+golden potatoes,10211362,7.27,52
+chocolate malt powder,14317,9.66,48
+bbq wings,5100,6.96,70
+pork sirloin tip roast,10963,6.24,28
+cardamon,2006,7.37,63
+firmly packed brown sugar,19334,2.04,9
+red beet,11080,4.35,84
+morningstar farms patty,16147,8.87,25
+s&p,1102047,1.34,68
+egg plant,11209,6.34,20
+farmer cheese,98933,0.79,41
+persimmon,9265,2.83,49
+mozzarella cheese sticks,98970,4.01,99
+skinless chicken thigh,5096,9.76,49
+yuzu juice,93682,6.27,42
+aji amarillo,10311819,2.8,57
+blueberry filling,44158,1.64,96
+morels,11240,6.01,66
+olive oil cooking spray,1004679,2.93,81
+hemp oil,99134,3.45,48
+baby bell peppers,10311821,8.43,27
+gluten free pasta,98875,9.85,4
+unflavored gelatin,19177,8.56,23
+hot dog rolls,10018350,5.37,3
+radish sprouts,11676,6.17,5
+whole wheat penne,99182,7.66,8
+scotch bonnet chili peppers,10011819,1.11,25
+gluten-free short bread cookie,99056,3.05,75
+bisquick mix,18010,4.09,95
+buttermilk powder,1094,5.45,4
+gelato pops,19095,6.25,95
+yellow corn meal,35137,5.94,100
+sultana,9297,4.59,13
+mixed peel,98925,2.97,98
+ciabatta loaf,93655,8.85,78
+oxtails,93778,5.87,34
+pie shells,18334,4.01,85
+canned anchovy fillets,15002,4.47,87
+chile oil,1014053,8.26,46
+beverage syrup,10242040,8.19,84
+broccoli spears,11090,6.89,8
+cooked crabmeat,15141,4.18,36
+vegetable bouillon cube,98845,9.89,43
+fresh garlic,11215,4.75,90
+toffee pieces,19383,7.5,64
+broccoli coleslaw mix,11741,5.99,86
+full-fat cottage cheese,1012,9.7,18
+tortilla wraps,18364,6.49,57
+chocolate coating,98857,6.96,52
+complete seasoning,98999,5.67,31
+hemp protein powder,93601,6.01,33
+gooseberries,9107,9.83,2
+freekeh,98869,1.17,53
+banana pepper,11976,6.75,77
+ground ancho chili,1022009,6.93,63
+wonton wraps,10018368,3.89,83
+frank,21118,2.69,97
+sub bun,98940,7.33,97
+cooked wide egg noodles,20410,1.35,100
+coarsely ground pepper,2035,1.3,32
+booze,14037,7.44,7
+dessert oats,8121,5.96,9
+whole wheat pizza dough,93771,3.96,90
+rib-eye steak,23232,1.34,78
+king oyster mushroom,10011987,9.01,87
+celery hearts,11143,5.58,21
+brown onions,10511282,0.53,42
+pinot grigio,14113,1.75,24
+spaghettini,11420420,7.65,23
+firm tofu,10016213,7.31,84
+whole grain rice pasta,99038,7.01,54
+runner beans,10011052,6.6,46
+basil oil,1044053,1.31,66
+ice cream cookie sandwich,98882,4.41,62
+fresh pasta,20093,8.53,83
+flatleaf parsley,11297,8.35,16
+ground tumeric,2043,2.59,87
+part skim mozzarella,1028,5.65,48
+coix seed,99115,1.92,78
+hemp milk,98874,0.59,24
+yuzu,93702,6.24,46
+chicken wing section,5100,5.17,86
+yellow sweet pepper,11951,6.72,73
+guanciale,93799,9.12,79
+sugar cubes,10419335,6.62,7
+hershey's kisses,93743,2.94,81
+ajwain,99017,3.74,69
+irish moss,11444,1.67,95
+dumpling wrappers,10018368,2.15,95
+monkfish,15054,9.01,80
+chicken stock cubes,6080,7.2,94
+vegetables,11583,5.53,62
+low fat parmesan cheese,1204,3.34,56
+kecap manis,10016124,2.75,93
+pork bones,11811111,8.21,66
+maize flour,20019,5.48,38
+sandwich cookies,18166,1.88,75
+lump crab,10115136,0.92,98
+ground almond,93740,9.56,6
+celery rib,11143,3.9,80
+dried beans,16032,6.44,63
+green chile pepper,31015,9.63,92
+Frank's Red Hot,98878,9.44,10
+elderflower,11211111,9.4,10
+nut butters,12195,5.1,6
+red velvet cookie,18157,4.12,58
+french dressing,4120,2.47,81
+captain crunch cereal,99106,8.48,60
+salt packed anchovy,93796,9.63,21
+nonfat dry milk powder,1154,9.77,84
+hashbrowns,11390,3.02,88
+potato hash,11390,9.65,43
+pop corn,19034,6.14,99
+dried chilies,10111962,6.72,14
+ribeye steak,23232,4.16,83
+popped popcorn,19034,0.72,1
+green tea bags,13311111,2.07,49
+mint essence,1022050,3.84,14
+chipotle chile pepper,11632,7.18,71
+brown rice pasta,99038,6.79,52
+dried cannellini beans,10016049,7.51,17
+dried mango,93638,6.27,27
+wheat chex,1008082,2.14,53
+mozzarella cheese balls,93790,2.52,23
+zucchini pasta,10111477,9.37,100
+cinnamon swirl bread,18047,6.71,79
+nam pla,6179,2.74,44
+gem squash,10111641,7.04,87
+golden oreos,10018210,2.27,34
+pecan halves,12142,8.11,11
+collard leaves,11161,1.33,69
+bramley apples,1019003,4.09,11
+snickers candy bar,19155,1.21,58
+turkey giblets,5171,7.52,58
+manzanilla olives,9195,9.34,39
+pepper and onion mix,10011583,3.53,15
+coconut vinegar,98930,3.39,89
+sesame seed buns,10018350,6.92,52
+amaranth flour,93763,4.16,13
+ditalini,10020499,8.33,54
+whole-wheat couscous,99024,7.38,81
+raspberry extract,14011111,4.49,31
+moon shine,14037,8.69,21
+dried strawberries,98897,5.0,76
+creme de menthe liqueur,14034,7.28,77
+serrano chile peppers,11977,5.43,47
+chocolate covered caramel candies,19152,1.27,59
+epazote,98908,2.55,34
+grouper,15031,3.97,17
+ground canela,2010,1.06,48
+popped corn,19034,1.31,94
+tamarind juice,9437,1.72,27
+short grain brown rice,10020040,4.86,55
+whole wheat noodles,20124,5.58,49
+real bacon pieces,10862,6.9,38
+anjou pear,1009252,9.92,47
+crushed ice cubes,10014412,6.72,94
+tapioca pearls,20068,5.91,79
+shirataki noodles,98923,7.08,26
+cod fish,15015,3.47,7
+swede,11435,3.37,35
+egg flavor,1123,1.05,38
+whole-wheat breadcrumbs,99025,4.33,53
+quinces,9296,9.38,6
+lavender honey,10019296,4.05,8
+roquefort,1039,3.73,11
+arbol chile,11962,8.39,49
+cane syrup,19335,6.76,23
+extra large eggs,1123,1.34,4
+black walnuts,12154,7.4,82
+canned chipotle chiles,11632,5.8,54
+Meat Loaf Mix,98865,7.3,63
+boneless turkey breast,5696,2.9,19
+beef jerky,19002,8.8,36
+grape-nuts cereal,8038,8.61,37
+pink grapefruit,9112,1.01,8
+cod fish fillets,15015,3.49,4
+wondra flour,93739,1.46,62
+chocolate kisses,93743,2.93,35
+fat-free cream cheese,1186,1.0,63
+preserved lemons,99093,9.58,79
+chocolate coffee bean,19268,7.41,16
+sun-dried tomato wrap,99019,3.31,96
+cream corn,11174,2.78,19
+caramel popcorn,19039,8.75,62
+baby lima beans,11032,3.22,31
+horseradish cream,2055,0.87,85
+green chili pepper,31015,5.97,56
+butter-flavored syrup,19113,5.88,53
+macaroni and cheese,32004,6.34,74
+herb tea,14355,6.96,89
+dried coriander,2012,2.37,80
+tree tomato,99173,3.16,74
+canned black eyed peas,10016063,3.53,22
+roasted pepitas,12516,5.39,2
+piecrust,18334,7.6,41
+canned anchovy,15002,1.61,48
+butter milk,1230,5.51,15
+diet soda,14146,5.05,79
+sausage meat,7063,6.34,28
+brewed coffee,14209,8.37,25
+flaxmeal,12220,7.37,2
+ham steaks,10149,4.11,9
+bone in pork chops,10036,4.11,4
+turkey drumsticks,5193,4.87,57
+mulberries,9190,5.39,18
+mushroom blend,10011238,3.01,82
+turkey deli meat,7259,6.8,63
+solid white albacore tuna in olive oil,15124,5.55,15
+calamata olives,1009195,1.86,21
+pork rib roast,10044,1.43,71
+unbaked pie shells,18334,7.24,42
+wasabi tube,10011990,2.41,50
+yellow curry paste,10193605,5.67,72
+sheep's milk cheese,1011019,7.49,100
+non-dairy milk,16235,1.17,27
+stilton,1021004,4.69,79
+framboise lambic,93720,0.86,66
+sunchokes,11226,6.41,22
+soy crumbles,22120,9.47,45
+legumes,16069,6.1,52
+thai chili pepper,11670,0.61,37
+ginger snaps,18172,7.13,34
+dry seasoning rub,1012034,3.03,39
+soy margarine,4673,0.55,68
+rib eye steak,23232,7.91,82
+boneless beef short ribs,13149,9.86,65
+veal shanks,17276,5.98,40
+elderflower liqueur,99126,8.0,92
+oxtail,93778,5.64,44
+reduced fat mayonnaise,4641,7.99,19
+chicken leg,5075,4.83,40
+red-skinned sweet potatoes,11508,8.14,70
+elk sausages,10017338,8.36,35
+oil packed sundried tomatoes,11956,3.26,9
+french fried potatoes,11408,7.94,49
+jalepeno,11979,4.29,15
+canned fire roasted tomatoes,98849,5.96,26
+Greek froyo,93629,7.24,30
+scotch bonnet chile,10011819,4.02,64
+white potato,10111362,0.95,50
+strong brewed coffee,14209,8.48,15
+guava juice,93678,9.55,100
+psyllium husks,98892,5.97,82
+ras-el-hanout,1062027,5.88,1
+fried cod,10115261,2.58,91
+ground fenugreek,1002019,5.26,71
+globe eggplant,11209,5.58,69
+sugar cube,10419335,1.98,5
+red jalapeno pepper,10111819,3.89,48
+beet roots,11080,8.65,1
+rice cakes,19816,8.61,89
+Kosher Dill,10011937,4.03,24
+pimento cheese,99060,9.57,69
+soppressata,1007071,7.73,39
+ground rosemary,2036,2.17,0
+queso quesadilla,98973,4.21,40
+turkey tenderloins,99008,3.58,20
+baby bella mushroom,11266,2.02,17
+conversation hearts,99117,3.01,0
+chocolate covered coffee beans,19268,1.19,42
+cocoa puffs cereal,8271,4.16,7
+bologna,7008,9.9,48
+Hawaiian bread,98947,6.47,72
+ground chipotle chili pepper,1052009,3.31,70
+single serve tea,14355,6.26,16
+peperoncini,11976,5.08,87
+butter flavored crackers,18621,8.55,34
+pigeon peas,16102,3.5,65
+lemon sugar,10119335,0.92,12
+belacan,93657,0.62,28
+low-sodium soy sauce,16424,8.02,15
+cous cous,20028,5.03,94
+sweet pepper,10211821,9.33,58
+rice bran oil,4037,9.62,42
+lavang,1002011,1.64,89
+starchy potatoes,11353,4.85,40
+bitter chocolate,19078,3.28,23
+black quinoa,10020035,7.44,63
+cooked sushi rice,10220055,6.78,5
+beef liver,13325,0.86,0
+red currants,9084,8.6,64
+tostadas,18952,2.69,14
+lavash,93722,7.2,94
+hibiscus,14649,5.05,9
+camembert cheese,1007,0.87,16
+creole spice,1002031,8.18,20
+finely grated lime zest,1009159,2.19,1
+braeburn apple,1009003,4.97,54
+chili without beans,22911,6.09,68
+lobster tail,10015147,7.57,100
+Espresso Shot,14210,1.69,48
+alcohol free vanilla flavor,1012050,3.23,88
+imitation crab meat,93735,8.59,58
+whole milk mozzarella,1026,6.54,14
+redfish,10015024,9.28,68
+pepperonis,7057,8.85,13
+white chocolate chunks,10019087,1.24,92
+cape gooseberries,9138,1.91,64
+chicken drumettes,1005100,2.74,48
+malted milk balls,98864,2.58,22
+lucky charms cereal,8050,9.29,14
+roasting chickens,5109,4.19,9
+pastrami,7925,6.36,78
+ouzo,10714037,8.38,94
+cocktail sausages,7235,3.19,21
+lotus root,11254,3.28,74
+sun-dried tomato halves,11955,1.09,8
+ricotta salata cheese,1036,1.34,43
+pearl onion,10111282,6.98,62
+green papaya,1009226,2.94,59
+gochugaru,1072009,7.53,49
+seasoning packet,1032027,2.96,76
+boneless skinless chicken breast fillets,1055062,5.14,87
+whole wheat pita bread,18042,8.03,41
+red pearl onions,10411282,3.25,87
+orange-flower water,12411111,8.19,69
+bbq seasoning,1062034,2.99,59
+chanterelles,11239,7.18,0
+sun-dried tomato paste,93797,7.24,46
+wieners,21118,3.03,6
+low-sodium chicken broth,6970,6.18,79
+honey stick,19296,1.95,70
+frog legs,80200,3.18,21
+turkey wings,5195,2.32,78
+skinless chicken pieces,5011,6.2,47
+gum drop,19106,5.68,86
+spareribs,10088,1.69,10
+chilli pepper,11819,4.01,5
+pastry crust,10018338,2.48,92
+st germain liqueur,99126,8.38,17
+pumpkin bread mix,18010,3.87,43
+shredded pork,10073,4.07,86
+ground chipotle,1052009,6.44,54
+cracked black pepper,2030,5.45,17
+caramel sundae syrup,19364,9.02,70
+italian parsley,11297,8.45,52
+rack of lamb,17029,5.55,69
+ducks,5139,7.15,52
+all natural egg,1123,9.2,21
+canned biscuits,18009,5.18,19
+avocadoes,9037,9.39,75
+sweet pickle juice,93640,2.85,56
+yellow mustard seed,2024,1.32,89
+anaheim pepper,10031015,8.8,32
+round steaks,23617,9.62,31
+beef fillet,13926,9.33,30
+nonfat cottage cheese,1014,0.54,73
+dried hibiscus flowers,10014649,0.71,6
+moscato,14140,8.03,98
+fine salt,1012047,4.82,87
+cooked pasta shells,11020421,7.61,65
+basil leaf,2044,4.51,19
+honey crisp apples,9003,5.87,31
+beef back ribs,23236,6.57,91
+scotch whisky,10014052,2.31,65
+clotted cream,93665,3.8,69
+katsuobushi,98898,3.54,88
+coleslaw dressing,43016,1.49,81
+oaxaca cheese,98989,4.14,74
+aloe vera juice,99095,0.81,28
+proscuitto,10010123,9.28,58
+catalina salad dressing,93649,4.7,33
+sun dried tomato halves,11955,7.62,71
+medium-grain rice,10220052,1.78,49
+long red chilli,11819,0.51,76
+breadstick dough,98918,4.68,37
+candied nuts,10093785,5.04,25
+bolognese,11549,9.75,97
+stir fry oil,4513,5.39,68
+butter substitute,4073,9.73,73
+wheat beer,14006,3.5,88
+cold cuts,1005006,1.71,31
+red leaf lettuce leaves,10011257,4.47,34
+gluten free bread crumbs,93694,3.62,76
+mixed fruits,9431,4.19,31
+baby shrimp,15152,5.6,93
+unsalted pumpkin seeds,12016,4.52,19
+chai tea bags,13711111,5.53,4
+raspberry jelly,11419297,7.07,71
+sunbutter,98928,5.51,61
+canned green chilis,11980,7.1,97
+dried coconut,12108,7.76,60
+Amaranth Stone Ground Flour,93763,3.49,48
+stock powder,1016075,9.56,6
+egg plants,11209,6.91,6
+beef cubes,10013411,3.18,72
+papayas,9226,1.47,65
+reindeer,17162,9.91,67
+grappa,93809,4.72,97
+cream cheese icing,19228,9.12,21
+ground cumin seed,1002014,7.7,13
+goose fat,4576,6.13,1
+black lentils,93718,2.49,32
+chestnut flour,99016,1.43,12
+fennel pollen,93808,4.74,96
+purple plums,9279,4.86,9
+black treacle,93774,4.57,78
+whole wheat pita breads,18042,5.97,64
+mizuna,10011270,2.03,38
+pheasant,5153,1.12,8
+amchoor,98964,0.84,74
+muffin mix,18010,4.08,17
+ground chipotle chile,1052009,2.83,23
+tomatos,11529,2.51,84
+pizza seasoning,1052027,1.89,31
+artificial vanilla flavoring,1012050,8.21,18
+low fat coconut milk,99009,1.15,19
+unpopped popcorn,25002,8.9,17
+crÃ¨me De Menthe Baking Chips,99054,9.32,54
+bison,17330,8.19,17
+ice cream cone,18271,5.52,71
+anaheim peppers,10031015,1.7,9
+citron,10093702,5.83,59
+black cardamom pods,1012006,6.72,80
+strawberry flavored gelatin,10219172,5.23,17
+lucky charms,8050,1.31,43
+ox tail,93778,2.36,24
+cantaloupe balls,1009181,1.31,17
+cranberry bread,18064,3.22,70
+jalepenos,11979,5.14,14
+chipotle chili,11632,6.58,82
+vegan cheddar cheese,10193701,7.69,3
+sundried tomato wrap,99019,3.13,52
+cherry flavored gelatin,10419172,0.79,100
+blackening seasoning,99003,9.27,68
+colored sugar,19335,5.91,97
+sago,99164,5.6,88
+pomegranates,1009286,3.74,48
+star fruit,9060,4.45,61
+grana padano cheese,1011033,2.36,77
+dried lima beans,16071,4.93,46
+sazon completa seasoning,98999,4.81,86
+croissant,18239,9.99,76
+candiquik,98857,1.82,47
+bouillon cube,1026076,4.4,31
+lasagne sheets,10620420,3.08,12
+comte cheese,1001023,4.97,34
+1000 island dressing,4017,1.93,84
+elbow noodles,10120499,8.37,13
+fresh italian parsley,11297,4.22,22
+red jalapeno chile,10111819,4.41,31
+ancho chili,10211962,7.12,13
+fiddleheads,11995,5.36,67
+mozarella cheese,1026,1.41,60
+warm milk,1077,5.96,24
+whole grain oat flour,20132,9.62,92
+Caramel Corn,19039,3.35,61
+low-sodium chicken stock,1006970,2.12,95
+pork crown roast,10044,3.11,90
+portabella mushroom cap,11265,9.26,71
+pepperoncinis,11976,2.19,82
+dungeness crab,15143,1.51,34
+guava nectar,9435,2.28,14
+cranberry beans,16020,6.13,27
+wheat thins,93728,3.92,48
+lasagna sheets,10620420,6.22,78
+boneless skinless chicken breasts,1055062,5.86,84
+potato bread,18971,6.65,88
+job's tears,99115,9.38,73
+fresh lavender,93811,0.58,2
+dried chipotle chili pepper,98839,1.89,95
+ground beef round,10023562,5.53,84
+quick oats,8402,9.33,79
+bar-b-q sauce,6150,8.61,46
+sucralose,10019868,3.05,27
+dark soy sauce,16124,2.64,47
+lychee,9164,4.98,80
+gingerbread men,10118192,2.97,20
+dried peaches,9246,9.3,76
+reduced sodium beef broth,10093741,6.9,99
+barley flour,20130,6.96,40
+malted milk,14311,0.99,79
+mixed fruit,9431,1.39,30
+pizza base,93770,3.71,96
+lemon sorbet,10093691,3.62,30
+annatto seeds,10093648,7.72,82
+dry couscous,20028,6.86,31
+chocolate soy pudding,93700,9.23,69
+elk roast,35177,8.57,78
+coconut pecan frosting,19227,1.16,58
+flaxseed oil,98934,8.57,100
+ginger brew,14136,3.93,32
+rice krispies,8065,7.47,31
+toffee chips,19383,4.36,83
+ladyfinger cookies,18423,1.11,4
+beef shanks,13227,6.26,2
+plum vinegar,98954,8.24,74
+filter coffee,14209,4.33,0
+siracha,1016168,9.33,83
+corn grits,8160,3.21,27
+shredded reduced fat cheddar,1001168,2.09,64
+egg roll wrap,18368,4.26,40
+peppermint crunch,98858,7.34,72
+yucca,11134,2.4,19
+scotch bonnet chili,10011819,7.81,18
+smoked haddock,15035,9.89,20
+garlic butter,1001,8.77,3
+reese's cups,19150,8.72,36
+mini bun,93646,1.23,81
+artichoke bottoms,98959,2.49,43
+cheez whiz cheese dip,1188,2.9,98
+skinless boneless turkey breast,1005696,1.32,76
+cream of wheat,8104,5.56,15
+capsicums,10211821,2.84,6
+watermelon radish,10011429,8.55,61
+cornish hen,5307,8.99,53
+semisweet chocolate minichips,10319903,0.67,17
+skim milk mozzarella,42304,3.54,100
+lamb loin,10017026,9.05,65
+curly leaf lettuce leaves,10011253,1.51,52
+hash,11390,5.58,44
+cooked bow tie pasta,10120421,5.49,16
+grana padano,1011033,9.94,70
+snails,90560,9.14,56
+whole garlic clove,11215,8.76,65
+new potato,11352,0.97,8
+mandarin,9218,7.59,0
+PB2,99089,8.6,33
+veal loin chops,17104,4.06,12
+horseradish root,98949,7.95,87
+hot giardiniera,99014,9.79,15
+stock cube,1026076,9.7,71
+ground chorizo,7019,3.59,66
+cheeseburger macaroni,99037,9.97,2
+raisin bread,18047,7.43,73
+nonfat vanilla greek yogurt,99033,8.02,93
+mandarins,9218,7.32,48
+fine cornmeal,35137,3.43,48
+cocktail tomatoes,10311529,8.38,4
+korean bbq sauce,99000,0.6,3
+shiitakes,11238,7.77,5
+fresh raspberries,9302,7.93,5
+manchego,93821,5.55,80
+shellfish,10115261,8.95,65
+kraft single,1190,2.08,3
+raspberry gelatin dessert mix,10319172,7.48,82
+brats,7013,2.01,37
+tomato and basil sauce,6233,8.03,34
+colby monterey jack,1011,8.44,16
+ribs celery,11143,9.8,57
+chianti,14108,1.16,40
+hardboiled egg,1129,2.34,46
+turkey sausages,7955,7.85,68
+white asparagus,10011011,1.08,61
+fresh cracked black pepper,2030,4.04,64
+dark chocolate morsels,10019071,1.04,12
+burrito wrap,10118364,1.57,26
+yacon syrup,93806,9.69,63
+frozen cranberry juice concentrate,14430,8.29,88
+poblanos,10011333,5.7,21
+coffee syrup,10242040,2.69,46
+farina,8104,3.26,82
+sliders buns,93646,8.16,34
+turkey breasts,5696,1.54,64
+fat free cool whip,1200,8.8,0
+hotdogs,21118,5.84,97
+waffle cones,18272,1.74,56
+canned sardines,15088,7.48,75
+cavatappi,10320420,5.6,14
+corn flake cereal,8020,6.16,67
+egg roll wraps,18368,4.93,63
+tilapia fillet,15261,2.09,27
+unprocessed wheat bran,20077,9.34,43
+confectioner's swerve,99084,4.15,96
+plain doritos,19056,3.72,20
+cooked green lentils,10216070,2.94,14
+black eyed beans,16063,2.61,97
+pouring cream,1052,6.87,13
+camembert,1007,4.64,90
+grapefruit peel,1009156,1.98,2
+dulse,93615,7.66,98
+chilli garlic sauce,93749,2.06,30
+mezcal,11014037,8.01,8
+coarse black pepper,1002030,9.79,31
+twix,19160,8.29,53
+cabbages,11109,4.83,33
+bbq spice,1062034,6.42,87
+pasteurized eggs,1123,8.13,3
+lamb cutlets,17239,9.2,7
+canned chipotle pepper,11632,0.66,22
+blackened seasoning,99003,5.72,61
+low fat cheese,1168,8.74,30
+fat free mayonnaise,42193,7.41,57
+long pepper,99141,1.03,5
+cheez whiz,1188,5.76,35
+chocolate eggs,99112,7.72,44
+90 percent ground beef,23562,5.97,45
+luncheon meat,7908,9.4,78
+canned cannelini beans,10016051,7.32,92
+fresh orange juice,9206,6.77,71
+farmer's cheese,98933,8.89,8
+buttery rounds,18621,9.97,22
+chicken fingers,1015062,0.97,78
+dried kidney beans,16032,7.75,85
+bucatini pasta,11620420,7.19,71
+roasted nuts,12135,9.32,100
+corn flake crumbs,1008020,3.5,14
+lowfat greek yogurt,93652,1.14,98
+white morsels,10019087,3.72,83
+little neck clams,10015157,3.71,75
+khoya,99090,1.96,2
+fettuccini,10020409,6.95,10
+chicken broth powder,1016080,5.57,63
+jumbo marshmallows,10019116,7.01,75
+lowfat yogurt,1117,3.13,23
+sugar free maple syrup,19128,9.92,64
+sausage patties,1047063,1.51,39
+chicken stock powder,1016080,5.5,86
+oat porridge,8121,1.77,59
+ripe banana,9040,7.99,31
+skin on chicken drumsticks,5066,5.89,89
+chipotle chile,11632,8.44,16
+lox,15077,5.52,75
+kamut,20138,3.89,15
+irish oats,93695,0.54,50
+ground sausage meat,7063,5.77,78
+plain low-fat yogurt,1117,5.17,36
+snack cake mix,18010,0.87,48
+cantaloupes,9181,6.73,21
+pizza crust mix,98924,2.09,36
+banana pepper rings,98903,3.02,34
+drumstick,5066,9.61,20
+wasabi peas,93719,2.96,76
+vegetable oil spread,4073,1.86,53
+red chard,11147,9.5,64
+seafood,15152,2.01,51
+cheese tortilla chips,19057,1.53,100
+red jalapenos,10111819,4.04,60
+dried dillweed,2017,6.71,87
+hero bun,98940,6.41,48
+kidney,13323,5.8,95
+white grapes,9132,5.11,77
+dragon fruit,93662,1.58,38
+extra large shrimp,15152,4.65,58
+coarse sugar,10019335,4.45,18
+mawa,99090,7.6,91
+black cherries,9063,8.96,52
+low-fat sour cream,1179,9.76,96
+cinnamon bun,99020,1.32,39
+sunflower butter,98928,5.51,13
+acini di pepe,93647,3.47,23
+puff pastry sheet,18337,9.22,78
+giant shells,10520420,6.02,27
+flat iron steaks,23059,1.19,31
+strawberry sauce,19137,9.83,86
+cheesecake pudding mix,99192,8.4,71
+non-fat vanilla greek yogurt,99033,9.29,69
+sago pearls,99164,1.23,24
+baby leeks,10011246,4.45,70
+dried chili peppers,10111962,3.49,3
+gluten-free elbow macaroni pasta,10398875,2.8,9
+mcintosh apple,1039003,9.34,66
+st germain,99126,4.19,40
+squid ink pasta,99074,3.97,61
+pasta dough,10118334,1.68,58
+chayote squash,11149,5.52,55
+chile de arbol,11962,4.14,54
+seed mix,93818,3.14,20
+no-calorie sweetener,19868,8.4,76
+fresno pepper,10011979,8.63,65
+egg pasta,20409,8.81,12
+low-fat ice cream,19088,1.79,61
+mango sorbet,10193691,2.72,32
+fresh tuna,10015117,1.85,61
+pam,4679,7.7,30
+pasilla chile,11982,1.53,94
+ancho chile peppers,10211962,3.8,12
+bran flakes,8029,9.14,72
+melon,9431,9.19,53
+curly leaf parsley,11297,4.39,66
+juice boxes,1019016,3.7,19
+artificial vanilla,1012050,5.6,11
+Mango Fruit Puree,1009176,3.1,99
+beef stock cube,6076,4.64,95
+crushed pineapple,1019354,2.3,46
+filtered water,14412,1.12,41
+Butterfinger,19069,2.28,67
+zinfandel,14102,0.54,5
+canned chipotle peppers,11632,1.1,87
+banana shallots,11677,5.08,38
+pork liver,10110,5.44,65
+sweet potato starch noodles,99031,8.04,89
+sugar cookie,18192,8.98,15
+hawaiian bun,98871,5.47,99
+ready-to-use pie crust,18334,9.57,45
+low-fat mayonnaise,4641,7.44,5
+ice cream cake,19095,8.32,71
+korean chili paste,1016973,0.58,53
+cod fish filets,15015,2.63,55
+cooked orzo pasta,10920421,7.73,37
+beef bone broth,98904,9.7,63
+potato puffs,11398,9.34,24
+coffee mix,14214,6.97,49
+whole-wheat penne,99182,2.27,7
+captain crunch,99106,2.39,73
+dried chiles,10111962,2.06,33
+cassava,11134,9.84,40
+light salad dressing,4011,7.07,32
+cactus pads,11963,7.72,57
+mackerel fillets,10015050,2.31,18
+ridge gourd,99162,9.7,60
+sea bream,93614,0.79,7
+Pork & Beans,16009,3.54,90
+vegan mozzarella,93701,7.54,43
+devil's food cake mix,18099,1.0,84
+cannelini beans,10716050,1.46,10
+sour dough bread,10118029,1.29,84
+capicola,93679,4.36,27
+macadamias,12131,7.02,81
+colorful sprinkles,93645,9.96,35
+prego sauce,10011549,8.62,93
+portabello mushrooms,11265,3.31,13
+asian vegetables,10111583,7.5,29
+93% lean mince turkey,5665,9.42,73
+skinless chicken legs,5080,1.61,37
+toffee bar candy,98978,9.01,10
+chicken drummettes,1005100,6.54,51
+chablis,10014160,5.01,16
+sweetened flake coconut,12109,2.87,5
+andouille sausages,7064,0.8,84
+grey goose vodka,14051,3.11,69
+textured vegetable protein,98854,8.72,73
+spinach fettuccine,10320409,1.88,6
+pretzel nuggets,99155,6.6,78
+tiger shrimp,10115149,6.26,67
+cashewmilk,99088,6.42,49
+garbanzo flour,16157,2.69,60
+slivered blanched almonds,10012062,7.83,87
+soya chunks,98854,6.83,65
+sweet pickle,11940,7.35,71
+broad egg noodles,20409,7.38,19
+cockles,35028,5.53,50
+sirloin tip steak,23032,2.11,78
+cod filet,15015,0.81,79
+chartreuse,99091,5.66,40
+mahi-mahi fillets,15023,7.17,9
+yellow squashes,11641,6.56,83
+borlotti beans,10016020,9.58,27
+snickers chocolate bar,19155,2.93,14
+dried chipotle chiles,98839,1.28,50
+filet mignons,10013926,3.68,45
+vegetable bouillon cubes,98845,6.86,6
+cooked crab,15141,3.54,34
+butternut pumpkin,11485,9.23,53
+unseasoned rice wine vinegar,1022053,8.61,57
+red food colouring,1451111,6.89,7
+sweet potato fries,11408,5.11,66
+egg white powder,1173,9.92,70
+gemelli,10420420,9.08,42
+pot stickers,99034,3.31,90
+cinnamon schnapps,93731,0.82,38
+no bake cookies,18192,3.15,25
+milky way,19135,1.41,19
+pork loin chop,10062,7.22,99
+beef patties,23507,7.5,55
+beef fillets,13926,5.12,83
+nonfat mayonnaise,42193,0.99,11
+mushroom mix,10011238,7.07,48
+collards,11161,3.76,88
+yeast rolls,18347,9.48,37
+mangetout,10011300,3.13,70
+acai powder,99094,5.18,94
+low-carb tortilla,99086,3.26,14
+teriyaki baste and glaze,6112,5.71,54
+cooked jumbo pasta shells,10520421,9.92,51
+hotdog,21118,7.11,25
+maraschino cherry syrup,99032,0.79,84
+king oyster mushrooms,10011987,4.53,77
+lime flavored gelatin,19172,5.26,73
+non fat cottage cheese,1014,8.34,18
+fresh parmesan cheese,1033,7.34,69
+bran flakes cereal,8029,7.22,48
+cooked soba noodles,20115,3.68,100
+fresh sardines,10093703,8.2,31
+oat milk,99149,0.92,30
+medium grain rice,10220052,3.17,39
+kang kong,11503,0.66,98
+adzuki beans,16002,0.59,11
+au jus gravy,6996,4.18,3
+vegetable medley,11583,6.59,42
+vegenaise,98975,6.37,65
+low-fat salad dressing,4011,6.3,27
+fresh blackberries,9042,0.58,1
+lettuce cups,93623,6.68,18
+poached egg,1131,4.3,78
+turbinado,19908,9.49,2
+blueberry juice,14623,1.65,27
+bread soda,18372,9.04,87
+strawberry gelatin dessert mix,10219172,3.98,10
+baby corns,10011168,5.42,50
+low fat natural yogurt,1117,7.63,27
+brat,7013,4.09,57
+beef bone,11611111,2.22,16
+raspberry flavor gelatin,10319172,8.9,50
+fresh flatleaf parsley,11297,4.6,32
+soy bean flour,16115,8.64,62
+evaporated cane juice crystals,93625,3.29,89
+sugar-free raspberry jello mix,10319175,1.71,1
+cube steaks,13874,4.92,27
+gingerbread mix,98856,9.76,59
+edam cheese,1018,2.43,64
+porterhouse steaks,10023003,0.66,78
+imitation crab,93735,6.14,98
+whole wheat elbow macaroni,10220124,1.17,100
+unsweetened soymilk,16222,4.4,3
+rendered chicken fat,4542,7.18,27
+turnip tops,11568,2.66,28
+fettucine,10020409,5.06,58
+tri-tip steak,10013954,5.28,96
+buttercup squash,10011643,5.48,86
+green sweet pepper,11333,3.27,19
+potato crisps,19411,4.07,76
+baby potato,11352,5.13,49
+marie biscuits,10018173,8.78,88
+black cod,15019,5.38,45
+bouillon powder,1006075,9.61,95
+rice papers,10118368,3.43,69
+imitation vanilla extract,1012050,6.02,22
+bean threads,16082,5.4,35
+farm raised catfish fillets,15234,3.82,46
+distilled white vinegar,2053,5.91,50
+strained yogurt,1256,7.84,8
+chex corn cereal,8019,4.91,76
+turkey tenderloin,99008,6.42,95
+barbecue seasoning,1062034,7.4,94
+beansprouts,11043,2.88,18
+palm hearts,43392,5.04,100
+mixed salad,21052,9.91,74
+chocolate dessert sauce,10019348,1.5,17
+cherry gelatin dessert mix,10419172,3.12,30
+golden oreo cookies,10018210,5.85,98
+piloncillo,10099002,2.32,10
+lime gelatin dessert mix,19172,3.91,6
+bread loaf,18064,6.71,58
+dehydrated onion,11284,3.08,89
+nacho cheese,98901,8.32,64
+banana leaf,10011111,8.25,27
+manicotti,10220420,7.53,91
+chipotle chili pepper,11632,1.73,93
+wild blueberries,1009050,9.32,92
+corn meal mix,20024,7.4,37
+vegan buttery sticks,4628,5.99,1
+cashew nut,12087,7.7,51
+date palm sugar,93831,1.28,7
+guinea fowl,5151,1.11,98
+TSP,98854,1.88,70
+low fat shredded cheddar,1001168,4.36,27
+graham cracker square,10218617,2.13,47
+mounds,19142,9.34,64
+red jalapeno peppers,10111819,6.89,61
+calf liver,17202,8.47,42
+verjus,93757,7.47,32
+hot dog bun,10018350,7.37,55
+lychees,9164,4.22,73
+emmentaler cheese,1040,9.24,14
+tempura shrimp,15152,2.62,19
+cooked shell pasta,11020421,6.51,91
+orange jell-o,10119172,1.03,59
+frankfurters,21118,7.01,94
+dried arbol chiles,11962,9.55,7
+asian sesame oil,4058,5.81,83
+chayotes,11149,3.78,57
+black plums,9279,1.58,98
+red hots,93737,8.22,43
+whole tomato,10011531,2.69,26
+vegetarian baked beans,16006,9.94,89
+capellini,11720420,9.64,99
+garbanzos,16057,5.41,9
+cooked farfalle,10120421,0.91,32
+european seabass,15004,5.71,99
+red chilis,11819,9.84,94
+emmental cheese,1040,9.5,78
+boston bibb lettuce,11250,3.08,95
+green hot sauce,1006168,7.86,80
+cracker meal,10018621,3.1,14
+orange jello,10119172,4.03,96
+fat free soy flour,16117,6.53,4
+plum preserves,10919297,6.65,50
+oil-packed anchovies,15002,8.69,70
+schmaltz,4576,3.76,70
+dairy free milk,10016223,5.02,59
+banana nut bread,18019,3.2,26
+baharat,10093663,9.87,40
+guajillo chile,10011962,2.22,44
+hawaiian sweet rolls,98871,9.09,51
+ras el hanout spice mix,1062027,5.88,33
+tomato concentrate,11887,4.84,50
+moong beans,16080,1.96,57
+kelp noodles,99081,9.27,41
+crayfish,15243,9.74,90
+overnight oats,8121,4.17,26
+whole duck,5139,8.72,36
+coffee granules,14214,4.09,99
+dutch-processed cocoa powder,10019165,6.78,25
+lowfat cheese,1168,6.37,82
+ham slices,10010151,3.06,69
+italian turkey sausages,7927,6.29,7
+bouillon cubes,1026076,4.91,38
+lowfat ice cream,19088,6.26,55
+sopressata,1007071,3.47,48
+ground marjoram,2023,6.56,77
+strip loin,13913,6.25,11
+pork stock,6170,7.88,5
+leftover turkey,5166,2.35,71
+pork fillet,10218,8.98,66
+Mini M&Ms,19157,8.1,33
+franks,21118,1.62,7
+st. germain,99126,0.94,69
+dr pepper,98974,8.63,44
+empanada dough,93734,4.96,73
+grain alcohol,14037,3.74,30
+matzoh meal,18217,7.9,68
+mahimahi,15023,8.78,40
+dr. pepper,98974,1.74,67
+mange tout,10011300,7.08,6
+duck eggs,1138,6.13,59
+amaretti biscuits,93766,9.13,42
+chocolate topping,10019348,5.83,48
+beef filets,13926,3.67,26
+bird's eye chiles,11670,9.43,70
+black currants,9083,1.95,23
+unsweetened dutch process cocoa powder,10019165,9.72,89
+porterhouse steak,10023003,8.68,17
+coconut manna,93746,5.66,95
+whole-wheat pasta,20124,0.69,8
+fat free ricotta cheese,93630,6.54,15
+basil infused oil,1044053,1.48,97
+bird's eye chilis,11670,8.83,1
+almond joy,19065,8.44,12
+cooked rigatoni,11220421,0.92,33
+pretzel rolls,99156,7.54,70
+zoodles,10111477,9.47,91
+tuna packed in water,15121,7.73,32
+fat-free yogurt,1118,5.06,44
+unsweetened dutch processed cocoa powder,10019165,7.48,82
+cooked spiral pasta,11320421,7.07,80
+chipotles,11632,8.37,98
+sweet red peppers,11821,5.72,63
+cheese pumpkin,10011422,9.09,86
+breakfast sausage patties,1047063,1.69,51
+fuyu persimmon,1009265,7.99,6
+boar leg,10417158,5.76,40
+whitefish fillets,10015261,8.41,27
+granulated swerve,99084,5.23,69
+cannoli shells,98983,4.76,92
+whipped butter,4602,0.76,23
+Ranch Sauce,4639,2.56,2
+filled pasta,20420,0.63,77
+white sweet potatoes,10011507,6.86,8
+green olive,1029195,3.21,94
+dried chillies,10111962,5.64,27
+iceburg lettuce,11252,1.26,71
+ground red pepper,2031,5.85,24
+ciabatta buns,93699,7.58,16
+milk kefir,93611,5.16,54
+bleu cheese dressing,43020,5.55,45
+havarti,93838,6.4,46
+ice tea,14355,8.69,59
+za'atar spice blend,1002042,5.29,21
+skin on boneless chicken breast halves,1025057,4.32,59
+pimento-stuffed green olives,1049195,0.85,69
+milled flax seed,12220,3.29,85
+turkey fat,4575,2.84,47
+pudding spice,1022035,2.83,96
+dried garbanzo beans,16056,5.32,26
+red grapefruit juice,98926,3.77,71
+100 percent whole wheat crackers,18235,0.58,43
+bleu cheese crumbles,1001004,9.36,35
+cocoa puffs,8271,3.04,72
+deep dish pie shells,18945,4.99,79
+treacle,19304,8.42,68
+smoked sausages,7916,5.04,95
+agar-agar,11663,2.62,62
+chocolate ice cream topping,19348,5.09,14
+butterhead lettuce,11250,8.91,3
+royal porgy,15090,4.6,37
+fruity pebbles,8034,3.31,7
+spinach tortellini,93725,6.01,90
+salmon caviar,15072,2.58,2
+muscat wine,14140,3.98,52
+gluten-free bread crumbs,93694,5.87,94
+turkey wing,5195,6.69,70
+cranberry juice concentrate,14430,0.86,32
+grape tomato,10111529,5.19,36
+nopales,11963,2.46,12
+bicarb soda,18372,8.89,78
+herring,15039,6.39,84
+crisped rice cereal,8066,7.77,90
+nondairy butter,4628,8.05,22
+whole fish,10115261,7.29,23
+gluten free frozen piecrusts,10018334,8.11,70
+dried pears,9259,1.55,86
+whole grain pastry flour,10020080,7.97,92
+shark,15095,1.0,65
+banana shallot,10011677,9.28,67
+radish leaves,99157,6.89,50
+honey dew,9184,8.99,81
+fillo dough,18338,8.32,10
+berry mix,9054,9.37,86
+ground white pepper,2032,1.44,26
+lowfat vanilla yogurt,1001119,7.66,66
+tumeric powder,2043,4.74,76
+country time lemonade mix,14287,8.21,82
+low fat salad dressing,4011,6.13,68
+sunflower sprouts,98986,1.56,1
+caramel candy,19074,2.97,43
+canned fava beans,16054,3.64,81
+spanish onion,10511282,2.32,21
+rainier cherries,98939,1.16,89
+porter,93619,0.72,62
+green prawns,10015149,2.38,44
+dried thyme leaves,2042,2.27,32
+cranberry juice cocktail concentrate,14430,1.99,42
+beluga lentils,93718,0.88,65
+lasagne pasta,10620420,6.48,40
+cooked whole wheat pasta,20125,8.81,30
+huckleberries,35043,2.38,80
+dried chile flakes,1032009,8.95,65
+muskmelon,98936,2.29,84
+goldfish crackers,99121,6.6,84
+bratwursts,7013,6.26,45
+taro root,11518,4.34,94
+non-fat vanilla yogurt,43261,4.62,97
+grape jam,10519297,7.56,38
+alum powder,10118371,5.56,19
+cooked wheat berries,10098872,4.68,62
+hamburger patties,23507,9.77,7
+raisin bran cereal,8061,2.39,83
+baby eggplant,10011209,1.23,43
+gluten free noodles,98875,1.87,34
+licorice twists,99160,2.46,60
+creamer potatoes,11352,6.31,71
+lime curd,98902,9.17,58
+latte,14209,9.41,10
+green mango,1019176,1.32,77
+green pesto,93698,8.16,19
+rainbow jimmies,93645,8.09,50
+beef stir-fry meat,23572,5.41,78
+pretzel buns,99156,8.73,60
+au jus,6996,3.7,29
+fresh oregano leaves,1002027,5.59,79
+instant grits,8092,3.97,25
+chocolate sandwich biscuits,18166,3.23,99
+dried chipotle chile,98839,9.94,89
+soy oil,4513,2.26,36
+canned buttermilk biscuits,18009,3.85,27
+quinoa pasta,99062,6.48,35
+low-fat coconut milk,99009,2.05,24
+white kidney beans,16028,2.34,9
+scallop,10015172,7.73,42
+fresh pineapple,9266,2.17,34
+nacho cheese doritos,19057,8.86,41
+aji amarillo paste,1006973,8.7,49
+branzino,15004,9.5,56
+soft cheese,1001017,1.41,14
+hero rolls,98940,7.33,5
+poblano chili,10011333,1.88,80
+pumpernickel,18044,3.02,63
+turkey burger,99026,7.73,87
+lemon jello,19172,2.0,38
+animal cookies,10118192,9.87,46
+bratwurst sausage links,7013,5.05,61
+fava pods,16053,6.91,11
+malt beverage,14006,4.42,74
+fun size butterfinger,19069,6.76,87
+low fat graham crackers,10118617,6.07,33
+candy corn oreo cookies,10018166,3.49,98
+squid tubes,10015175,8.79,22
+breakfast cereal,8029,6.4,30
+brown cap mushrooms,11266,3.71,100
+gluten free crackers,99057,2.52,61
+COCOA KRISPIES,8014,9.64,7
+bone in skin on chicken breast,1005057,7.45,78
+chocolate flavored milk,1103,9.77,97
+sodium bicarbonate,18372,0.6,41
+chilean sea bass,93804,3.2,66
+mint jelly,93683,1.79,37
+chocolate covered caramels,19152,4.04,77
+scape tops,93750,3.02,72
+king trumpet mushrooms,10011987,3.59,29
+vegetarian sausages,98968,6.63,32
+stuffed chicken breasts,1015006,2.81,69
+perilla leaves,10311111,2.14,5
+mixed fresh herbs,1012024,4.51,26
+soy lecithin granules,98965,5.56,25
+chicken quarters,1005091,5.95,90
+fat free half-and-half,1199,7.45,79
+t-bone steaks,23003,9.6,83
+cooked fusilli,11320421,2.33,50
+pike,98906,5.51,66
+pimiento cheese,99060,2.41,6
+spinach wraps,99018,5.64,53
+ruby port,10114057,5.07,40
+lean racks of lamb,10017032,6.29,68
+black beluga lentils,93718,9.89,92
+finger chilis,10211819,9.26,35
+whole coriander seed,2013,1.5,2
+licorice twist,99160,8.43,1
+free range eggs,1123,2.57,93
+mitsuba,99135,5.66,83
+kumquat,9149,3.39,59
+low sodium broth,1016970,7.81,52
+chicken bone,11711111,2.93,55
+thai chilis,11670,3.4,72
+light vanilla ice cream,19088,6.0,2
+chuck steaks,23145,6.96,45
+fat free reduced sodium chicken broth,6984,9.68,46
+citrus fruit,9431,2.35,3
+turkey thigh,98913,7.46,100
+chipotle chilis in adobo,11632,3.45,44
+frozen yogurt,93629,1.18,9
+spinach tortillas,99018,4.36,7
+oatmeal raisin cookie,10118192,5.54,84
+shiso leaf,10311111,2.31,47
+bone in turkey breast,1005696,4.59,18
+ajwain seeds,99017,3.29,77
+dried chili,10111962,7.26,58
+lemon sole,10015028,1.9,20
+creamed coconut,12177,1.12,98
+mostaccioli pasta,12120420,4.6,11
+walla walla,11294,5.16,9
+soy nuts,16111,1.85,40
+hamburger helper,99037,3.26,77
+chorizo crumble,1007019,6.58,44
+cranberry cocktail,14242,2.22,32
+mandarin orange sections,9218,9.22,83
+beef bouillon powder,6075,3.62,61
+rice cake,19816,7.55,61
+red pesto,93697,4.13,70
+galliano,93780,7.56,50
+boar,17158,8.72,20
+turkey breast tenderloin,99008,4.56,48
+rapini,11096,7.62,89
+scotch whiskey,10014052,2.08,64
+protein powder mix,1223,0.74,97
+mixed nuts,12135,7.12,77
+flax oil,98934,8.45,17
+reeses cups,19150,4.26,2
+whole-wheat rolls,18351,2.74,64
+chinese five spice,1002002,3.32,64
+tiger prawn,10115149,8.63,47
+cooked rotini,11320421,6.65,37
+soured milk,1077,4.43,82
+worm shaped gummy candy,93642,0.87,43
+lotus nuts,12013,7.38,54
+chocolate covered sunflower seeds,93641,7.27,61
+peanut satay sauce,99028,4.4,51
+2% milk,1174,7.52,86
+sandwich thins,18064,3.43,89
+thai chile pepper,11670,5.76,25
+fresh lemon zest,9156,7.06,82
+dried chilli,10111962,9.25,93
+low-fat chocolate milk,1103,3.81,73
+low-fat buttermilk,1088,2.71,74
+kit kat,19109,3.35,11
+king arthur unbleached all-purpose flour,10020081,0.51,46
+bags chai tea,13711111,1.92,9
+gluten-free chocolate cookies,99070,7.84,89
+cooked brown lentils,16070,7.65,69
+crab legs,15136,9.86,12
+lite olive oil,4053,5.05,14
+acai berry powder,99094,2.43,35
+penne noodles,11120420,9.83,71
+turkey leg,5193,8.93,25
+frozen biscuits,18009,3.89,61
+grated parmesan cheese,1032,3.05,27
+cooked grits,8164,8.16,27
+baby-back loin ribs,10010204,4.57,66
+diet coke,14146,0.8,43
+beef ravioli,22900,3.73,48
+spicy peppers,11819,6.66,8
+caviar alternative,10015072,8.0,91
+capellini pasta,11720420,6.58,40
+cardamon pods,1002006,8.72,9
+gelato,19095,2.16,65
+reduced fat coconut milk,99009,7.07,46
+ground hamburger,10023572,3.53,45
+pasteurized egg,1123,8.0,3
+beef filet,13926,8.55,27
+vanilla pods,93622,6.53,50
+maca,99079,7.9,37
+condensed nonfat milk,98880,2.01,23
+broths,1006615,2.44,28
+gammon steak,10149,3.96,18
+creme de cocoa,93712,7.02,93
+fresh baby spinach,11457,9.03,44
+boneless chuck steak,23078,1.38,100
+lavash bread,93722,2.59,33
+creamer potato,11352,4.36,28
+trout,10115261,7.72,39
+bramley apple,1019003,5.86,79
+low-fat vanilla yogurt,1119,2.06,83
+guavas,9139,6.86,4
+balm mint,2064,8.67,2
+silver tequila,10814037,6.91,50
+black mustard seed,2024,7.64,16
+ice cream sandwich,98882,5.51,26
+macaroni & cheese mix,32004,6.53,1
+ears sweet corn,11167,8.91,76
+mozarella,1026,5.24,0
+Red 3 Lake,10711111,5.66,6
+ready to drink coffee,14209,0.58,68
+yeast dinner rolls,18347,1.52,87
+rolos,19152,9.23,89
+fresh tomatoes,11529,6.88,78
+firmly packed light brown sugar,19334,9.7,84
+pretzel bites,19047,0.55,1
+serrano chili pepper,11977,6.59,63
+broccoli carrots cauliflower mix,11583,8.17,71
+sweet red pepper,11821,9.9,17
+golden oreo,10018210,8.47,8
+fruity pebbles cereal,8034,2.76,87
+any color food coloring,10711111,3.92,3
+block 1/3-less-fat cream cheese,43274,3.3,24
+pork bone,11811111,0.68,72
+fresh squeezed lemon juice,9152,8.57,1
+powdered buttermilk,1094,8.28,49
+catfish fillet,15010,3.91,36
+achiote seeds,10093648,2.87,73
+lady finger cookies,18423,1.88,35
+mirlitons,11149,3.64,66
+chili mix,1022028,4.0,88
+fat-free ground turkey,5662,3.38,76
+ash gourd,99179,8.92,88
+low fat shredded mozzarella,1001028,5.35,7
+elk tenderloin,10017166,9.89,9
+burdock root,11104,0.99,12
+cuban pepper,10111821,2.93,54
+marmite,43406,8.45,45
+curly leaf lettuce,11253,1.9,67
+pistachio pudding mix,19202,3.22,66
+chopped pecans,10012142,2.32,75
+fat-free sugar-free vanilla pudding mix,99022,1.72,18
+hibiscus flowers,14649,4.85,57
+chai tea bag,13711111,9.89,67
+powdered egg whites,1173,2.73,34
+whole cumin,2014,5.43,72
+yuca root,11134,1.28,65
+korean chili powder,1072009,9.47,79
+boar chop,10017158,6.43,31
+dried italian seasoning,2027,4.38,92
+boneless skinless chicken breast,1055062,3.05,96
+dry riesling,14132,0.68,89
+cooked bowtie pasta,10120421,8.21,34
+cube steak,13874,1.06,73
+jumbo shell pasta,10520420,9.28,10
+all-bran,8001,5.28,60
+ancho chile pepper,10211962,2.51,12
+fresh bread crumbs,18079,7.83,90
+cobs of corn,11167,8.24,29
+extra-sharp cheddar cheese,1009,3.3,67
+round tip steak,23636,4.45,21
+venison loin,17345,6.45,55
+tea biscuits,10118192,9.07,47
+lowfat cream cheese,43274,4.55,21
+ancho chili pepper,10211962,1.85,51
+food coloring gel,98881,9.36,33
+refined sugar,19335,3.89,29
+kabocha,10311643,5.48,41
+hummus dip,16158,1.08,76
+reduced-fat cream cheese,43274,4.23,24
+whole wheat hot dog buns,10018351,8.79,26
+romanesco,98938,3.47,42
+chocolate malt,14317,9.58,59
+orange tomato,11695,7.56,24
+achiote powder,93648,0.52,18
+cooked ziti,11520421,1.56,35
+instant ramen,6583,3.65,0
+rotel,10011693,4.47,22
+baking chips,10019903,3.65,74
+elderberries,9088,5.07,99
+sweet italian sausage,1007036,8.91,62
+modified cornstarch,20027,5.62,66
+cooked cheese tortellini,93727,8.51,97
+butter leaf lettuce,11250,5.83,82
+bone in skin on turkey breast,1005191,6.75,97
+red mullet,15055,7.01,73
+tomato pesto,93697,9.99,81
+turkey smokies,99035,4.23,62
+ciabatta roll,93699,2.37,0
+corkscrew pasta,11320420,2.45,14
+refrigerated tortellini,93727,6.64,27
+burrito size tortilla,10118364,6.92,10
+dumpling skins,10018368,7.2,13
+turkey meatballs,10110219,7.18,29
+whole grain oats,8120,0.88,78
+red skinned sweet potato,11508,6.51,50
+soy protein powder,16122,4.67,10
+cube beef stock,6076,5.83,14
+white sweet potato,10011507,1.85,92
+fingerling potato,10111352,5.64,4
+non fat milk,1085,9.47,100
+prepared pizza crust,93770,8.37,17
+horse radish sauce,2055,1.89,27
+tropical fruit,9431,7.06,92
+skimmed milk powder,1154,9.89,47
+broccoli sprouts,11001,6.35,74
+fresno peppers,10011979,9.08,70
+TVP,98854,8.62,90
+dried tart cherries,93822,4.45,49
+veggie sausage,98971,8.42,95
+chicken foot,5335,6.18,45
+zaatar,1002042,0.91,64
+wheat-berries,98872,8.91,50
+thai chilli,11670,4.27,0
+demerara,10019908,7.48,85
+squid tube,10015175,3.93,37
+Ground Sesame Seeds,12698,3.76,4
+anchovy oil,1004053,1.34,32
+sundried tomato halves,11955,9.95,8
+dry buttermilk,1094,7.17,46
+beef suet,13335,8.5,9
+low-sodium broth,6970,1.34,97
+sweet orange pepper,10011821,7.37,2
+raspberry flavored gelatin,10319172,7.53,68
+wax chili,98910,1.66,64
+whole-wheat penne pasta,99182,0.92,27
+pork fillets,10218,6.61,90
+1 percent chocolate milk,1103,8.57,12
+waxy potato,11355,3.38,94
+half & half cream,1049,8.63,79
+gluten-free elbow macaroni noodles,10398875,3.82,46
+veal shank,17276,4.87,30
+veggie nuggets,98981,5.56,54
+milled flaxseed,12220,9.31,46
+fresh dillweed,2045,8.5,62
+pineapple jam,10219297,6.16,37
+whole-grain english muffins,18266,0.82,33
+canned pigeon peas,10016102,1.28,95
+part skim swiss cheese,43589,6.22,44
+unsalted pepitas,12016,9.24,49
+rosemary leaf,2036,5.21,90
+mozzerella cheese,1026,9.78,95
+precooked farro,10020006,4.43,76
+berry medley,9054,8.56,71
+hubbard squash,11489,1.87,31
+curly lettuce leaves,10011253,9.69,41
+roasted chicken breasts,5064,7.69,86
+berbere,98995,9.26,31
+reduced fat shredded mozzarella,1001028,5.76,13
+ox tails,93778,9.38,31
+boca patty,16147,2.79,55
+submarine sandwich buns,98940,7.12,66
+ground achiote,93648,4.64,47
+aluminum-free baking powder,18371,2.66,76
+KahlÃºa mocha,93716,7.64,59
+arrowroot starch flour,20003,9.87,86
+worm shaped gummi candy,93642,3.6,95
+stuffed pasta,20420,2.64,46
+vegetable broth cube,98845,4.7,42
+shredded coconut,12108,0.87,48
+ketjap manis,10016124,4.36,62
+unsweetened dutch-process cocoa powder,10019165,2.53,86
+fish sticks,10115261,4.9,9
+cavatelli,12220420,5.48,37
+lean rack of lamb,10017032,6.08,68
+overnight oatmeal,8121,1.96,46
+cooked bulgur,20013,8.99,35
+torn romaine lettuce,11251,2.97,41
+italian loaves,10028033,1.86,54
