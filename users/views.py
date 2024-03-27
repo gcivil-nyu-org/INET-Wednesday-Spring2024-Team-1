@@ -11,7 +11,8 @@ from dateutil.relativedelta import relativedelta
 from google_auth_oauthlib.flow import InstalledAppFlow
 import os
 import django
-
+import json
+from google.oauth2.credentials import Credentials
 django.setup()
 
 from users.models import CustomUser, UserPreferences, Cuisine, Allergy
@@ -146,56 +147,22 @@ def set_preferences(request):
 def show_profile(request):
     if not request.user.is_authenticated:
         return redirect("/")
-    context = request.session.get('profile_context', None)
-    if context:
-        request.session['profile_context'] = None # We need to refresh it every time.
-        return render(request, 'users/profile.html', context)
+    custom_user_instance = CustomUser.objects.get(email=request.user.email)
+    credentials = None
+    if custom_user_instance.credentials:
+        credentials_dict = json.loads(custom_user_instance.credentials)
+        if 'refresh_token' not in credentials_dict:
+            credentials_dict['refresh_token'] = ''
+        print(credentials_dict)
+        credentials = Credentials.from_authorized_user_info(credentials_dict)
+        if credentials.expired:
+            try:
+                credentials.refresh(Request())
+            except Exception as e:
+                return auth(request)
     else:
-        flow = InstalledAppFlow.from_client_config(
-        client_config = {
-            "web":{
-                "client_id":os.environ.get("google_client_id"),
-                "auth_uri":"https://accounts.google.com/o/oauth2/auth",
-                "token_uri":"https://oauth2.googleapis.com/token",
-                "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
-                "client_secret":os.environ.get("google_secret"),
-                }},
-        scopes=['https://www.googleapis.com/auth/fitness.activity.read']
-        )
-        flow.redirect_uri = 'https://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/profile/callback/'
-        authorization_url, _ = flow.authorization_url(access_type='offline')
-        request.session['authorization_url'] = authorization_url
-        return redirect(authorization_url)
-
-def callback(request):
-    if not request.user.is_authenticated:
-        return redirect("/")
-    authorization_url = request.session.get('authorization_url')
-    if not authorization_url:
-        return HttpResponse('Authorization URL not found in session. Please try again.')
-
-    flow = InstalledAppFlow.from_client_config(
-    client_config = {
-            "web":{
-                "client_id":os.environ.get("google_client_id"),
-                "auth_uri":"https://accounts.google.com/o/oauth2/auth",
-                "token_uri":"https://oauth2.googleapis.com/token",
-                "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
-                "client_secret":os.environ.get("google_secret"),
-                }},
-    scopes=['https://www.googleapis.com/auth/fitness.activity.read']
-    )
-    flow.redirect_uri = 'https://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/profile/callback/'
-    try:
-        flow.fetch_token(authorization_response=request.build_absolute_uri())
-    except Exception as e:
-        return HttpResponse(f'Error fetching token: {e}')
-
-    credentials = flow.credentials
-
-
+        return auth(request)
     service = build('fitness', 'v1', credentials=credentials)
-
     current_date = datetime.datetime.utcnow()
 
     end_time = int(datetime.datetime.utcnow().timestamp() * 1000)
@@ -232,6 +199,51 @@ def callback(request):
         'labels': labels,
         'calorie_values': calorie_values,
     }
-    request.session['profile_context'] = context
 
+    return render(request, 'users/profile.html', context)
+
+def auth(request):
+    flow = InstalledAppFlow.from_client_config(
+    client_config = {
+        "web":{
+            "client_id":os.environ.get("google_client_id"),
+            "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+            "token_uri":"https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+            "client_secret":os.environ.get("google_secret"),
+            }},
+    scopes=['https://www.googleapis.com/auth/fitness.activity.read']
+    )
+    flow.redirect_uri = 'https://localhost:8000/profile/callback/'
+    authorization_url, _ = flow.authorization_url(access_type='offline')
+    request.session['authorization_url'] = authorization_url
+    print(authorization_url)
+    return redirect(authorization_url)
+
+def callback(request):
+    authorization_url = request.session.get('authorization_url')
+    if not authorization_url:
+        return HttpResponse('Authorization URL not found in session. Please try again.')
+    flow = InstalledAppFlow.from_client_config(
+    client_config = {
+            "web":{
+                "client_id":os.environ.get("google_client_id"),
+                "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+                "token_uri":"https://oauth2.googleapis.com/token",
+                "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+                "client_secret":os.environ.get("google_secret"),
+                }},
+    scopes=['https://www.googleapis.com/auth/fitness.activity.read']
+    )
+    flow.redirect_uri = 'https://localhost:8000/profile/callback/'
+    try:
+        flow.fetch_token(authorization_response=request.build_absolute_uri())
+    except Exception as e:
+        return HttpResponse(f'Error fetching token: {e}')
+
+    custom_user_instance = CustomUser.objects.get(email=request.user.email)
+    custom_user_instance.credentials = flow.credentials.to_json()
+    custom_user_instance.save()
     return redirect("showProfile")
+    
+   
