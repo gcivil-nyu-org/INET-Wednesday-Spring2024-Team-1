@@ -3,7 +3,9 @@ import requests
 import os
 from django.http import JsonResponse
 import json
+from utils import groceryStore_utils
 
+base_url = "http://127.0.0.1:8000/groceryStore/api/"
 
 def recipe_info(request, recipe_id):
     print(recipe_id)
@@ -26,8 +28,17 @@ def add_to_cart(request):
     if request.method == "POST":
         # Assuming you're receiving data in JSON format
         try:
-            cart_data = json.loads(request.body)
-            request.session["cart_data"] = cart_data
+            data = json.loads(request.body)
+            cart_data = data["updated_data"]
+            for item in cart_data:
+                item_id = item["id"]
+                temp = int(item["quantity"])
+                if "price" not in item:
+                    # Fetch grocery price and calculate item price
+                    grocery_price = fetch_grocery_price(int(item_id), item["name"])
+                    # if grocery_price is not None:
+                    item["price"] = str(grocery_price * temp)
+            request.session["cart_data"] = {"updated_data": cart_data}
             return JsonResponse({"success": True})
         except json.JSONDecodeError as e:
             # Handle JSON decoding error
@@ -44,6 +55,7 @@ def fetch_cart_data(request):
     # Retrieve cart data from session or database
     data = request.session.get("cart_data", [])
     cart_data = data["updated_data"]
+    print("Cart data:", cart_data)
     cart_html = "<table>"
     for item in cart_data:
         if int(item["quantity"]) <= 0:
@@ -57,11 +69,26 @@ def fetch_cart_data(request):
         cart_html += '<td><button type="button" class="btn" onclick="increaseQuantity({})">+</button></td>'.format(
             item["id"]
         )
+        cart_html += '<td id="price_{}">{}</td>'.format(item["id"], item["price"])
         cart_html += "</tr>"
     cart_html += "</table>"
     # Return cart data as JSON response
     return JsonResponse({"cart_items": cart_html})
 
+def fetch_grocery_price(grocery_id, name):
+    url = f"{base_url}groceries/{grocery_id}/"
+    response = requests.get(url)
+    if response.status_code == 200:
+        grocery_details = response.json()
+        return float(grocery_details["price"])
+    else:
+        # If grocery price is not found, add it to the database
+        groceryStore_utils.grocery_addition(grocery_id, name)
+        response = requests.get(url)
+        if response.status_code == 200:
+            grocery_details = response.json()
+            return float(grocery_details["price"])
+    return None
 
 def update_cart(request):
     if request.method == "POST":
@@ -74,6 +101,14 @@ def update_cart(request):
             if item["id"] == item_id:
                 temp = int(item["quantity"])
                 temp += int(change)
+                if "price" not in item:
+                    # Fetch grocery price and calculate item price
+                    grocery_price = fetch_grocery_price(int(item_id), item["name"])
+                    # if grocery_price is not None:
+                    item["price"] = str(grocery_price * temp)
+                else:
+                    # If item["price"] already exists, update it based on the new quantity
+                    item["price"] = str(fetch_grocery_price(int(item_id), item["name"]) * temp)
                 item["quantity"] = str(temp)
                 break
         request.session["cart_data"] = {"updated_data": cart_data}
@@ -81,7 +116,8 @@ def update_cart(request):
         new_quantity = next(
             (item["quantity"] for item in cart_data if item["id"] == item_id), None
         )
-        return JsonResponse({"newQuantity": new_quantity})
+        new_price = next((item["price"] for item in cart_data if item["id"] == item_id), None)
+        return JsonResponse({"newQuantity": new_quantity, "newPrice": new_price})
     else:
         return JsonResponse({"error": "Invalid request method"}, status=400)
 

@@ -14,7 +14,7 @@ urlpatterns = [
     path("get_order_data/", get_order_data, name="get_order_data"),
     path("get_orderitem_data/", get_orderitem_data, name="get_orderitem_data"),
     path("get_user_data/", get_user_data, name="get_user_data"),
-    path("api/groceries/<str:gname>/", get_grocery_details, name="get_grocery_details"),
+    path("api/groceries/<int:id>/", get_grocery_details, name="get_grocery_details"),
     path(
         "update_stock/<str:gname>/", update_grocery_stock, name="update_grocery_stock"
     ),
