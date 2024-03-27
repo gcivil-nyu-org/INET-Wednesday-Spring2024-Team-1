@@ -13,6 +13,7 @@ import os
 import django
 import json
 from google.oauth2.credentials import Credentials
+
 django.setup()
 
 from users.models import CustomUser, UserPreferences, Cuisine, Allergy
@@ -157,8 +158,9 @@ def show_profile(request):
         credentials = Credentials.from_authorized_user_info(credentials_dict)
         if credentials.expired:
             try:
-                credentials.refresh(Request())
+                credentials.refresh(request)
             except Exception as e:
+                print(e)
                 return auth(request)
     else:
         return auth(request)
