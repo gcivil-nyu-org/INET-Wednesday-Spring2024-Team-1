@@ -201,12 +201,6 @@ def callback(request):
 
     service = build('fitness', 'v1', credentials=credentials)
 
-    try:
-        data_sources = service.users().dataSources().list(userId='me').execute()
-    except Exception as e:
-        return HttpResponse(f'Error fetching data sources: {e}')
-
-
     current_date = datetime.datetime.utcnow()
 
     end_time = int(datetime.datetime.utcnow().timestamp() * 1000)
