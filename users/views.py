@@ -11,6 +11,7 @@ from dateutil.relativedelta import relativedelta
 from google_auth_oauthlib.flow import InstalledAppFlow
 import os
 import django
+from django.http import Request
 
 django.setup()
 
