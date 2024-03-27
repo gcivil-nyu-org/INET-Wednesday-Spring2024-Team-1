@@ -11,7 +11,6 @@ from dateutil.relativedelta import relativedelta
 from google_auth_oauthlib.flow import InstalledAppFlow
 import os
 import django
-from django.http import Request
 
 django.setup()
 
@@ -194,11 +193,6 @@ def callback(request):
 
     credentials = flow.credentials
 
-    if credentials.expired:
-        try:
-            credentials.refresh(Request())
-        except Exception as e:
-            return HttpResponse(f'Error refreshing credentials: {e}')
 
     service = build('fitness', 'v1', credentials=credentials)
 
