@@ -6,16 +6,19 @@ from django.contrib.auth.models import AnonymousUser
 from django.db import models
 from .models import CustomUser, UserPreferences, Cuisine, Allergy
 from django.utils import timezone
-from .views import preferences, login, set_preferences, skip_preferences
+from .views import preferences, login_redirect, set_preferences, skip_preferences
 from django.dispatch import Signal
 from .signals import update_custom_user, user_logged_in
+from .forms import UserSignUpForm
 
 
 class UserPreferencesTestCase(TestCase):
     def setUp(self):
         # Create a test user
         self.factory = RequestFactory()
-        # self.user = User.objects.create_user(username='testuser', email='test@example.com', last_login=timezone.now())
+        User.objects.create_user(
+            username="testuser", email="test@example.com", last_login=timezone.now()
+        )
         self.customUser = CustomUser.objects.create(
             username="testuser",
             email="test@example.com",
@@ -28,14 +31,14 @@ class UserPreferencesTestCase(TestCase):
         request = self.factory.get(reverse("login"))
         request.user = self.customUser
         request.user.is_authenticated = lambda: True
-        response = login(request)
+        response = login_redirect(request)
         self.assertIsInstance(response, HttpResponseRedirect)
         self.assertEqual(response.url, reverse("homepage"))
 
     def test_unauthenticated_user_render_login_page(self):
         request = self.factory.get(reverse("login"))
         request.user = AnonymousUser()
-        response = login(request)
+        response = login_redirect(request)
         self.assertEqual(response.status_code, 200)
         self.assertIn("Continue with Google", response.content.decode())
 
@@ -184,7 +187,7 @@ class UserPreferencesTestCase(TestCase):
     #     # request.data = data
     #     response = set_preferences(request)
     #     self.assertTrue(response.client.session["preferences_updated"])
-        # self.assertEqual(response.status_code, 302)
+    # self.assertEqual(response.status_code, 302)
 
     # def test_set_preferences_valid_data_authenticated_set(self):
     #     data = {
@@ -326,3 +329,27 @@ class UserPreferencesTestCase(TestCase):
         self.assertEqual(custom_user.email, customUser.email)
         self.assertEqual(custom_user.username, customUser.username)
         self.assertEqual(custom_user.preferences, False)
+
+    def test_clean_email_unique(self):
+        # Test that clean_email method raises ValidationError for existing email
+        form_data = {
+            "username": "test_user",
+            "email": "test@example.com",
+            "password": "testpassword",
+        }
+        form = UserSignUpForm(data=form_data)
+        self.assertFalse(form.is_valid())
+        self.assertIn("email", form.errors)
+        self.assertEqual(form.errors["email"], ["Email already exists."])
+
+    def test_clean_username_unique(self):
+        # Test that clean_username method raises ValidationError for existing username
+        form_data = {
+            "username": "testuser",
+            "email": "testing@example.com",
+            "password": "testpassword",
+        }
+        form = UserSignUpForm(data=form_data)
+        self.assertFalse(form.is_valid())
+        self.assertIn("username", form.errors)
+        self.assertEqual(form.errors["username"], ["Username already exists."])

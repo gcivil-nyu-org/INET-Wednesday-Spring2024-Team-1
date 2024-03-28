@@ -6,29 +6,53 @@ function decreaseQuantity(itemId) {
 
 function increaseQuantity(itemId) {
     // Call your Django view to increase quantity
+    console.log("increaseQuantity");
     updateQuantity(itemId, 1);
+    
 }
 
 function updateQuantity(itemId, change) {
-    fetch('/update_cart/', {
+    $.ajax({
+        url: '/update_cart/',
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
             'X-CSRFToken': getCookie('csrftoken')
         },
-        body: JSON.stringify({itemId: itemId, change: change})
-    })
-    .then(response => response.json())
-    .then(data => {
-    if (parseInt(data.newQuantity) <= 0) {
-        console.log('Removing item from cart');
-        $('#tr_' + itemId).remove();
-    } else {
-        document.getElementById('quantity_' + itemId).innerText = data.newQuantity;
-    }
-    })
-    .catch(error => console.error('Error:', error));
+        data: JSON.stringify({itemId: itemId, change: change}),
+        dataType: 'json',
+        success: function(data) {
+            if (parseInt(data.newQuantity) <= 0) {
+                console.log('Removing item from cart');
+                $('#tr_' + itemId).remove();
+                updateCartBadge();
+            } else {
+                console.error("elese");
+                $('#quantity_' + itemId).text(data.newQuantity);
+                $('#price_' + itemId).text(data.newPrice);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error:', error);
+        }
+    });
 }
+
+function updateCartBadge() {
+    $.ajax({
+        url: '/fetch-cart-data/',
+        method: 'GET',
+        data: JSON.stringify({cart_badge: true}),
+        success: function(response) {
+            let badgeElement = document.getElementById("cart-button");
+            if (badgeElement) {
+                badgeElement.setAttribute("value", response.cart_quantity);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error fetching cart data:', error);
+        }
+    });
+};
 
 // Function to get CSRF token from cookies
 function getCookie(name) {
@@ -47,7 +71,7 @@ function getCookie(name) {
     return cookieValue;
 }
 
-$(document).ready(function(){
+// $(document).ready(function(){
 // Function to fetch cart data with AJAX
 function fetchCartData() {
     $.ajax({
@@ -56,6 +80,10 @@ function fetchCartData() {
         success: function(response) {
             // Populate cart items in the overlay
             // console.log(response);
+            let badgeElement = document.getElementById("cart-button");
+            if (badgeElement) {
+                badgeElement.setAttribute("value", response.cart_quantity);
+            }
             $('#cart-items').html(response.cart_items);
             showCartOverlay(); // Show cart overlay once data is fetched
         },
@@ -106,13 +134,15 @@ $('#cart-button').click(function() {
         updatedData.push({ id: itemId, name: itemName, quantity: quantity });
         });
 
-        var csrftoken = '{{ csrf_token }}';
+        // var csrftoken = '{{ csrf_token }}';
+        var csrfToken = $('#addToCart').data('csrf');
+
 
         // Send updatedData to the server via AJAX
         $.ajax({
             url: '/addToCart/',
             method: 'POST',
-            headers: { 'X-CSRFToken': getCookie('csrftoken') },
+            headers: { 'X-CSRFToken': csrfToken },
             contentType: 'application/json',
             dataType: 'json',
             data: JSON.stringify({ updated_data: updatedData }),
@@ -143,7 +173,7 @@ $('#cart-button').click(function() {
         console.log('View cart button clicked');
         fetchCartData(); // Show cart overlay when cart button is clicked
     });
-});
+// });
 $(document).ready(function(){
     $.ajax({
         url: '/check_session_variable/',
@@ -157,7 +187,8 @@ $(document).ready(function(){
                 $('#addToCart').remove();
                 // Add View Cart button
                 $('#cartButtons').append('<button id="viewCart" class="btn btn-success">View Cart</button>');
-                fetchCartData();
+                // fetchCartData();
+                updateCartBadge();
                 
                 // Do something if session variable exists
             } else {

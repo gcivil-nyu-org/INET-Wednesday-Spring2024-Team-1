@@ -32,6 +32,6 @@ def user_signed_up(data, request):
         username=data["username"],
         email=data["email"],
         preferences=False,
-        last_login=timezone.now()
+        last_login=timezone.now(),
     )
     request.session["check_user_preferences"] = "False"

@@ -57,6 +57,16 @@ def fetch_cart_data(request):
     data = request.session.get("cart_data", [])
     cart_data = data["updated_data"]
     print("Cart data:", cart_data)
+    # Iterate through cart_data and remove items with quantity <= 0
+    cart_data = [item for item in cart_data if int(item["quantity"]) > 0]
+    try:
+        request_data = json.loads(request.body)
+    except json.JSONDecodeError:
+        # Handle case where request body is empty or not valid JSON
+        request_data = {}
+    cart_badge = request_data.get("cart_badge", False)
+    if cart_badge:
+        return JsonResponse({"cart_quantity": len(cart_data)})
     cart_html = "<table>"
     for item in cart_data:
         if int(item["quantity"]) <= 0:
@@ -74,7 +84,7 @@ def fetch_cart_data(request):
         cart_html += "</tr>"
     cart_html += "</table>"
     # Return cart data as JSON response
-    return JsonResponse({"cart_items": cart_html})
+    return JsonResponse({"cart_items": cart_html, "cart_quantity": len(cart_data)})
 
 
 def fetch_grocery_price(grocery_id, name):
@@ -108,18 +118,21 @@ def update_cart(request):
                     # Fetch grocery price and calculate item price
                     grocery_price = fetch_grocery_price(int(item_id), item["name"])
                     # if grocery_price is not None:
-                    item["price"] = str(grocery_price * temp)
+                    item["price"] = str(round(grocery_price * temp, 2))
                 else:
                     # If item["price"] already exists, update it based on the new quantity
-                    item["price"] = str(fetch_grocery_price(int(item_id), item["name"]) * temp)
+                    item["price"] = str(
+                        round(fetch_grocery_price(int(item_id), item["name"]) * temp, 2)
+                    )
                 item["quantity"] = str(temp)
-                break
         request.session["cart_data"] = {"updated_data": cart_data}
         request.session.modified = True
         new_quantity = next(
             (item["quantity"] for item in cart_data if item["id"] == item_id), None
         )
-        new_price = next((item["price"] for item in cart_data if item["id"] == item_id), None)
+        new_price = next(
+            (item["price"] for item in cart_data if item["id"] == item_id), None
+        )
         return JsonResponse({"newQuantity": new_quantity, "newPrice": new_price})
     else:
         return JsonResponse({"error": "Invalid request method"}, status=400)

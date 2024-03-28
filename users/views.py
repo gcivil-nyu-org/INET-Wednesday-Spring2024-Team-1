@@ -36,62 +36,62 @@ def signup(request):
 
 
 def user_signup(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form = UserSignUpForm(request.POST)
         if form.is_valid():
-            username = form.cleaned_data['username']
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
+            username = form.cleaned_data["username"]
+            email = form.cleaned_data["email"]
+            password = form.cleaned_data["password"]
             hashed_password = make_password(password)
             try:
-                User.objects.create(username=username, email=email, password=hashed_password)
-                data = {
-                    "username": username, "email": email
-                }
+                User.objects.create(
+                    username=username, email=email, password=hashed_password
+                )
+                data = {"username": username, "email": email}
                 user_signed_up(data, request)
                 user = authenticate(request, username=username, password=password)
                 login(request, user)
-                return redirect('homepage')  # Redirect to login page after successful signup
+                return redirect(
+                    "homepage"
+                )  # Redirect to login page after successful signup
             except Exception as e:
                 print(e)
                 return TemplateResponse(
-                    request, "users/signup.html", {'form': form, 'error': 'Error creating user'}
+                    request,
+                    "users/signup.html",
+                    {"form": form, "error": "Error creating user"},
                 )
     else:
         form = UserSignUpForm()
     return TemplateResponse(
-        request, "users/signup.html", {'form': form, 'error': 'Error creating user'}
+        request, "users/signup.html", {"form": form, "error": "Error creating user"}
     )
 
 
 def user_login(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form_data = request.POST
-        username = form_data.get('username')
-        password = form_data.get('password')
+        username = form_data.get("username")
+        password = form_data.get("password")
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
             # user_logged_in(username, request)
-            return redirect(reverse("homepage"))  # Replace 'dashboard' with the desired URL name
+            return redirect(
+                reverse("homepage")
+            )  # Replace 'dashboard' with the desired URL name
         else:
             # If authentication fails, display an error message
             error_message = "Invalid username or password."
-            return render(request, 'users/login.html', {'error_message': error_message})
+            return render(request, "users/login.html", {"error_message": error_message})
 
-    return TemplateResponse(
-        request, "users/login.html"
-    )
+    return TemplateResponse(request, "users/login.html")
 
 
 def preferences(request):
     if not request.user.is_authenticated:
         return redirect("/")
     try:
-        # if request.user.is_authenticated:
-        #     email = request.user.email
-        # else:
-        #     email = request.session.get("customUserLoggedIn")["email"]
         custom_user_instance = CustomUser.objects.get(email=request.user.email)
         if custom_user_instance.preferences:
             user_preferences = UserPreferences.objects.get(user=custom_user_instance)
@@ -121,20 +121,16 @@ def preferences(request):
 
 
 def skip_preferences(request):
-    if not request.user.is_authenticated and request.session.get("customUserLoggedIn") is False:
+    if not request.user.is_authenticated:
         return redirect("/")
     return redirect("homepage")
 
 
 def set_preferences(request):
-    if not request.user.is_authenticated and request.session.get("customUserLoggedIn") is False:
+    if not request.user.is_authenticated:
         return redirect("/")
     if request.method == "POST":
-        if request.user.is_authenticated:
-            email = request.user.email
-        else:
-            email = request.session.get("customUserLoggedIn")["email"]
-        custom_user_instance = CustomUser.objects.get(email=email)
+        custom_user_instance = CustomUser.objects.get(email=request.user.email)
         form_data = request.POST
         phone_number = form_data.get("phone")
         address = form_data.get("address")

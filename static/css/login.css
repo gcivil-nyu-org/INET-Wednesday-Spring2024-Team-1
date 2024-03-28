@@ -49,7 +49,7 @@
   }
   
   .login-container {
-    background-color: #777;
+    background-color: rgba(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    color: #777;
+    color: #efffbd;
   }
   
   .bottom-text p {
