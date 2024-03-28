@@ -3,7 +3,11 @@ from django.http import HttpResponse
 from .models import Grocery, Order, OrderItem, UserProfile, Ingredient
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import GrocerySerializer, GroceryStockUpdateSerializer, IngredientSerializer
+from .serializers import (
+    GrocerySerializer,
+    GroceryStockUpdateSerializer,
+    IngredientSerializer,
+)
 
 
 # Create your views here.
@@ -56,12 +60,12 @@ def get_grocery_details(request, id):
     try:
         # Fetch the grocery data using the provided gname from the groceryStore_grocery table
         # grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
-        ingredient = Ingredient.objects.get(iid = id)
+        ingredient = Ingredient.objects.get(iid=id)
         # Serialize the grocery data
         serializer = IngredientSerializer(ingredient)
         # Return the serialized data in the response
         return Response(serializer.data)
-    except ingredient.DoesNotExist:
+    except Ingredient.DoesNotExist:
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
 
