@@ -8,9 +8,7 @@ def homepage_recipes(request):
     email = None
     if hasattr(request.user, 'email'):
         email = request.user.email
-    # if request.session.get("customUserLoggedIn"):
-    #     email = request.session.get("customUserLoggedIn")["email"]
-    if email: 
+    if email:
         user = models.CustomUser.objects.get(email=email)
         if user.preferences:
             user_preferences = models.UserPreferences.objects.get(user=user)

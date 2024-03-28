@@ -56,7 +56,7 @@ def get_grocery_details(request, id):
     try:
         # Fetch the grocery data using the provided gname from the groceryStore_grocery table
         # grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
-        ingredient = Ingredient.objects.get(iid = id)
+        ingredient = Ingredient.objects.get(iid=id)
         # Serialize the grocery data
         serializer = IngredientSerializer(ingredient)
         # Return the serialized data in the response

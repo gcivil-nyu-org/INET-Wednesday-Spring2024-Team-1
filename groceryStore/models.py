@@ -11,6 +11,7 @@ class Grocery(models.Model):
     def __str__(self):
         return self.gname
 
+
 class Ingredient(models.Model):
     iid = models.AutoField(primary_key=True)
     iname = models.CharField(max_length=100)

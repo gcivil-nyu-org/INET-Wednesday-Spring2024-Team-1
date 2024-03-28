@@ -26,17 +26,12 @@ def update_custom_user(sender, user, request, **kwargs):
         custom_user.last_login = timezone.now()
         custom_user.save()
 
+
 def user_signed_up(data, request):
-    new_user = CustomUser.objects.create(
+    CustomUser.objects.create(
         username=data["username"],
         email=data["email"],
         preferences=False,
         last_login=timezone.now()
     )
-    # custom_user_data = {
-    #     'email': data["email"],
-    #     'username': data["username"],
-    #     # Add more fields as needed
-    # }
-    # request.session["customUserLoggedIn"] = custom_user_data
     request.session["check_user_preferences"] = "False"

@@ -17,19 +17,23 @@ django.setup()
 
 from users.models import CustomUser, UserPreferences, Cuisine, Allergy
 
+
 def login_redirect(request):
     if request.user.is_authenticated:
         return redirect("homepage")
     return render(request, "users/login.html")
 
+
 def logout_view(request):
     logout(request)
     return redirect("/")
+
 
 def signup(request):
     if request.user.is_authenticated:
         return redirect("homepage")
     return render(request, "users/signup.html")
+
 
 def user_signup(request):
     if request.method == 'POST':
@@ -40,9 +44,7 @@ def user_signup(request):
             password = form.cleaned_data['password']
             hashed_password = make_password(password)
             try:
-                new_user = User.objects.create(username=username, email=email, password=hashed_password)
-                # request.session["email"] = email
-                # Call any additional function after signup
+                User.objects.create(username=username, email=email, password=hashed_password)
                 data = {
                     "username": username, "email": email
                 }
@@ -51,7 +53,7 @@ def user_signup(request):
                 login(request, user)
                 return redirect('homepage')  # Redirect to login page after successful signup
             except Exception as e:
-                # return render(request, 'signup.html', {'form': form, 'error': 'Error creating user'})
+                print(e)
                 return TemplateResponse(
                     request, "users/signup.html", {'form': form, 'error': 'Error creating user'}
                 )
@@ -60,6 +62,7 @@ def user_signup(request):
     return TemplateResponse(
         request, "users/signup.html", {'form': form, 'error': 'Error creating user'}
     )
+
 
 def user_login(request):
     if request.method == 'POST':
@@ -79,6 +82,7 @@ def user_login(request):
     return TemplateResponse(
         request, "users/login.html"
     )
+
 
 def preferences(request):
     if not request.user.is_authenticated:
