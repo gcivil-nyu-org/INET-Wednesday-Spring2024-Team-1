@@ -21,35 +21,32 @@
         display: flex;
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
-        background-color: rgba(255, 255, 255, 0.5);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      {% load socialaccount %}
-      <!-- <div class="row col-md-4 offset-md-4 text-center">
-        <h2 style="color: #fff;">Sign in to FoodSync</h2>
-      </div> -->
       <div class="login-container">
-        <form class="login-form" method="post" action="/userLogin/">
-          {% csrf_token %}
+        <form class="login-form" method="post" action="{% url 'userSignup' %}">
+        {% csrf_token %}
           <h1>FoodSync</h1>
-          <p>Please login to your account</p>
+          <p>Create an account</p>
           <div class="input-group">
-            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="username" name="username" placeholder="Username" required value="{{ form.cleaned_data.username }}">
+            {% for error in form.username.errors %}
+                <p class="error">{{ error }}</p>
+            {% endfor %}
           </div>
           <div class="input-group">
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+            {% for error in form.email.errors %}
+                <p class="error">{{ error }}</p>
+            {% endfor %}
           </div>
-          <button type="submit">Login</button>
-          <div class="bottom-text">
-            <p>Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
-            <p>
-              <a href="{% provider_login_url 'google' %}" class="google-btn">
-              <img src="{% static 'google.png' %}" alt="Google" />Continue with Google
-            </a></p>
+          <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Password" required value="{{ form.cleaned_data.password }}">
           </div>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
       <!-- <div class="background-box">

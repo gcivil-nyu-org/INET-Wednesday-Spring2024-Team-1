@@ -5,7 +5,6 @@ from django.shortcuts import render
 
 from utils.homepage_utils import homepage_recipes
 
-
 def homepage(request):
     preferences_updated = request.session.pop("preferences_updated", False)
     check_user_preferences = request.session.get("check_user_preferences")

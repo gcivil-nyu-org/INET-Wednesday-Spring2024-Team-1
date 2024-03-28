@@ -9,7 +9,6 @@ class CustomUser(models.Model):
     preferences = models.BooleanField(default=False)
     last_login = models.DateTimeField(null=True)
 
-
 class Cuisine(models.Model):
     name = models.CharField(max_length=50)
 

@@ -61,7 +61,7 @@ def get_grocery_details(request, id):
         serializer = IngredientSerializer(ingredient)
         # Return the serialized data in the response
         return Response(serializer.data)
-    except ingredient.DoesNotExist:
+    except Ingredient.DoesNotExist:
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
 
