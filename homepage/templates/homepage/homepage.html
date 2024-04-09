@@ -77,6 +77,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/preferences">Preferences</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/userProfilePage">Profile</a>
+                  </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item position-relative">
@@ -94,15 +97,16 @@
                             {% endif %}
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <a type="a" href="{% url 'userProfilePage' %}">Test</a>
                             <form method="post" action="{% url 'account_logout' %}">
                                 {% csrf_token %}
-                                <button type="button submit" class="btn btn-primary" type="button">Logout</button>
+                                <button type="submit" class="btn btn-primary">Logout</button>
                             </form>
                         </div>
-                        {% else %}
-                            <a href="/">Please login</a>
+                    {% else %}
+                        <a href="/">Please login</a>
                     {% endif %}
-                    </span>
+                </span>
               </div>
             </div>
           </nav>

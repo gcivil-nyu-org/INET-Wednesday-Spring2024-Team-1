@@ -31,10 +31,8 @@ class Order(models.Model):
     oid = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
-    total_price = models.DecimalField(max_digits=10, decimal_places=2)
     date = models.DateTimeField(auto_now_add=True)
-    calories = models.IntegerField()
-    recipe = models.TextField()
+    calories = models.IntegerField(default=0)
 
     def __str__(self):
         return (
@@ -44,11 +42,11 @@ class Order(models.Model):
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
-    grocery = models.ForeignKey(Grocery, on_delete=models.CASCADE)
+    grocery = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
     quantity = models.IntegerField()
 
     def __str__(self):
-        return f"Order ID: {self.order.oid}, Grocery: {self.grocery.gname}, Quantity: {self.quantity}"
+        return f"Order ID: {self.order.oid}, Grocery: {self.grocery.iname}, Quantity: {self.quantity}"
 
 
 class UserProfile(models.Model):

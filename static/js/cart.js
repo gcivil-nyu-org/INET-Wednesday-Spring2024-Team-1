@@ -1,3 +1,4 @@
+var base_url = "http://127.0.0.1:8000/groceryStore/api/"
 
 function decreaseQuantity(itemId) {
     // Call your Django view to decrease quantity
@@ -74,22 +75,76 @@ function getCookie(name) {
 // $(document).ready(function(){
 // Function to fetch cart data with AJAX
 function fetchCartData() {
-    $.ajax({
-        url: '/fetch-cart-data/', // URL to fetch cart data
-        method: 'GET',
-        success: function(response) {
-            // Populate cart items in the overlay
-            // console.log(response);
-            let badgeElement = document.getElementById("cart-button");
-            if (badgeElement) {
-                badgeElement.setAttribute("value", response.cart_quantity);
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: '/fetch-cart-data/', // URL to fetch cart data
+            method: 'GET',
+            success: function(response) {
+                // Populate cart items in the overlay
+                // console.log(response);
+                let badgeElement = document.getElementById("cart-button");
+                if (badgeElement) {
+                    badgeElement.setAttribute("value", response.cart_quantity);
+                }
+                $('#cart-items').html(response.cart_items);
+
+                showCartOverlay(); // Show cart overlay once data is fetched;
+
+                resolve(response.cart_og_data);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching cart data:', error);
+                reject(error);
             }
-            $('#cart-items').html(response.cart_items);
-            showCartOverlay(); // Show cart overlay once data is fetched
-        },
-        error: function(xhr, status, error) {
-            console.error('Error fetching cart data:', error);
-        }
+        });
+    });
+}
+
+function checkout() {
+    // Get cart data
+    fetchCartData().then(cartData => {
+        console.log(cartData);
+        // Send cart data to the server
+        var username = document.getElementById('dropdownMenuButton1').innerText;
+        username = username.trim();
+        var dataToSend = {...cartData, user: username};
+        fetch(base_url + 'place_order/', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                // Include any other necessary headers, such as CSRF token
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            body: JSON.stringify({items: dataToSend}),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle response data
+            console.log(data);
+            hideCartOverlay();
+            $.ajax({
+                url: base_url + 'clear_cart_data/',
+                type: 'POST',
+                headers: {
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                success: function(data) {
+                    console.log("Cart data cleared successfully");
+                    let badgeElement = document.getElementById("cart-button");
+                    if (badgeElement) {
+                        badgeElement.setAttribute("value", 0);
+                    }
+                    location.reload();
+                },
+                error: function(error) {
+                    console.error('Error clearing cart data:', error);
+                }
+            });
+
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     });
 }
 
@@ -169,10 +224,10 @@ $('#cart-button').click(function() {
         });
     });
 
-    $(document).on('click', '#viewCart', function() {
-        console.log('View cart button clicked');
-        fetchCartData(); // Show cart overlay when cart button is clicked
-    });
+$(document).on('click', '#viewCart', function() {
+    console.log('View cart button clicked');
+    fetchCartData(); // Show cart overlay when cart button is clicked
+});
 // });
 $(document).ready(function(){
     $.ajax({

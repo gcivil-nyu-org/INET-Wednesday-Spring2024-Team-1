@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "groceryStore",
     "homepage",
     "users",
+    "userProfilePage",
     "django.contrib.sites",
     "allauth",
     "allauth.account",
