@@ -186,14 +186,15 @@
                     {% endif %}
                 </button>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <a type="a" href="{% url 'userProfilePage' %}">Test</a>
                     <form method="post" action="{% url 'account_logout' %}">
                         {% csrf_token %}
-                        <button type="button submit" class="btn btn-primary" type="button">Logout</button>
+                        <button type="submit" class="btn btn-primary">Logout</button>
                     </form>
                 </div>
-                {% else %}
+            {% else %}
                 <a href="/">Please login</a>
-                {% endif %}
+            {% endif %}
             </div>
         </nav>
     </div>

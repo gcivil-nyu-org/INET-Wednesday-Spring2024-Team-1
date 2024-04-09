@@ -7,7 +7,6 @@ from utils import groceryStore_utils
 
 base_url = "http://127.0.0.1:8000/groceryStore/api/"
 
-
 def recipe_info(request, recipe_id):
     print(recipe_id)
     url = (
@@ -83,8 +82,9 @@ def fetch_cart_data(request):
         cart_html += '<td id="price_{}">{}</td>'.format(item["id"], item["price"])
         cart_html += "</tr>"
     cart_html += "</table>"
+    cart_html += '<button type="button" class="btn btn-primary" onclick="checkout()" id="checkoutButton" >Checkout</button>'
     # Return cart data as JSON response
-    return JsonResponse({"cart_items": cart_html, "cart_quantity": len(cart_data)})
+    return JsonResponse({"cart_items": cart_html, "cart_quantity": len(cart_data), "cart_og_data": cart_data})
 
 
 def fetch_grocery_price(grocery_id, name):
