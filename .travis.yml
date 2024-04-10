@@ -11,7 +11,7 @@ before_script:
 script:
 - black .
 - flake8 .
-- yes | coverage run --source=users manage.py test
+- echo yes | coverage run --source=users manage.py test
 after_success:
 - coveralls
 
