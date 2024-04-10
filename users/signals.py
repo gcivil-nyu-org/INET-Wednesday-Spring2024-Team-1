@@ -12,13 +12,12 @@ from django.utils import timezone
 def update_custom_user(sender, user, request, **kwargs):
     # Retrieve the user data from the auth_user table
     auth_user = User.objects.get(username=user.username)
-    print(auth_user)
     try:
         custom_user = CustomUser.objects.get(username=auth_user.username)
         custom_user.last_login = timezone.now()
         custom_user.save()
         request.session["check_user_preferences"] = custom_user.preferences
-        request.session["username"] = custom_user.username
+        request.session["username"] = auth_user.username
 
     except CustomUser.DoesNotExist:
         custom_user = CustomUser(email=auth_user.email)
@@ -26,7 +25,7 @@ def update_custom_user(sender, user, request, **kwargs):
         custom_user.preferences = "False"
         custom_user.last_login = timezone.now()
         custom_user.save()
-        request.session["username"] = custom_user.username
+        request.session["username"] = auth_user.username
 
 
 def user_signed_up(data, request):
