@@ -25,10 +25,10 @@ deploy:
   access_key_id: $aws_access_key
   secret_access_key: $aws_secret_access_key
   bucket_name: $aws_bucket_name
-  app: FoodSync-Dev
-  env: FoodSync-Dev-env
+  app: FoodSync-Prod
+  env: FoodSync-Prod-env
   on:
     repo: gcivil-nyu-org/INET-Wednesday-Spring2024-Team-1
-    branch: develop
+    branch: master
   skip_cleanup: 'true'
 
