@@ -18,6 +18,7 @@ def update_custom_user(sender, user, request, **kwargs):
         custom_user.last_login = timezone.now()
         custom_user.save()
         request.session["check_user_preferences"] = custom_user.preferences
+        request.session["username"] = custom_user.username
 
     except CustomUser.DoesNotExist:
         custom_user = CustomUser(email=auth_user.email)
@@ -25,6 +26,7 @@ def update_custom_user(sender, user, request, **kwargs):
         custom_user.preferences = "False"
         custom_user.last_login = timezone.now()
         custom_user.save()
+        request.session["username"] = custom_user.username
 
 
 def user_signed_up(data, request):
@@ -35,3 +37,4 @@ def user_signed_up(data, request):
         last_login=timezone.now(),
     )
     request.session["check_user_preferences"] = "False"
+    request.session["username"] = data["username"]
