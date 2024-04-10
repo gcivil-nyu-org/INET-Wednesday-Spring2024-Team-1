@@ -8,12 +8,14 @@ install:
 before_script:
 - python manage.py migrate
 - python manage.py collectstatic --noinput
+- psql -c "CREATE DATABASE test_[secure];" -U postgres
 script:
 - black .
 - flake8 .
 - echo yes | coverage run --source=users manage.py test
 after_success:
 - coveralls
+- psql -c "DROP DATABASE IF EXISTS test_[secure];" -U postgres
 
 env:
   global:
