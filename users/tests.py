@@ -1,15 +1,22 @@
+import datetime
 from django.test import TestCase, Client, RequestFactory
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import AnonymousUser
+from django.contrib.sessions.middleware import SessionMiddleware
 from django.db import models
 from .models import CustomUser, UserPreferences, Cuisine, Allergy
 from django.utils import timezone
 from .views import preferences, login_redirect, set_preferences, skip_preferences
 from django.dispatch import Signal
-from .signals import update_custom_user, user_logged_in
+from .signals import update_custom_user, user_logged_in, user_signed_up
 from .forms import UserSignUpForm
+from unittest.mock import patch
+from django.utils import timezone
+from freezegun import freeze_time
+from unittest.mock import MagicMock
+from rest_framework.test import force_authenticate
 
 
 class UserPreferencesTestCase(TestCase):
@@ -166,48 +173,61 @@ class UserPreferencesTestCase(TestCase):
         response = set_preferences(request)
         self.assertEqual(response.status_code, 302)
 
+    def test_set_preferences_valid_data_authenticated_set(self):
+        data = {
+            "phone": "1234567890",
+            "address": "Test Address",
+            "diet": "vegetarian",
+            "cuisine": ["Indian", "Italian"],
+            "allergies": ["Dairy", "Nuts"],
+            "height": "170",
+            "weight": "150",
+            "targetWeight": "140",
+        }
+
+        fq = RequestFactory()
+        custom_user = CustomUser.objects.create(
+            username="test", email="test@test.com", preferences="False"
+        )
+        request = fq.post(reverse("setPreferences"), data=data)
+
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        request.user = custom_user
+        force_authenticate(request, user=custom_user)
+
+        request.user.is_authenticated = lambda: True
+        response = set_preferences(request)
+        self.assertTrue(request.session["preferences_updated"])
+        self.assertTrue(request.session["preferences_set"])
+        self.assertTrue(request.session["check_user_preferences"])
+        # Check if the response status code is 302
+        self.assertEqual(response.status_code, 302)
+
     # def test_set_preferences_valid_data_authenticated_update(self):
     #     data = {
-    #         "phone": "1234567890",
-    #         "address": "Test Address",
-    #         "diet": "vegetarian",
-    #         "cuisine": ["Indian", "Italian"],
-    #         "allergies": ["Dairy", "Nuts"],
-    #         "height": "170",
-    #         "weight": "150",
-    #         "targetWeight": "140",
+    #         'cuisine': ['Indian'],
+    #         'allergies': ['Dairy']
     #     }
     #     fq = RequestFactory()
     #     custom_user = CustomUser.objects.create(
     #         username="test", email="test@test.com", preferences="True"
     #     )
     #     request = fq.post(reverse("setPreferences"), data=data)
-    #     request.user = custom_user
-    #     request.user.is_authenticated = lambda: True
-    #     # request.data = data
-    #     response = set_preferences(request)
-    #     self.assertTrue(response.client.session["preferences_updated"])
-    # self.assertEqual(response.status_code, 302)
 
-    # def test_set_preferences_valid_data_authenticated_set(self):
-    #     data = {
-    #         'phone': '1234567890',
-    #         'address': 'Test Address',
-    #         'diet': 'vegetarian',
-    #         'cuisine': ['Indian', 'Italian'],
-    #         'allergies': ['Dairy', 'Nuts'],
-    #         'height': '170',
-    #         'weight': '150',
-    #         'targetWeight': '140'
-    #     }
-    #     custom_user = CustomUser.objects.create(username='test', email = 'test@test.com')
-    #     request = self.factory.get(reverse('setPreferences'))
+    #     middleware = SessionMiddleware(lambda req: None)
+    #     middleware.process_request(request)
+    #     request.session.save()
+
     #     request.user = custom_user
+    #     force_authenticate(request, user=custom_user)
+
     #     request.user.is_authenticated = lambda: True
-    #     request.POST = data
+
     #     response = set_preferences(request)
-    #     # self.assertTrue(request.session["check_user_preferences"])
-    #     # self.assertTrue(request.session['preferences_set'])
+    #     self.assertTrue(request.session['preferences_updated'])
     #     self.assertEqual(response.status_code, 302)
 
     def test_set_preferences_invalid_data_authenticated_set(self):
@@ -353,3 +373,85 @@ class UserPreferencesTestCase(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn("username", form.errors)
         self.assertEqual(form.errors["username"], ["Username already exists."])
+
+    def test_update_custom_user_existing(self):
+        # CustomUser.objects.create(username=self.user.username, email=self.user.email)
+        request = self.factory.get("/")
+        request.user = self.customUser
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        update_custom_user(CustomUser, self.customUser, request)
+        custom_user = CustomUser.objects.get(username=self.customUser.username)
+
+        self.assertEqual(custom_user.last_login.date(), timezone.now().date())
+        self.assertEqual(
+            request.session["check_user_preferences"], custom_user.preferences
+        )
+        self.assertEqual(request.session["username"], self.customUser.username)
+
+    def test_update_custom_user_new(self):
+        request = self.factory.get("/")
+        request.user = self.customUser
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        update_custom_user(User, self.customUser, request)
+        custom_user = CustomUser.objects.get(username=self.customUser.username)
+
+        self.assertEqual(custom_user.last_login.date(), timezone.now().date())
+        self.assertEqual(request.session["username"], self.customUser.username)
+
+    @patch("users.signals.CustomUser.objects.create")
+    @freeze_time("2024-04-10 16:39:55")
+    def test_user_signed_up(self, mock_create):
+        data = {"username": "testuser", "email": "test@otherexample.com"}
+        request = self.factory.get("/")
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        user_signed_up(data, request)
+
+        mock_create.assert_called_once_with(
+            username=data["username"],
+            email=data["email"],
+            preferences=False,
+            last_login=timezone.now(),
+        )
+        self.assertEqual(request.session["check_user_preferences"], "False")
+        self.assertEqual(request.session["username"], data["username"])
+
+    @freeze_time("2024-04-10 16:39:55")
+    def test_update_custom_user_new_user(self):
+        request = self.factory.get("/")
+        User.objects.create_user(
+            username="newuser", email="newuser@example.com", last_login=timezone.now()
+        )
+        request.user = User.objects.get(username="newuser")
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        update_custom_user(User, request.user, request)
+        custom_user = CustomUser.objects.get(username=request.user.username)
+
+        self.assertEqual(custom_user.last_login.date(), timezone.now().date())
+        self.assertEqual(request.session["username"], request.user.username)
+
+    @freeze_time("2024-04-10 16:39:55")
+    def test_user_signed_up_no_mock(self):
+        data = {"username": "testotheruser", "email": "test@someotherexample.com"}
+        request = self.factory.get("/")
+        middleware = SessionMiddleware(lambda req: None)
+        middleware.process_request(request)
+        request.session.save()
+
+        user_signed_up(data, request)
+
+        custom_user = CustomUser.objects.get(username=data["username"])
+        self.assertEqual(custom_user.last_login.date(), timezone.now().date())
+        self.assertEqual(request.session["check_user_preferences"], "False")
+        self.assertEqual(request.session["username"], data["username"])

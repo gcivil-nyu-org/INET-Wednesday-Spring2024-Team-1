@@ -72,17 +72,19 @@ def get_grocery_details(request, grocery_id):
     except Ingredient.DoesNotExist:
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
-    
+
+
 @api_view(["POST"])
 def get_order_data(request):
-    username = request.data.get('username', None)
+    username = request.data.get("username", None)
     if username is not None:
         user = get_object_or_404(User, username=username)
-        orders = Order.objects.filter(user=user).prefetch_related('orderitem_set')
-        serializer = OrderSerializer(orders, many=True, context={'request': request})
+        orders = Order.objects.filter(user=user).prefetch_related("orderitem_set")
+        serializer = OrderSerializer(orders, many=True, context={"request": request})
         return Response(serializer.data)
     else:
         return Response({"error": "No modi provided"}, status=400)
+
 
 @api_view(["PUT"])
 def place_order(request):
@@ -90,14 +92,14 @@ def place_order(request):
         print("Request Data: ", request.data)
         username = request.user.username
         print("Username: ", username)
-        items = request.data['items'].values()
+        items = request.data["items"].values()
         user = get_object_or_404(User, username=username)
         order = Order.objects.create(user=user)
 
         # For each item, create a new OrderItem instance linked to the order
         for item in items:
-            grocery_id = item['id']
-            quantity = item['quantity']
+            grocery_id = item["id"]
+            quantity = item["quantity"]
 
             # Get the Grocery instance for the grocery_id
             grocery = get_object_or_404(Ingredient, iid=grocery_id)
@@ -107,6 +109,7 @@ def place_order(request):
 
         return Response({"message": "Order placed successfully"})
     return Response({"message": "Invalid request method"}, status=400)
+
 
 @api_view(["PUT"])
 def update_grocery_stock(request, gname):
@@ -122,7 +125,8 @@ def update_grocery_stock(request, gname):
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
 
+
 def clear_cart_data(request):
-    if 'cart_data' in request.session:
-        del request.session['cart_data']
-    return JsonResponse({'status': 'success'})
+    if "cart_data" in request.session:
+        del request.session["cart_data"]
+    return JsonResponse({"status": "success"})
