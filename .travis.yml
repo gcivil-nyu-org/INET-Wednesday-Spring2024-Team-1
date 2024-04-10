@@ -8,14 +8,12 @@ install:
 before_script:
 - python manage.py migrate
 - python manage.py collectstatic --noinput
-- psql -h $RDS_HOSTNAME -p $RDS_PORT -U $RDS_USERNAME -d $RDS_DB_NAME -c "CREATE DATABASE test_$RDS_DB_NAME;" -W $RDS_PASSWORD
 script:
 - black .
 - flake8 .
 - echo yes | coverage run --source=users manage.py test
 after_success:
 - coveralls
-- $ psql -h $RDS_HOSTNAME -p $RDS_PORT -U $RDS_USERNAME -d $RDS_DB_NAME -c "DROP DATABASE IF EXISTS test_$RDS_DB_NAME;" -W $RDS_PASSWORD
 
 env:
   global:
