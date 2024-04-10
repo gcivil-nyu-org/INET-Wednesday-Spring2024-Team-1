@@ -30,6 +30,8 @@ ALLOWED_HOSTS = [
     "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/",
     "foodsync-dev-env.us-east-2.elasticbeanstalk.com",
     "FoodSync-Dev-env.us-east-2.elasticbeanstalk.com",
+    "http://foodsync-prod-env.eba-fw3ym3th.us-east-2.elasticbeanstalk.com/",
+    "foodsync-prod-env.eba-fw3ym3th.us-east-2.elasticbeanstalk.com"
     "127.0.0.1",
 ]
 
