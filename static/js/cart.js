@@ -1,4 +1,4 @@
-var base_url = "http://127.0.0.1:8000/groceryStore/api/"
+var base_url = window.location.protocol + "//" + window.location.host + "/groceryStore/api/";
 
 function decreaseQuantity(itemId) {
     // Call your Django view to decrease quantity
@@ -101,13 +101,11 @@ function fetchCartData() {
 }
 
 function checkout() {
+    console.log(base_url)
     // Get cart data
     fetchCartData().then(cartData => {
         console.log(cartData);
-        // Send cart data to the server
-        var username = document.getElementById('dropdownMenuButton1').innerText;
-        username = username.trim();
-        var dataToSend = {...cartData, user: username};
+        var dataToSend = {...cartData};
         fetch(base_url + 'place_order/', {
             method: 'PUT',
             headers: {
@@ -150,6 +148,7 @@ function checkout() {
 
 // Event listener for cart button click
 $('#cart-button').click(function() {
+    console.log(base_url);
     fetchCartData(); // Fetch cart data when cart button is clicked
 });
     // Function to hide the cart overlay

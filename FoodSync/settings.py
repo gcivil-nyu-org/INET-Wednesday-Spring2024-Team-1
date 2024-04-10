@@ -118,6 +118,7 @@ if "RDS_HOSTNAME" in os.environ:
             "PORT": os.environ["RDS_PORT"],
         }
     }
+    BASE_API_URL = "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/groceryStore/api/"
 else:
     DATABASES = {
         "default": {
@@ -125,6 +126,7 @@ else:
             "NAME": str(os.path.join(BASE_DIR, "db.sqlite3")),
         }
     }
+    BASE_API_URL = "http://127.0.0.1:8000/groceryStore/api/"
 
 
 # Password validation
@@ -163,6 +165,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

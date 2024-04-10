@@ -4,8 +4,9 @@ import os
 from django.http import JsonResponse
 import json
 from utils import groceryStore_utils
+from FoodSync.settings import BASE_API_URL
 
-base_url = "http://127.0.0.1:8000/groceryStore/api/"
+base_url = BASE_API_URL
 
 def recipe_info(request, recipe_id):
     print(recipe_id)
@@ -89,6 +90,7 @@ def fetch_cart_data(request):
 
 def fetch_grocery_price(grocery_id, name):
     url = f"{base_url}groceries/{grocery_id}/"
+    print(url)
     response = requests.get(url)
     if response.status_code == 200:
         grocery_details = response.json()

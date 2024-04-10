@@ -75,7 +75,7 @@ def get_grocery_details(request, grocery_id):
     
 @api_view(["POST"])
 def get_order_data(request):
-    username = request.data.get('username', None)
+    username = request.session.get('username', None)
     if username is not None:
         user = get_object_or_404(User, username=username)
         orders = Order.objects.filter(user=user).prefetch_related('orderitem_set')
@@ -88,11 +88,10 @@ def get_order_data(request):
 def place_order(request):
     if request.method == "PUT":
         print("Request Data: ", request.data)
-        username = request.data['items'].pop('user')
+        username = request.session.get('username')
+        print("Username: ", username)
         items = request.data['items'].values()
-
         user = get_object_or_404(User, username=username)
-
         order = Order.objects.create(user=user)
 
         # For each item, create a new OrderItem instance linked to the order
