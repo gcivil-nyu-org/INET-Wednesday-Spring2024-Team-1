@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "secret_key"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/",
@@ -107,6 +107,9 @@ WSGI_APPLICATION = "FoodSync.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+BASE_API_URL = "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/groceryStore/api/"
+# BASE_API_URL = "http://127.0.0.1:8000/groceryStore/api/"
+
 if "RDS_HOSTNAME" in os.environ:
     DATABASES = {
         "default": {
@@ -118,7 +121,7 @@ if "RDS_HOSTNAME" in os.environ:
             "PORT": os.environ["RDS_PORT"],
         }
     }
-    BASE_API_URL = "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/groceryStore/api/"
+    
 else:
     DATABASES = {
         "default": {

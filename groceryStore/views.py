@@ -75,20 +75,20 @@ def get_grocery_details(request, grocery_id):
     
 @api_view(["POST"])
 def get_order_data(request):
-    username = request.session.get('username', None)
+    username = request.data.get('username', None)
     if username is not None:
         user = get_object_or_404(User, username=username)
         orders = Order.objects.filter(user=user).prefetch_related('orderitem_set')
         serializer = OrderSerializer(orders, many=True, context={'request': request})
         return Response(serializer.data)
     else:
-        return Response({"error": "No username provided"}, status=400)
+        return Response({"error": "No modi provided"}, status=400)
 
 @api_view(["PUT"])
 def place_order(request):
     if request.method == "PUT":
         print("Request Data: ", request.data)
-        username = request.session.get('username')
+        username = request.user.username
         print("Username: ", username)
         items = request.data['items'].values()
         user = get_object_or_404(User, username=username)
