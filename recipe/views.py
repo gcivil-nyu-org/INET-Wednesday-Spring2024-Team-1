@@ -8,6 +8,7 @@ from FoodSync.settings import BASE_API_URL
 
 base_url = BASE_API_URL
 
+
 def recipe_info(request, recipe_id):
     print(recipe_id)
     url = (
@@ -85,7 +86,13 @@ def fetch_cart_data(request):
     cart_html += "</table>"
     cart_html += '<button type="button" class="btn btn-primary" onclick="checkout()" id="checkoutButton" >Checkout</button>'
     # Return cart data as JSON response
-    return JsonResponse({"cart_items": cart_html, "cart_quantity": len(cart_data), "cart_og_data": cart_data})
+    return JsonResponse(
+        {
+            "cart_items": cart_html,
+            "cart_quantity": len(cart_data),
+            "cart_og_data": cart_data,
+        }
+    )
 
 
 def fetch_grocery_price(grocery_id, name):

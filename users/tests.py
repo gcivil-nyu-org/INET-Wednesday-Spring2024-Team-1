@@ -18,6 +18,7 @@ from freezegun import freeze_time
 from unittest.mock import MagicMock
 from rest_framework.test import force_authenticate
 
+
 class UserPreferencesTestCase(TestCase):
     def setUp(self):
         # Create a test user
@@ -172,7 +173,6 @@ class UserPreferencesTestCase(TestCase):
         response = set_preferences(request)
         self.assertEqual(response.status_code, 302)
 
-
     def test_set_preferences_valid_data_authenticated_set(self):
         data = {
             "phone": "1234567890",
@@ -201,7 +201,7 @@ class UserPreferencesTestCase(TestCase):
         request.user.is_authenticated = lambda: True
         response = set_preferences(request)
         self.assertTrue(request.session["preferences_updated"])
-        self.assertTrue(request.session['preferences_set'])
+        self.assertTrue(request.session["preferences_set"])
         self.assertTrue(request.session["check_user_preferences"])
         # Check if the response status code is 302
         self.assertEqual(response.status_code, 302)
@@ -376,7 +376,7 @@ class UserPreferencesTestCase(TestCase):
 
     def test_update_custom_user_existing(self):
         # CustomUser.objects.create(username=self.user.username, email=self.user.email)
-        request = self.factory.get('/')
+        request = self.factory.get("/")
         request.user = self.customUser
         middleware = SessionMiddleware(lambda req: None)
         middleware.process_request(request)
@@ -386,11 +386,13 @@ class UserPreferencesTestCase(TestCase):
         custom_user = CustomUser.objects.get(username=self.customUser.username)
 
         self.assertEqual(custom_user.last_login.date(), timezone.now().date())
-        self.assertEqual(request.session["check_user_preferences"], custom_user.preferences)
+        self.assertEqual(
+            request.session["check_user_preferences"], custom_user.preferences
+        )
         self.assertEqual(request.session["username"], self.customUser.username)
 
     def test_update_custom_user_new(self):
-        request = self.factory.get('/')
+        request = self.factory.get("/")
         request.user = self.customUser
         middleware = SessionMiddleware(lambda req: None)
         middleware.process_request(request)
@@ -402,11 +404,11 @@ class UserPreferencesTestCase(TestCase):
         self.assertEqual(custom_user.last_login.date(), timezone.now().date())
         self.assertEqual(request.session["username"], self.customUser.username)
 
-    @patch('users.signals.CustomUser.objects.create')
+    @patch("users.signals.CustomUser.objects.create")
     @freeze_time("2024-04-10 16:39:55")
     def test_user_signed_up(self, mock_create):
         data = {"username": "testuser", "email": "test@otherexample.com"}
-        request = self.factory.get('/')
+        request = self.factory.get("/")
         middleware = SessionMiddleware(lambda req: None)
         middleware.process_request(request)
         request.session.save()
@@ -424,7 +426,7 @@ class UserPreferencesTestCase(TestCase):
 
     @freeze_time("2024-04-10 16:39:55")
     def test_update_custom_user_new_user(self):
-        request = self.factory.get('/')
+        request = self.factory.get("/")
         User.objects.create_user(
             username="newuser", email="newuser@example.com", last_login=timezone.now()
         )
@@ -442,7 +444,7 @@ class UserPreferencesTestCase(TestCase):
     @freeze_time("2024-04-10 16:39:55")
     def test_user_signed_up_no_mock(self):
         data = {"username": "testotheruser", "email": "test@someotherexample.com"}
-        request = self.factory.get('/')
+        request = self.factory.get("/")
         middleware = SessionMiddleware(lambda req: None)
         middleware.process_request(request)
         request.session.save()

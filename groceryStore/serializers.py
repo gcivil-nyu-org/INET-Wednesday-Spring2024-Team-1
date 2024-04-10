@@ -21,6 +21,7 @@ class GroceryStockUpdateSerializer(serializers.ModelSerializer):
         model = Grocery
         fields = ["stock"]
 
+
 class OrderItemSerializer(serializers.ModelSerializer):
     # grocery_detail = serializers.HyperlinkedIdentityField(
     #     view_name='get_grocery_details',  # Replace with the name of your grocery details view
@@ -32,6 +33,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
         model = OrderItem
         fields = ["order_id", "grocery", "quantity"]
         db_table = "groceryStore_orderitem"
+
 
 class OrderSerializer(serializers.ModelSerializer):
     orderitem_set = OrderItemSerializer(many=True, read_only=True)
