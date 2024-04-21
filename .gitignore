@@ -11,5 +11,7 @@ db.sqlite3
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 swe-project/*
+static/admin/*
+static/rest_framework/*
 
 .coverage

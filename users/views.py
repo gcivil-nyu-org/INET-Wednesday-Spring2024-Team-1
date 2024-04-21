@@ -3,26 +3,89 @@ from django.contrib.auth.models import User
 from django.db import transaction
 from django.template.response import TemplateResponse
 from django.http import HttpResponse
-from google_auth_oauthlib.flow import Flow
-from googleapiclient.discovery import build
-import datetime
-import traceback
-from dateutil.relativedelta import relativedelta
-from google_auth_oauthlib.flow import InstalledAppFlow
-import os
+from .forms import UserSignUpForm
+from django.contrib.auth.views import LogoutView
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 import django
-import json
-from google.oauth2.credentials import Credentials
+from django.contrib.auth.hashers import make_password
+from .signals import user_signed_up, user_logged_in
+from django.contrib.auth import authenticate, logout, login
+from django.urls import reverse_lazy
 
 django.setup()
 
 from users.models import CustomUser, UserPreferences, Cuisine, Allergy
 
 
-def login(request):
+def login_redirect(request):
     if request.user.is_authenticated:
         return redirect("homepage")
     return render(request, "users/login.html")
+
+
+def logout_view(request):
+    logout(request)
+    return redirect("/")
+
+
+def signup(request):
+    if request.user.is_authenticated:
+        return redirect("homepage")
+    return render(request, "users/signup.html")
+
+
+def user_signup(request):
+    if request.method == "POST":
+        form = UserSignUpForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data["username"]
+            email = form.cleaned_data["email"]
+            password = form.cleaned_data["password"]
+            hashed_password = make_password(password)
+            try:
+                User.objects.create(
+                    username=username, email=email, password=hashed_password
+                )
+                data = {"username": username, "email": email}
+                user_signed_up(data, request)
+                user = authenticate(request, username=username, password=password)
+                login(request, user)
+                return redirect(
+                    "homepage"
+                )  # Redirect to login page after successful signup
+            except Exception as e:
+                print(e)
+                return TemplateResponse(
+                    request,
+                    "users/signup.html",
+                    {"form": form, "error": "Error creating user"},
+                )
+    else:
+        form = UserSignUpForm()
+    return TemplateResponse(
+        request, "users/signup.html", {"form": form, "error": "Error creating user"}
+    )
+
+
+def user_login(request):
+    if request.method == "POST":
+        form_data = request.POST
+        username = form_data.get("username")
+        password = form_data.get("password")
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            # user_logged_in(username, request)
+            return redirect(
+                reverse("homepage")
+            )  # Replace 'dashboard' with the desired URL name
+        else:
+            # If authentication fails, display an error message
+            error_message = "Invalid username or password."
+            return render(request, "users/login.html", {"error_message": error_message})
+
+    return TemplateResponse(request, "users/login.html")
 
 
 def preferences(request):
@@ -64,7 +127,6 @@ def skip_preferences(request):
 
 
 def set_preferences(request):
-    print("set_preferences")
     if not request.user.is_authenticated:
         return redirect("/")
     if request.method == "POST":
@@ -101,7 +163,6 @@ def set_preferences(request):
             request.session["preferences_updated"] = True
             return redirect("homepage")
 
-        print("else")
         if (
             not phone_number
             or not address
@@ -110,7 +171,6 @@ def set_preferences(request):
             or not target_weight
         ):
             return HttpResponse("Missing required fields", status=400)
-        print("Creating UserPreferences instance")
         user_preferences = UserPreferences.objects.create(
             user=custom_user_instance,
             phone_number=phone_number,
@@ -126,7 +186,6 @@ def set_preferences(request):
         try:
             with transaction.atomic():
                 # Create UserPreferences instance
-
                 # Add cuisines (assuming cuisines is a ManyToManyField)
                 user_preferences.cuisines.add(*cuisines)
                 user_preferences.allergies.add(*allergies)

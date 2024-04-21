@@ -24,11 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "secret_key"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    "inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com",
-    "http://inet-wednesday-spring2024-team-1-dev.us-east-2.elasticbeanstalk.com/",
+    "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/",
+    "foodsync-dev-env.us-east-2.elasticbeanstalk.com",
+    "FoodSync-Dev-env.us-east-2.elasticbeanstalk.com",
     "127.0.0.1",
     "localhost",
 ]
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     "groceryStore",
     "homepage",
     "users",
+    "userProfilePage",
     "django.contrib.sites",
     "allauth",
     "allauth.account",
@@ -107,6 +109,11 @@ WSGI_APPLICATION = "FoodSync.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+BASE_API_URL = (
+    "http://foodsync-dev-env.us-east-2.elasticbeanstalk.com/groceryStore/api/"
+)
+# BASE_API_URL = "http://127.0.0.1:8000/groceryStore/api/"
+
 if "RDS_HOSTNAME" in os.environ:
     DATABASES = {
         "default": {
@@ -125,6 +132,7 @@ else:
             "NAME": str(os.path.join(BASE_DIR, "db.sqlite3")),
         }
     }
+    BASE_API_URL = "http://127.0.0.1:8000/groceryStore/api/"
 
 
 # Password validation
@@ -162,7 +170,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

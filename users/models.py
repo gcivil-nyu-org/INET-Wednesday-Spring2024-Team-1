@@ -8,7 +8,6 @@ class CustomUser(models.Model):
     email = models.EmailField(max_length=150, primary_key=True)
     preferences = models.BooleanField(default=False)
     last_login = models.DateTimeField(null=True)
-    credentials = models.TextField(null=True)
 
 
 class Cuisine(models.Model):
