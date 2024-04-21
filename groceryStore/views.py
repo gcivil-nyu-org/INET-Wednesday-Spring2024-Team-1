@@ -1,11 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-<<<<<<< HEAD
-from .models import Grocery, Order, OrderItem, UserProfile
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from .serializers import GrocerySerializer, GroceryStockUpdateSerializer
-=======
 from .models import Grocery, Order, OrderItem, UserProfile, Ingredient
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
@@ -18,7 +12,6 @@ from .serializers import (
     OrderSerializer,
 )
 from django.http import JsonResponse
->>>>>>> develop
 
 
 # Create your views here.
@@ -67,18 +60,6 @@ def get_user_data(request):
 
 
 @api_view(["GET"])
-<<<<<<< HEAD
-def get_grocery_details(request, gname):
-    try:
-        # Fetch the grocery data using the provided gname from the groceryStore_grocery table
-        # grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
-        grocery = Grocery.objects.get(gname=gname)
-        # Serialize the grocery data
-        serializer = GrocerySerializer(grocery)
-        # Return the serialized data in the response
-        return Response(serializer.data)
-    except Grocery.DoesNotExist:
-=======
 def get_grocery_details(request, grocery_id):
     try:
         # Fetch the grocery data using the provided gname from the groceryStore_grocery table
@@ -89,13 +70,10 @@ def get_grocery_details(request, grocery_id):
         # Return the serialized data in the response
         return Response(serializer.data)
     except Ingredient.DoesNotExist:
->>>>>>> develop
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
 
 
-<<<<<<< HEAD
-=======
 @api_view(["POST"])
 def get_order_data(request):
     username = request.data.get("username", None)
@@ -133,7 +111,6 @@ def place_order(request):
     return Response({"message": "Invalid request method"}, status=400)
 
 
->>>>>>> develop
 @api_view(["PUT"])
 def update_grocery_stock(request, gname):
     try:
@@ -147,12 +124,9 @@ def update_grocery_stock(request, gname):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
-<<<<<<< HEAD
-=======
 
 
 def clear_cart_data(request):
     if "cart_data" in request.session:
         del request.session["cart_data"]
     return JsonResponse({"status": "success"})
->>>>>>> develop

@@ -1,9 +1,5 @@
 from rest_framework import serializers
-<<<<<<< HEAD
-from .models import Grocery
-=======
 from .models import Grocery, Ingredient, Order, OrderItem
->>>>>>> develop
 
 
 class GrocerySerializer(serializers.ModelSerializer):
@@ -13,8 +9,6 @@ class GrocerySerializer(serializers.ModelSerializer):
         db_table = "groceryStore_grocery"
 
 
-<<<<<<< HEAD
-=======
 class IngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ingredient
@@ -22,13 +16,10 @@ class IngredientSerializer(serializers.ModelSerializer):
         db_table = "groceryStore_ingredient"
 
 
->>>>>>> develop
 class GroceryStockUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grocery
         fields = ["stock"]
-<<<<<<< HEAD
-=======
 
 
 class OrderItemSerializer(serializers.ModelSerializer):
@@ -51,4 +42,3 @@ class OrderSerializer(serializers.ModelSerializer):
         model = Order
         fields = ["oid", "date", "status", "user", "calories", "orderitem_set"]
         db_table = "groceryStore_order"
->>>>>>> develop
