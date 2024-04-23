@@ -53,7 +53,6 @@ def index(request):
     end_time = int(datetime.datetime.utcnow().timestamp() * 1000)
     start_time = end_time - (30 * 24 * 60 * 60 * 1000)  
 
-    status = True
     try:
         data = service.users().dataset().aggregate(
             userId='me',
@@ -65,7 +64,7 @@ def index(request):
             }
         ).execute()
     except Exception as e:
-        status = False
+        print(e)
     calories_data = []
     labels = []
     current_date = datetime.datetime.utcnow()
@@ -74,8 +73,8 @@ def index(request):
         calories = 0
         try:
             calories = data['bucket'][i]['dataset'][0]['point'][0]['value'][0]['fpVal']
-        except:
-            print('not exist')
+        except Exception as e:
+            print(e)
         calories_data.append((date, calories))
     # Prepare data for the template
     labels = [item[0] for item in reversed(calories_data)]  
