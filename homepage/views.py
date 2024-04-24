@@ -14,11 +14,15 @@ def homepage(request):
         homepage_recipes(request)
     if request.session.get("homepage_recipes_info"):
         recipes_info = request.session.get("homepage_recipes_info")
-        return render(request, "homepage/homepage.html", {"recipes": recipes_info})
-    homepage_recipes(request)
-    recipes_info = request.session.get("homepage_recipes_info")
-    return render(
-        request,
-        "homepage/homepage.html",
-        {"recipes": recipes_info, "check_user_preferences": check_user_preferences},
-    )
+        response = render(request, "homepage/homepage.html", {"recipes": recipes_info})
+    else:
+        homepage_recipes(request)
+        recipes_info = request.session.get("homepage_recipes_info")
+        response = render(
+            request,
+            "homepage/homepage.html",
+            {"recipes": recipes_info, "check_user_preferences": check_user_preferences},
+        )
+
+    response["Cache-Control"] = "no-store"
+    return response

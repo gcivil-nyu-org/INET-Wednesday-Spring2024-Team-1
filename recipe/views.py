@@ -148,8 +148,10 @@ def update_cart(request):
 
 
 def check_session_variable(request):
+    request.session.modified = True
     if "cart_data" in request.session:
         exists = True
     else:
         exists = False
+    print("Session variable exists:", exists)
     return JsonResponse({"exists": exists})

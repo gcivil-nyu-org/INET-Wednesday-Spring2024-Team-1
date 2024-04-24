@@ -164,32 +164,52 @@
 </head>
 
 <body>
-    <div class="fixed-top">
-        <nav class="navbar navbar-light bg-light">
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand">
-                    <h2>FoodSync</h2>
-                </a>
-                {% if user.is_authenticated %}
-                <button type="button" class="d-flex btn btn-primary btn-circle btn-sm dropdown-toggle" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    {% if user.is_authenticated.socialaccount_set.all %}
-                        {{ user.socialaccount_set.all.0.extra_data.name }}
+              <a class="navbar-brand" href="/homepage">FoodSync</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/homepage">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/preferences">Preferences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/userProfilePage">Profile</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item position-relative">
+                        <i class="fa badge fa-lg" style="font-size:24px; color: #000;" id="cart-button">&#xf07a;</i>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    {% if user.is_authenticated%}
+                        <button type="button" class="d-flex btn btn-primary btn-circle btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- {{ user.socialaccount_set.all.0.extra_data.name}} -->
+                            {% if user.socialaccount_set.all %}
+                                {{ user.socialaccount_set.all.0.extra_data.name }}
+                            {% else %}
+                                {{ user.username }}
+                            {% endif %}
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <a type="a" href="{% url 'userProfilePage' %}">User Profile</a>
+                            <form method="post" action="{% url 'account_logout' %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary">Logout</button>
+                            </form>
+                        </div>
                     {% else %}
-                        {{ user.username }}
+                        <a href="/">Please login</a>
                     {% endif %}
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                    <a type="a" href="{% url 'userProfilePage' %}">User Profile</a>
-                    <form method="post" action="{% url 'account_logout' %}">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-primary">Logout</button>
-                    </form>
-                </div>
-            {% else %}
-                <a href="/">Please login</a>
-            {% endif %}
+                </span>
+              </div>
             </div>
         </nav>
     </div>

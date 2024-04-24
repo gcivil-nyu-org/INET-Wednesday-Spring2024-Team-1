@@ -24,6 +24,11 @@ class Allergy(models.Model):
         return self.name
 
 
+class CartData(models.Model):
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+    data = models.JSONField(default=dict)
+
+
 class UserPreferences(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, primary_key=True)
     phone_number = models.CharField(

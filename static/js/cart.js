@@ -208,7 +208,7 @@ $('#cart-button').click(function() {
                     // Remove Add to Cart button
                     $('#addToCart').remove();
                     // Add View Cart button
-                    $('#cartButtons').append('<button id="viewCart" class="btn btn-success">View Cart</button>');
+                    $('#cartButtons').append('<button id="viewCart" class="btn btn-success">You have ingredients from other recipe. Please checkout that order to add more. View Cart</button>');
                     fetchCartData();
                     // Handle success response
                 } else {
@@ -240,7 +240,7 @@ $(document).ready(function(){
                 // Remove Add to Cart button
                 $('#addToCart').remove();
                 // Add View Cart button
-                $('#cartButtons').append('<button id="viewCart" class="btn btn-success">View Cart</button>');
+                $('#cartButtons').append('<button id="viewCart" class="btn btn-success">You have ingredients from other recipe. Please checkout that order to add more. View Cart</button>');
                 // fetchCartData();
                 updateCartBadge();
                 
