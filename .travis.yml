@@ -8,10 +8,15 @@ install:
 before_script:
 - python manage.py migrate
 - python manage.py collectstatic --noinput
+jobs:
+  include:
+    - stage: test
+      if: branch = develop AND type = push
+      script: echo yes | coverage run --source=users manage.py test
 script:
 - black .
 - flake8 .
-- echo yes | coverage run --source=users manage.py test
+# - echo yes | coverage run --source=users manage.py test
 after_success:
 - coveralls
 
@@ -30,6 +35,4 @@ deploy:
   on:
     repo: gcivil-nyu-org/INET-Wednesday-Spring2024-Team-1
     branch: develop
-    if: type = pull_request
   skip_cleanup: 'true'
-
