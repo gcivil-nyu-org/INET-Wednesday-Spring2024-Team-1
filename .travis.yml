@@ -11,7 +11,7 @@ before_script:
 jobs:
   include:
     - stage: test
-      if: branch = develop AND type = push
+      if: branch = develop
       script: echo yes | coverage run --source=users manage.py test
 script:
 - black .
