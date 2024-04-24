@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Grocery, Order, OrderItem, UserProfile, Ingredient
+from users.models import CustomUser, CartData
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
@@ -106,6 +107,12 @@ def place_order(request):
 
             # Create a new OrderItem instance
             OrderItem.objects.create(order=order, grocery=grocery, quantity=quantity)
+        custom_user = CustomUser.objects.get(email=request.user.email)
+        print("Custom user:", custom_user)
+        cart_data_obj = CartData.objects.filter(user=custom_user).first()
+        # Clear the cart data
+        if cart_data_obj:
+            cart_data_obj.delete()
 
         return Response({"message": "Order placed successfully"})
     return Response({"message": "Invalid request method"}, status=400)

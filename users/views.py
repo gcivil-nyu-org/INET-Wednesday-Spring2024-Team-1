@@ -4,14 +4,12 @@ from django.db import transaction
 from django.template.response import TemplateResponse
 from django.http import HttpResponse
 from .forms import UserSignUpForm
-from django.contrib.auth.views import LogoutView
-from django.http import HttpResponseRedirect
 from django.urls import reverse
 import django
 from django.contrib.auth.hashers import make_password
-from .signals import user_signed_up, user_logged_in
+from .signals import user_signed_up
 from django.contrib.auth import authenticate, logout, login
-from django.urls import reverse_lazy
+from .models import CartData
 
 django.setup()
 
@@ -25,7 +23,17 @@ def login_redirect(request):
 
 
 def logout_view(request):
+    cart_data = request.session.get("cart_data", None)
+    print("Cart data from logout:", cart_data)
+
+    if request.user.is_authenticated and cart_data is not None:
+        custom_user = CustomUser.objects.get(email=request.user.email)
+        CartData.objects.update_or_create(
+            user=custom_user, defaults={"data": cart_data}
+        )
+
     logout(request)
+
     return redirect("/")
 
 
@@ -88,6 +96,9 @@ def user_login(request):
     return TemplateResponse(request, "users/login.html")
 
 
+PREFERENCES_TEMPLATE = "users/preferences.html"
+
+
 def preferences(request):
     if not request.user.is_authenticated:
         return redirect("/")
@@ -107,15 +118,18 @@ def preferences(request):
                 "weight": user_preferences.weight,
                 "target_weight": user_preferences.target_weight,
             }
-            return TemplateResponse(
-                request, "users/preferences.html", {"preferences": preferences}
+            response = TemplateResponse(
+                request, PREFERENCES_TEMPLATE, {"preferences": preferences}
             )
         else:
-            return TemplateResponse(
+            response = TemplateResponse(
                 request, "users/preferences.html", {"preferences": None}
             )
     except CustomUser.DoesNotExist:
         return redirect("/")
+
+    response["Cache-Control"] = "no-store"
+    return response
 
     return HttpResponse("Something went wrong.", status=500)
 

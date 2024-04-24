@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import requests
 from FoodSync.settings import BASE_API_URL
 
@@ -8,13 +8,21 @@ base_url = BASE_API_URL
 
 def index(request):
     url = base_url + "get_order_data/"
-    data = {"username": request.user.username}
-    response = requests.post(url, data=data)
-    orders = response.json()
-    if orders is not None:
-        for order in orders:
-            items = order["orderitem_set"]
-            for item in items:
-                item["total"] = item["grocery"]["price"] * item["quantity"]
-        return render(request, "userProfilePage/index.html", {"orders": orders})
-    return render(request, "userProfilePage/index.html")
+    if request.user.is_authenticated:
+        data = {"username": request.user.username}
+        # if data["username"]:
+        response = requests.post(url, data=data)
+        orders = response.json()
+        if orders is not None:
+            for order in orders:
+                items = order["orderitem_set"]
+                for item in items:
+                    item["total"] = float(item["grocery"]["price"]) * item["quantity"]
+            response = render(request, "userProfilePage/index.html", {"orders": orders})
+        else:
+            response = render(request, "userProfilePage/index.html")
+    else:
+        response = redirect("login")
+
+    response["Cache-Control"] = "no-store"
+    return response

@@ -10,7 +10,7 @@ urlpatterns = [
     # path("preferences/", TemplateView.as_view(template_name="users/preferences.html")),
     path("preferences/", views.preferences, name="preferences"),
     path("homepage", homepage, name="homepage"),
-    #    path("logout",views.logout_view),
+    #    path("",views.logout_view),
     path("logout/", views.logout_view, name="logout"),
     path("", views.login_redirect, name="login"),
     path("signup/", views.signup, name="signup"),
