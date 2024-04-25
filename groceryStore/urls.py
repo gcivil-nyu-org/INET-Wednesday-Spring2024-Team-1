@@ -1,8 +1,5 @@
 from .views import (
-    get_grocery_data,
     get_order_data,
-    get_orderitem_data,
-    get_user_data,
     get_grocery_details,
     update_grocery_stock,
     place_order,
