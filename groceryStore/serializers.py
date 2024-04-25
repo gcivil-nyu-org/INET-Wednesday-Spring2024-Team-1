@@ -23,10 +23,6 @@ class GroceryStockUpdateSerializer(serializers.ModelSerializer):
 
 
 class OrderItemSerializer(serializers.ModelSerializer):
-    # grocery_detail = serializers.HyperlinkedIdentityField(
-    #     view_name='get_grocery_details',  # Replace with the name of your grocery details view
-    #     lookup_field='grocery_id'
-    # )
     grocery = IngredientSerializer(read_only=True)
 
     class Meta:
