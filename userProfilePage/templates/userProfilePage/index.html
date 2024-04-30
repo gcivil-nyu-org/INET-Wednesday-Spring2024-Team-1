@@ -115,10 +115,56 @@
                 </div>
                 {% endif %}
             </div>
+            <div class="col-md-6">
+                <canvas id="caloriesChart"></canvas>
+            </div>
         </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/af52a1a454.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/date-fns"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+<script>
+    var caloriesData = JSON.parse('{{ calories_data|escapejs }}');
+
+    // Extract the dates and total calories
+    var dates = caloriesData.map(function(item) {
+        return new Date(item.date);
+    });
+    var totalCalories = caloriesData.map(function(item) {
+        return item.total_calories;
+    });
+
+    console.log(dates, totalCalories);
+    // Create the chart
+    var ctx = document.getElementById('caloriesChart').getContext('2d');
+    console.log(ctx);
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [{
+                label: 'Intake Calories',
+                data: totalCalories,
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    type: 'time',
+                    time: {
+                        unit: 'day'
+                    }
+                }
+            }
+        }
+    });
+</script>
 </html>

@@ -6,10 +6,13 @@ from django.http import HttpResponse
 from .forms import UserSignUpForm
 from django.urls import reverse
 import django
+from django.utils import timezone
 from django.contrib.auth.hashers import make_password
 from .signals import user_signed_up
 from django.contrib.auth import authenticate, logout, login
-from .models import CartData
+from .models import CartData, UserCalorie
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 django.setup()
 
@@ -216,3 +219,35 @@ def set_preferences(request):
         return TemplateResponse(
             request, "users/preferences.html", {"preferences_set_error": None}
         )
+
+
+@csrf_exempt
+def track_calories(request):
+    if not request.user.is_authenticated:
+        return redirect("/")
+    if request.method == "POST":
+        custom_user_instance = CustomUser.objects.get(email=request.user.email)
+        amount = request.POST.get("amount")
+        recipe_id = request.POST.get("recipe_id")
+        existing_cals = UserCalorie.objects.filter(user=custom_user_instance, date=timezone.now().date(), recipeId=recipe_id).first()
+
+        if existing_cals:
+            # If a record for today exists, add the incoming calories to it
+            existing_cals.calories += float(amount)
+            existing_cals.save()
+        else:
+            # If no record for today exists, create a new one
+            UserCalorie.objects.create(user=custom_user_instance, date=timezone.now().date(), calories=float(amount), recipeId = recipe_id)
+
+        return JsonResponse({'status': 'success', 'message': 'Calories tracked successfully'})
+    
+
+# def get_calories(request):
+#     if not request.user.is_authenticated:
+#         return redirect("/")
+#     if request.method == "GET":
+#         custom_user_instance = CustomUser.objects.get(email=request.user.email)
+#         user_calories = UserCalorie.objects.filter(user=custom_user_instance, date=timezone.now().date())
+#         total_calories = sum([cal.calories for cal in user_calories])
+#         return JsonResponse({'status': 'success', 'total_calories': total_calories})
+#     return JsonResponse({'status': 'error', 'message': 'Invalid request method'})

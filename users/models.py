@@ -24,6 +24,15 @@ class Allergy(models.Model):
         return self.name
 
 
+class UserCalorie(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    calories = models.FloatField()
+    date = models.DateField()
+    recipeId = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f'{self.user.username} - {self.calories} calories on {self.date}'
+
 class CartData(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     data = models.JSONField(default=dict)
