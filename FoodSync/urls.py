@@ -27,6 +27,7 @@ urlpatterns = [
     path("groceryStore/", include("groceryStore.urls")),
     path("", include("users.urls")),
     path("admin/", admin.site.urls),
+    path("store/", include('store.urls')),
     path("userProfilePage/", include("userProfilePage.urls")),
     path("addToCart/", recipe_views.add_to_cart, name="add_to_cart"),
     path("fetch-cart-data/", recipe_views.fetch_cart_data, name="fetch_cart_data"),

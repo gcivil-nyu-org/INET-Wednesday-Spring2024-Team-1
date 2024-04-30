@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FoodSync</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <style>
+        .pending {
+            background-color: yellow;
+        }
+    
+        .completed {
+            background-color: blue;
+            color: white;  /* Add this if the text is hard to read on the blue background */
+        }
+    
+        .cancelled {
+            background-color: red;
+        }
+    
+        button[disabled] {
+            opacity: 0.5;
+        }
+    </style>
+    <body>
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/homepage">FoodSync</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <span class="navbar-text">
+                        {% if user.is_authenticated%}
+                            <button type="button" class="d-flex btn btn-primary btn-circle btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- {{ user.socialaccount_set.all.0.extra_data.name}} -->
+                                {% if user.socialaccount_set.all %}
+                                    {{ user.socialaccount_set.all.0.extra_data.name }}
+                                {% else %}
+                                    {{ user.username }}
+                                {% endif %}
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <form method="post" action="{% url 'account_logout' %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-primary">Logout</button>
+                                </form>
+                            </div>
+                        {% else %}
+                            <a href="/">Please login</a>
+                        {% endif %}
+                    </span>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container" style="padding-top: 60px;">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <a href="?status=all" class="btn btn-primary">Show All Orders</a>
+                        <a href="?status=pending" class="btn btn-primary">Show Pending Orders</a>
+                        <a href="?status=completed" class="btn btn-primary">Show Completed Orders</a>
+                        <a href="?status=cancelled" class="btn btn-primary">Show Cancelled Orders</a>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Order Date</th>
+                                <th scope="col">Order Items</th>
+                                <th scope="col">Order Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in orders %}
+                            <tr>
+                                <td>{{ order.oid }}</td>
+                                <td>{{ order.date }}</td>
+                                <td>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#orderItems{{ order.oid }}" aria-expanded="false" aria-controls="orderItems{{ order.oid }}">
+                                        Show Order Items
+                                    </button>
+                                    <div class="collapse" id="orderItems{{ order.oid }}">
+                                        <ul>
+                                        {% for item in order.orderitem_set.all %}
+                                            <li id="itemTotal{{ item.id }}"></li>
+                                        {% endfor %}
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    {% if status == 'pending' or order.status == 'pending' %}
+                                        <button class="completed" onclick="changeOrderStatus({{ order.oid }}, 'completed')" {% if order.status == 'completed' %}disabled{% endif %}>Complete the order</button>
+                                        <button class="cancelled" onclick="changeOrderStatus({{ order.oid }}, 'cancelled')" {% if order.status == 'cancelled' %}disabled{% endif %}>Cancel the order</button>
+                                    {% else %}
+                                        <button class="btn {{ order.status }}" disabled>{{ order.status }}</button>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% if orders.has_previous %}
+                        <a href="?page={{ orders.previous_page_number }}" class="btn btn-primary">Previous</a>
+                    {% endif %}
+                    {% if orders.has_next %}
+                        <a href="?page={{ orders.next_page_number }}" class="btn btn-primary">Next</a>
+                    {% endif %}
+                </div>
+        </div>
+    </body>
+<script>
+function showOrderItems(orderId) {
+    fetch(`/store/order-items/${orderId}`)
+        .then(response => response.json())
+        .then(data => {
+            // Find the div that will contain the order items list
+            const orderItemsDiv = document.getElementById(`orderItems${orderId}`);
+
+            // Clear the div
+            orderItemsDiv.innerHTML = '';
+
+            // Create a list to display the order items
+            const list = document.createElement('ul');
+
+            // Iterate over the order items data
+            data.forEach(item => {
+                // Calculate the total for the item
+                const total = item.grocery.price * item.quantity;
+
+                // Create a list item for the order item and add it to the list
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.grocery.name}: ${item.quantity} (Total: ${total})`;
+                list.appendChild(listItem);
+            });
+
+            // Append the list to the div
+            orderItemsDiv.appendChild(list);
+        });
+}
+
+function changeOrderStatus(orderId, newStatus) {
+    fetch(`/store/change-order-status/${orderId}/`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken')  // Django requires CSRF token for POST requests
+        },
+        body: JSON.stringify({ status: newStatus })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Update the order status
+        console.log(data);
+        location.reload();
+    });
+}
+
+// Function to get a cookie by name, needed to get the CSRF token
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+</script>
+
+<script>
+
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+
+    if (!status) {
+        window.location.href = '?status=pending';
+    }
+
+    const orderItemsButtons = document.querySelectorAll('[data-toggle="collapse"]');
+    
+    orderItemsButtons.forEach(button => {
+        const orderId = button.dataset.target.slice(11);  // Remove "#orderItems" from the target
+        button.addEventListener('click', function() {
+            showOrderItems(orderId);
+            const collapseElement = document.querySelector(button.dataset.target);
+            if (!collapseElement.classList.contains('show')) {
+                collapseElement.classList.add('show');
+            } else {
+                collapseElement.classList.remove('show');
+            }
+        });
+    });
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/af52a1a454.js" crossorigin="anonymous"></script>
+</html>
