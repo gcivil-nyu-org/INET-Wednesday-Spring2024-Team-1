@@ -5,8 +5,18 @@ from django.http import JsonResponse
 import json
 from utils import groceryStore_utils
 from FoodSync.settings import BASE_API_URL
+from users.models import CustomUser, UserCalorie
+from django.utils import timezone
+
 
 base_url = BASE_API_URL
+
+def calculate_total_calories(user, recipe_id=None):
+    if recipe_id:
+        user_calories = UserCalorie.objects.filter(user=user, date=timezone.now().date(), recipeId=recipe_id)
+    else:
+        user_calories = UserCalorie.objects.filter(user=user, date=timezone.now().date())
+    return sum([cal.calories for cal in user_calories])
 
 
 def recipe_info(request, recipe_id):
@@ -16,13 +26,20 @@ def recipe_info(request, recipe_id):
         + str(recipe_id)
         + "/information"
     )
-    # url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/798400/information"
     headers = {
         "X-RapidAPI-Key": os.environ.get("RAPID_API_KEY"),
         "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
     }
     querystring = {"includeNutrition": "true"}
     response = requests.request("GET", url, headers=headers, params=querystring)
+
+    if request.user.is_authenticated:
+        custom_user_instance = CustomUser.objects.get(email=request.user.email)
+        total_calories = calculate_total_calories(custom_user_instance, recipe_id)
+        is_tracked = total_calories > 0
+
+        return render(request, "recipe/recipe.html", {"recipe": response.json(), "is_tracked": is_tracked})
+
     return render(request, "recipe/recipe.html", {"recipe": response.json()})
 
 

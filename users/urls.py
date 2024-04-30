@@ -19,4 +19,5 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("setPreferences/", views.set_preferences, name="setPreferences"),
     path("skipPreferences/", views.skip_preferences, name="skipPreferences"),
+    path('track_calories/', views.track_calories, name='track_calories'),
 ]

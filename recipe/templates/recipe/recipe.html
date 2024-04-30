@@ -142,12 +142,16 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Quantity</th>
-                                <th class="ingredientQuantityHeading">Order</th>
+                                {% if user.is_authenticated %}
+                                    <th class="ingredientQuantityHeading">Order</th>
+                                {% endif %}
+                                
                             </tr>
                             {% for ingredient in recipe.extendedIngredients %}
                                 <tr id="{{ ingredient.id }}">
                                     <td>{{ ingredient.nameClean }}</td>
                                     <td>{{ ingredient.amount }} {{ ingredient.unit }} </td>
+                                    {% if user.is_authenticated %}
                                     <td>
                                         <select name="ingredientQuantity" class="ingredientQuantity form-select" id="ingredientQuantity" data-item-id="{{ ingredient.id }}" data-item-name="{{ ingredient.nameClean}}">
                                             <option value="1">1</option>
@@ -157,11 +161,19 @@
                                             <option value="5">5</option>
                                         </select>
                                     </td>
+                                    {% endif %}
                                 </tr>
                             {% endfor %}
                         </table>
                         <div id="cartButtons"></div>
-                        <button type="button" class="btn btn-secondary" id="addToCart" data-csrf="{{ csrf_token }}">Add to cart</button>
+                        {% if user.is_authenticated %}
+                            <button type="button" class="btn btn-secondary" id="addToCart" data-csrf="{{ csrf_token }}">Add to cart</button>
+                            {% if is_tracked %}
+                                <button type="button" class="btn btn-primary" id="trackCalories" disabled>Calories Tracked</button>
+                            {% else %}
+                                <button type="button" class="btn btn-primary" id="trackCalories">Track Calories for this Recipe</button>
+                            {% endif %}
+                        {% endif %}
                     </div>
                   </div>
             </div>
@@ -184,4 +196,30 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/af52a1a454.js" crossorigin="anonymous"></script>
 <script src="{% static 'js/cart.js' %}"></script>
+<script>
+    var base_url_temp = window.location.protocol + "//" + window.location.host + "/";
+    $("#trackCalories").click(function() {
+        // console.log(base_url_temp + 'track_calories/',  "clicked");
+    $.ajax({
+        url: base_url_temp + 'track_calories/',  // Replace with the path to your Django view
+        type: 'post',
+        data: {
+            // Any data you want to send to the server
+            'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val(),
+            'amount': '{{ recipe.nutrition.nutrients.0.amount }}',
+            'unit': '{{ recipe.nutrition.nutrients.0.unit }}',
+            'recipe_id': '{{ recipe.id }}',
+        },
+        success: function(response) {
+            // Code to execute if the request succeeds
+            console.log(response);
+            location.reload();
+        },
+        error: function(response) {
+            // Code to execute if the request fails
+            console.log(response);
+        }
+    });
+});
+</script>
 </html>

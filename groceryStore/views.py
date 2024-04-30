@@ -31,6 +31,22 @@ def get_grocery_details(request, grocery_id):
         # Return a 404 response if the grocery with the provided gname doesn't exist
         return Response({"message": "Grocery not found"}, status=404)
 
+def get_grocery_details_no_api(grocery_id):
+    try:
+        # Fetch the grocery data using the provided gname from the groceryStore_grocery table
+        # grocery = Grocery.objects.using("groceryStore_grocery").get(gname=gname)
+        ingredient = Ingredient.objects.get(iid=grocery_id)
+        ingredient_data = {
+            'iid': ingredient.iid,
+            'name': ingredient.iname,
+            'price': ingredient.price,
+            # Add any other fields you want to include in the response
+        }
+        # Return the ingredient data in the response
+        return ingredient_data
+    except Ingredient.DoesNotExist:
+        # Return a 404 response if the grocery with the provided gname doesn't exist
+        return Response({"message": "Grocery not found"}, status=404)
 
 @api_view(["POST"])
 def get_order_data(request):
