@@ -24,13 +24,13 @@ class Ingredient(models.Model):
 
 class Order(models.Model):
     STATUS_CHOICES = [
-        ("Pending", "Pending"),
-        ("Completed", "Completed"),
-        ("Cancelled", "Cancelled"),
+        ("pending", "pending"),
+        ("completed", "completed"),
+        ("cancelled", "cancelled"),
     ]
     oid = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="pending")
     date = models.DateTimeField(auto_now_add=True)
     calories = models.IntegerField(default=0)
 

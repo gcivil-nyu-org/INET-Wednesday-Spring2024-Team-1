@@ -77,13 +77,8 @@
                         <tr>
                             <td>{{ order.oid }}</td>
                             <td>{{ order.date }}</td>
-                            <!-- <td><span class="badge {% if order.status == 'Pending' %}badge-warning{% elif order.status == 'Completed' %}badge-success{% else %}badge-danger{% endif %}">
-                                {{ order.status }}
-                            </span></td> -->
                             <td>
-                                <!-- <span class="badge badge-warning"> -->
                                     {{ order.status }}
-                                <!-- </span> -->
                             </td>
                             <td>
                                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#orderItems{{ order.oid }}" aria-expanded="false" aria-controls="orderItems{{ order.oid }}">
