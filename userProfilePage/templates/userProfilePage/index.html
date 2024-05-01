@@ -118,6 +118,10 @@
             <div class="col-md-6">
                 <canvas id="caloriesChart"></canvas>
             </div>
+            <!-- Chart column initially hidden -->
+            <!-- <div class="col-md-8 mx-auto" id="chartColumn" style="display: none;">
+                <canvas id="caloriesChart" width="800" height="600"></canvas>
+            </div> -->
         </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -167,4 +171,55 @@
         }
     });
 </script>
+<!-- <script>
+    let caloriesChart; // Variable to store the Chart.js instance
+
+    // Function to draw or hide the chart
+    function toggleChart(labels, calorieValues) {
+        console.log(calorieValues)
+        if (caloriesChart) {
+            // If chart exists, destroy it and hide the chart column
+            caloriesChart.destroy();
+            $('#chartColumn').hide();
+            caloriesChart = null; // Reset the chart variable
+        } else {
+            // If chart doesn't exist, draw the chart
+            const ctx = document.getElementById('caloriesChart').getContext('2d');
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Calories Expended',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    data: calorieValues
+                }]
+            };
+
+            caloriesChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Show the chart column
+            $('#chartColumn').show();
+        }
+    }
+
+    // Event listener for the button click
+    $(document).ready(function() {
+        $('#drawChartBtn').click(function() {
+            // Directly call the toggleChart function with the data from the view
+            toggleChart({{ labels | safe }}, {{ calorie_values | safe }}); // Assuming labels and calorieValues are already defined in the template
+        });
+    });
+</script> -->
 </html>
